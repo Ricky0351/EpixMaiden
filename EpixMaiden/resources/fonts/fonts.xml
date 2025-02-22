@@ -1,0 +1,15 @@
+<fonts>
+	<font id="customFont" filename="custom.fnt" filter="0123456789:"/>
+	<font id="typicons22" filename="typicons22.fnt" filter="vwhplfqide" />
+	<font id="MetalAlpha" filename="MetalAlpha.fnt" filter=".ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 " />
+	<font id="MetalAlphapourcent" filename="MetalAlphapourcent.fnt" filter="%.$ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 " />
+	<font id="MetalAlpha2" filename="MetalAlpha2Size25px.fnt" filter="ABCDEFGHIJKLMNOPQRSTUVWXYZ " />
+	<font id="MetalAlpha3" filename="MetalAlpha2Size26px.fnt" filter="ABCDEFGHIJKLMNOPQRSTUVWXYZ " />
+    <font id="IconsFont" filename="mtba-icons.fnt" antialias="true" filter="012345678:;@ABPQRSTUVWXY.?>" />
+    <font id="WeatherFont" filename="weather-icons-24.fnt" antialias="true" />
+	<font id="TitleIron46" filename="TitleIron46.fnt" filter="ADEIMNNOR " />
+	<font id="TitleIron45" filename="TitleIron45.fnt" filter="ADEIMNNOR " />
+	<font id="HourIron120" filename="HourIron120.fnt" filter="0123456789:" />
+	<font id="SecIron50" filename="SecIron50.fnt" filter="0123456789:" />
+	<font id="TextIron30" filename="TextIron30.fnt" />
+</fonts>

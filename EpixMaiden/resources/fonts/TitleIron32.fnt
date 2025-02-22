@@ -1,0 +1,18 @@
+info face="Metal Lord" size=32 bold=0 italic=0 charset="" unicode=1 stretchH=100 smooth=1 aa=1 padding=0,0,0,0 spacing=1,1 outline=0
+common lineHeight=32 base=25 scaleW=256 scaleH=256 pages=1 packed=0 alphaChnl=1 redChnl=0 greenChnl=0 blueChnl=0
+page id=0 file="TitleIron32_0.png"
+chars count=9
+char id=32   x=143   y=0     width=3     height=1     xoffset=-1    yoffset=31    xadvance=7     page=0  chnl=15
+char id=65   x=82    y=0     width=20    height=19    xoffset=-1    yoffset=6     xadvance=19    page=0  chnl=15
+char id=68   x=103   y=0     width=18    height=19    xoffset=0     yoffset=6     xadvance=17    page=0  chnl=15
+char id=69   x=122   y=0     width=12    height=19    xoffset=0     yoffset=6     xadvance=12    page=0  chnl=15
+char id=73   x=135   y=0     width=7     height=19    xoffset=0     yoffset=6     xadvance=7     page=0  chnl=15
+char id=77   x=0     y=0     width=21    height=24    xoffset=-3    yoffset=6     xadvance=18    page=0  chnl=15
+char id=78   x=41    y=0     width=17    height=24    xoffset=-1    yoffset=6     xadvance=16    page=0  chnl=15
+char id=79   x=59    y=0     width=22    height=19    xoffset=-1    yoffset=6     xadvance=21    page=0  chnl=15
+char id=82   x=22    y=0     width=18    height=24    xoffset=0     yoffset=6     xadvance=16    page=0  chnl=15
+kernings count=4
+kerning first=78  second=77  amount=1   
+kerning first=73  second=77  amount=1   
+kerning first=69  second=77  amount=1   
+kerning first=65  second=77  amount=1   

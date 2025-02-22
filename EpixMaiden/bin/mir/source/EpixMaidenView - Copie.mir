@@ -1,0 +1,1357 @@
+[ @file = "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc"; @line = 1; ]
+using Toybox.WatchUi as :Ui;
+[ @file = "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc"; @line = 2; ]
+using Toybox.Graphics as :Gfx;
+[ @file = "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc"; @line = 3; ]
+using Toybox.System as :Sys;
+[ @file = "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc"; @line = 4; ]
+using Toybox.Lang as :Lang;
+[ @file = "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc"; @line = 5; ]
+using Toybox.Time.Gregorian as :Greg;
+[ @file = "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc"; @line = 6; ]
+using Toybox.ActivityMonitor as :Act;
+[ @file = "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc"; @line = 7; ]
+using Toybox.Activity as :Acty;
+[ @file = "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc"; @line = 9; ]
+class EpixMaidenView extends Ui.WatchFace{
+    [ @file = "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc"; @line = 9; ]
+    <init> {
+    }
+    [ @file = "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc"; @line = 9; ]
+    static
+    <init> {
+    }
+    [ @file = "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc"; @line = 11; @position = 5; ]
+    var customFont = null;
+    [ @file = "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc"; @line = 12; @position = 5; ]
+    var fsyms;
+    [ @file = "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc"; @line = 12; @position = 11; ]
+    var falpha;
+    [ @file = "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc"; @line = 12; @position = 18; ]
+    var falpha2;
+    [ @file = "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc"; @line = 12; @position = 26; ]
+    var falpha3;
+    [ @file = "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc"; @line = 12; @position = 34; ]
+    var falpha4;
+    [ @file = "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc"; @line = 12; @position = 42; ]
+    var fweather;
+    [ @file = "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc"; @line = 12; @position = 51; ]
+    var ficon;
+    [ @file = "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc"; @line = 13; @position = 5; ]
+    var h;
+    [ @file = "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc"; @line = 13; @position = 7; ]
+    var font2;
+    [ @file = "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc"; @line = 13; @position = 14; ]
+    var w;
+    [ @file = "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc"; @line = 15; ]
+    function onLayout(dc) {
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_15_26_24_4_start:
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 16 7 ]
+        %tmp.1 = getm $.Toybox.WatchUi;
+        %tmp.2 = getv function %tmp.1 :loadResource;
+        %tmp.4 = getv ? :Rez;
+        %tmp.5 = getv %tmp.4 :Fonts;
+        %tmp.6 = getv %tmp.5 :customFont;
+        %tmp.7 = invoke %tmp.1 %tmp.2(%tmp.6);
+        putv self :customFont %tmp.7;
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 17 7 ]
+        %tmp.8 = getm $.Toybox.WatchUi;
+        %tmp.9 = getv function %tmp.8 :loadResource;
+        %tmp.11 = getv ? :Rez;
+        %tmp.12 = getv %tmp.11 :Fonts;
+        %tmp.13 = getv %tmp.12 :typicons22;
+        %tmp.14 = invoke %tmp.8 %tmp.9(%tmp.13);
+        putv self :fsyms %tmp.14;
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 18 7 ]
+        %tmp.15 = getm $.Toybox.WatchUi;
+        %tmp.16 = getv function %tmp.15 :loadResource;
+        %tmp.18 = getv ? :Rez;
+        %tmp.19 = getv %tmp.18 :Fonts;
+        %tmp.20 = getv %tmp.19 :MetalAlpha;
+        %tmp.21 = invoke %tmp.15 %tmp.16(%tmp.20);
+        putv self :falpha %tmp.21;
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 19 7 ]
+        %tmp.22 = getm $.Toybox.WatchUi;
+        %tmp.23 = getv function %tmp.22 :loadResource;
+        %tmp.25 = getv ? :Rez;
+        %tmp.26 = getv %tmp.25 :Fonts;
+        %tmp.27 = getv %tmp.26 :MetalAlpha2;
+        %tmp.28 = invoke %tmp.22 %tmp.23(%tmp.27);
+        putv self :falpha2 %tmp.28;
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 20 7 ]
+        %tmp.29 = getm $.Toybox.WatchUi;
+        %tmp.30 = getv function %tmp.29 :loadResource;
+        %tmp.32 = getv ? :Rez;
+        %tmp.33 = getv %tmp.32 :Fonts;
+        %tmp.34 = getv %tmp.33 :MetalAlpha3;
+        %tmp.35 = invoke %tmp.29 %tmp.30(%tmp.34);
+        putv self :falpha3 %tmp.35;
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 21 7 ]
+        %tmp.36 = getm $.Toybox.WatchUi;
+        %tmp.37 = getv function %tmp.36 :loadResource;
+        %tmp.39 = getv ? :Rez;
+        %tmp.40 = getv %tmp.39 :Fonts;
+        %tmp.41 = getv %tmp.40 :MetalAlphapourcent;
+        %tmp.42 = invoke %tmp.36 %tmp.37(%tmp.41);
+        putv self :falpha4 %tmp.42;
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 22 4 ]
+        %tmp.43 = getm $.Toybox.WatchUi;
+        %tmp.44 = getv function %tmp.43 :loadResource;
+        %tmp.46 = getv ? :Rez;
+        %tmp.47 = getv %tmp.46 :Fonts;
+        %tmp.48 = getv %tmp.47 :WeatherFont;
+        %tmp.49 = invoke %tmp.43 %tmp.44(%tmp.48);
+        putv self :fweather %tmp.49;
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 23 4 ]
+        %tmp.50 = getm $.Toybox.WatchUi;
+        %tmp.51 = getv function %tmp.50 :loadResource;
+        %tmp.53 = getv ? :Rez;
+        %tmp.54 = getv %tmp.53 :Fonts;
+        %tmp.55 = getv %tmp.54 :IconsFont;
+        %tmp.56 = invoke %tmp.50 %tmp.51(%tmp.55);
+        putv self :ficon %tmp.56;
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_15_26_24_4_stop:
+    }
+    [ @file = "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc"; @line = 26; ]
+    function onUpdate(dc) {
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_start:
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 27 5 ]
+        %tmp.1 = lgetv %dc;
+        %tmp.2 = getv function %tmp.1 :setColor;
+        %tmp.3 = getm $.Toybox.Graphics;
+        %tmp.4 = getv %tmp.3 :COLOR_BLACK;
+        %tmp.5 = getm $.Toybox.Graphics;
+        %tmp.6 = getv %tmp.5 :COLOR_BLACK;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 28 4 ]
+        %tmp.7 = lgetv %dc;
+        %tmp.8 = getv function %tmp.7 :clear;
+        invoke %tmp.7 %tmp.8();
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 29 8 ]
+        [ "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_start" "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_stop" ]
+        %clockTime.1 = local;
+        %tmp.9 = getm $.Toybox.System;
+        %tmp.10 = getv function %tmp.9 :getClockTime;
+        %tmp.11 = invoke %tmp.9 %tmp.10();
+        lputv %clockTime.1 %tmp.11;
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 30 5 ]
+        [ "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_start" "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_stop" ]
+        %stats.2 = local;
+        %tmp.12 = getm $.Toybox.System;
+        %tmp.13 = getv function %tmp.12 :getSystemStats;
+        %tmp.14 = invoke %tmp.12 %tmp.13();
+        lputv %stats.2 %tmp.14;
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 31 8 ]
+        [ "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_start" "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_stop" ]
+        %hour.3 = local;
+        %tmp.15 = lgetv %clockTime.1;
+        %tmp.16 = getv %tmp.15 :hour;
+        lputv %hour.3 %tmp.16;
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 32 3 ]
+        [ "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_start" "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_stop" ]
+        %dateinfo.4 = local;
+        %tmp.17 = getm $.Toybox.Time.Gregorian;
+        %tmp.18 = getv function %tmp.17 :info;
+        %tmp.20 = getv ? :Time;
+        %tmp.21 = getv function %tmp.20 :now;
+        %tmp.22 = invoke %tmp.20 %tmp.21();
+        %tmp.24 = getv ? :Time;
+        %tmp.25 = getv %tmp.24 :FORMAT_SHORT;
+        %tmp.26 = invoke %tmp.17 %tmp.18(%tmp.22, %tmp.25);
+        lputv %dateinfo.4 %tmp.26;
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 33 3 ]
+        [ "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_start" "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_stop" ]
+        %actinfo.5 = local;
+        %tmp.27 = getm $.Toybox.ActivityMonitor;
+        %tmp.28 = getv function %tmp.27 :getInfo;
+        %tmp.29 = invoke %tmp.27 %tmp.28();
+        lputv %actinfo.5 %tmp.29;
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 34 8 ]
+        [ "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_start" "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_stop" ]
+        %battery.6 = local;
+        %tmp.30 = lgetv %stats.2;
+        %tmp.31 = getv %tmp.30 :battery;
+        lputv %battery.6 %tmp.31;
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 35 8 ]
+        [ "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_start" "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_stop" ]
+        %steps.7 = local;
+        %tmp.32 = lgetv %actinfo.5;
+        %tmp.33 = getv %tmp.32 :steps;
+        lputv %steps.7 %tmp.33;
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 36 8 ]
+        [ "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_start" "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_stop" ]
+        %StepGoal.8 = local;
+        %tmp.34 = lgetv %actinfo.5;
+        %tmp.35 = getv %tmp.34 :stepGoal;
+        lputv %StepGoal.8 %tmp.35;
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 37 8 ]
+        [ "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_start" "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_stop" ]
+        %settings.9 = local;
+        %tmp.36 = getm $.Toybox.System;
+        %tmp.37 = getv function %tmp.36 :getDeviceSettings;
+        %tmp.38 = invoke %tmp.36 %tmp.37();
+        lputv %settings.9 %tmp.38;
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 40 3 ]
+        [ "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_start" "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_stop" ]
+        %TextHeure.10 = local;
+        %tmp.39 = lgetv %hour.3;
+        %tmp.40 = getv function %tmp.39 :toString;
+        %tmp.41 = invoke %tmp.39 %tmp.40();
+        %tmp.42 = getm $.Toybox.Lang;
+        %tmp.43 = getv function %tmp.42 :format;
+        %tmp.44 = "$1$";
+        %tmp.45 = newa 1;
+        %tmp.46 = lgetv %clockTime.1;
+        %tmp.47 = getv %tmp.46 :min;
+        %tmp.48 = getv function %tmp.47 :format;
+        %tmp.49 = "%02d";
+        %tmp.50 = invoke %tmp.47 %tmp.48(%tmp.49);
+        %tmp.51 = dup %tmp.45;
+        %tmp.52 = aputv %tmp.51 0 %tmp.50;
+        %tmp.53 = invoke %tmp.42 %tmp.43(%tmp.44, %tmp.52);
+        %tmp.54 = add %tmp.41 %tmp.53;
+        lputv %TextHeure.10 %tmp.54;
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 42 3 ]
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_42_3_44_9_if_stmt:
+        %tmp.56 = lgetv %hour.3;
+        %tmp.57 = 10;
+        %tmp.58 = lt %tmp.56 %tmp.57;
+        bf %tmp.58 @D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_42_3_44_9_if_end;
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_42_3_44_9_if_true:
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_42_16_44_9_start:
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 43 10 ]
+        %tmp.59 = "0";
+        %tmp.61 = lgetv %TextHeure.10;
+        %tmp.62 = add %tmp.59 %tmp.61;
+        lputv %TextHeure.10 %tmp.62;
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_42_16_44_9_stop:
+        goto @D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_42_3_44_9_if_end;
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_42_3_44_9_if_end:
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 46 3 ]
+        [ "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_start" "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_stop" ]
+        %DizHeure.11 = local;
+        %tmp.63 = lgetv %TextHeure.10;
+        %tmp.64 = getv function %tmp.63 :substring;
+        %tmp.65 = 0;
+        %tmp.66 = 1;
+        %tmp.67 = invoke %tmp.63 %tmp.64(%tmp.65, %tmp.66);
+        lputv %DizHeure.11 %tmp.67;
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 47 3 ]
+        [ "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_start" "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_stop" ]
+        %UnitHeure.12 = local;
+        %tmp.68 = lgetv %TextHeure.10;
+        %tmp.69 = getv function %tmp.68 :substring;
+        %tmp.70 = 1;
+        %tmp.71 = 2;
+        %tmp.72 = invoke %tmp.68 %tmp.69(%tmp.70, %tmp.71);
+        lputv %UnitHeure.12 %tmp.72;
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 48 3 ]
+        [ "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_start" "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_stop" ]
+        %DizMin.13 = local;
+        %tmp.73 = lgetv %TextHeure.10;
+        %tmp.74 = getv function %tmp.73 :substring;
+        %tmp.75 = 2;
+        %tmp.76 = 3;
+        %tmp.77 = invoke %tmp.73 %tmp.74(%tmp.75, %tmp.76);
+        lputv %DizMin.13 %tmp.77;
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 49 3 ]
+        [ "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_start" "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_stop" ]
+        %UnitMin.14 = local;
+        %tmp.78 = lgetv %TextHeure.10;
+        %tmp.79 = getv function %tmp.78 :substring;
+        %tmp.80 = 3;
+        %tmp.81 = 4;
+        %tmp.82 = invoke %tmp.78 %tmp.79(%tmp.80, %tmp.81);
+        lputv %UnitMin.14 %tmp.82;
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 50 3 ]
+        [ "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_start" "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_stop" ]
+        %largeurDizHeure.15 = local;
+        %tmp.83 = lgetv %dc;
+        %tmp.84 = getv function %tmp.83 :getTextWidthInPixels;
+        %tmp.86 = lgetv %DizHeure.11;
+        %tmp.88 = getv ? :customFont;
+        %tmp.89 = invoke %tmp.83 %tmp.84(%tmp.86, %tmp.88);
+        lputv %largeurDizHeure.15 %tmp.89;
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 51 3 ]
+        [ "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_start" "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_stop" ]
+        %largeurUnitHeure.16 = local;
+        %tmp.90 = lgetv %dc;
+        %tmp.91 = getv function %tmp.90 :getTextWidthInPixels;
+        %tmp.93 = lgetv %UnitHeure.12;
+        %tmp.95 = getv ? :customFont;
+        %tmp.96 = invoke %tmp.90 %tmp.91(%tmp.93, %tmp.95);
+        lputv %largeurUnitHeure.16 %tmp.96;
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 52 3 ]
+        [ "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_start" "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_stop" ]
+        %largeurDizMin.17 = local;
+        %tmp.97 = lgetv %dc;
+        %tmp.98 = getv function %tmp.97 :getTextWidthInPixels;
+        %tmp.100 = lgetv %DizMin.13;
+        %tmp.102 = getv ? :customFont;
+        %tmp.103 = invoke %tmp.97 %tmp.98(%tmp.100, %tmp.102);
+        lputv %largeurDizMin.17 %tmp.103;
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 53 3 ]
+        [ "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_start" "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_stop" ]
+        %largeurUnitMin.18 = local;
+        %tmp.104 = lgetv %dc;
+        %tmp.105 = getv function %tmp.104 :getTextWidthInPixels;
+        %tmp.107 = lgetv %UnitMin.14;
+        %tmp.109 = getv ? :customFont;
+        %tmp.110 = invoke %tmp.104 %tmp.105(%tmp.107, %tmp.109);
+        lputv %largeurUnitMin.18 %tmp.110;
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 55 3 ]
+        %tmp.111 = lgetv %dc;
+        %tmp.112 = getv function %tmp.111 :setColor;
+        %tmp.113 = getm $.Toybox.Graphics;
+        %tmp.114 = getv %tmp.113 :COLOR_WHITE;
+        %tmp.115 = getm $.Toybox.Graphics;
+        %tmp.116 = getv %tmp.115 :COLOR_BLACK;
+        invoke %tmp.111 %tmp.112(%tmp.114, %tmp.116);
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 56 3 ]
+        %tmp.117 = lgetv %dc;
+        %tmp.118 = getv function %tmp.117 :drawText;
+        %tmp.119 = lgetv %dc;
+        %tmp.120 = getv function %tmp.119 :getWidth;
+        %tmp.121 = invoke %tmp.119 %tmp.120();
+        %tmp.122 = 2;
+        %tmp.123 = div %tmp.121 %tmp.122;
+        %tmp.125 = lgetv %largeurUnitHeure.16;
+        %tmp.126 = sub %tmp.123 %tmp.125;
+        %tmp.127 = 0.5;
+        %tmp.129 = lgetv %largeurDizHeure.15;
+        %tmp.130 = mul %tmp.127 %tmp.129;
+        %tmp.131 = sub %tmp.126 %tmp.130;
+        %tmp.132 = lgetv %dc;
+        %tmp.133 = getv function %tmp.132 :getHeight;
+        %tmp.134 = invoke %tmp.132 %tmp.133();
+        %tmp.135 = 2;
+        %tmp.136 = div %tmp.134 %tmp.135;
+        %tmp.138 = getv ? :customFont;
+        %tmp.140 = lgetv %DizHeure.11;
+        %tmp.141 = getm $.Toybox.Graphics;
+        %tmp.142 = getv %tmp.141 :TEXT_JUSTIFY_VCENTER;
+        %tmp.144 = getv ? :Graphics;
+        %tmp.145 = getv %tmp.144 :TEXT_JUSTIFY_CENTER;
+        %tmp.146 = bitor %tmp.142 %tmp.145;
+        invoke %tmp.117 %tmp.118(%tmp.131, %tmp.136, %tmp.138, %tmp.140, %tmp.146);
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 57 3 ]
+        %tmp.147 = lgetv %dc;
+        %tmp.148 = getv function %tmp.147 :setColor;
+        %tmp.149 = getm $.Toybox.Graphics;
+        %tmp.150 = getv %tmp.149 :COLOR_RED;
+        %tmp.151 = getm $.Toybox.Graphics;
+        %tmp.152 = getv %tmp.151 :COLOR_BLACK;
+        invoke %tmp.147 %tmp.148(%tmp.150, %tmp.152);
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 58 3 ]
+        %tmp.153 = lgetv %dc;
+        %tmp.154 = getv function %tmp.153 :drawText;
+        %tmp.155 = lgetv %dc;
+        %tmp.156 = getv function %tmp.155 :getWidth;
+        %tmp.157 = invoke %tmp.155 %tmp.156();
+        %tmp.158 = 2;
+        %tmp.159 = div %tmp.157 %tmp.158;
+        %tmp.160 = 0.5;
+        %tmp.162 = lgetv %largeurUnitHeure.16;
+        %tmp.163 = mul %tmp.160 %tmp.162;
+        %tmp.164 = sub %tmp.159 %tmp.163;
+        %tmp.165 = lgetv %dc;
+        %tmp.166 = getv function %tmp.165 :getHeight;
+        %tmp.167 = invoke %tmp.165 %tmp.166();
+        %tmp.168 = 2;
+        %tmp.169 = div %tmp.167 %tmp.168;
+        %tmp.171 = getv ? :customFont;
+        %tmp.173 = lgetv %UnitHeure.12;
+        %tmp.174 = getm $.Toybox.Graphics;
+        %tmp.175 = getv %tmp.174 :TEXT_JUSTIFY_VCENTER;
+        %tmp.177 = getv ? :Graphics;
+        %tmp.178 = getv %tmp.177 :TEXT_JUSTIFY_CENTER;
+        %tmp.179 = bitor %tmp.175 %tmp.178;
+        invoke %tmp.153 %tmp.154(%tmp.164, %tmp.169, %tmp.171, %tmp.173, %tmp.179);
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 59 3 ]
+        %tmp.180 = lgetv %dc;
+        %tmp.181 = getv function %tmp.180 :setColor;
+        %tmp.182 = getm $.Toybox.Graphics;
+        %tmp.183 = getv %tmp.182 :COLOR_BLUE;
+        %tmp.184 = getm $.Toybox.Graphics;
+        %tmp.185 = getv %tmp.184 :COLOR_BLACK;
+        invoke %tmp.180 %tmp.181(%tmp.183, %tmp.185);
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 60 3 ]
+        %tmp.186 = lgetv %dc;
+        %tmp.187 = getv function %tmp.186 :drawText;
+        %tmp.188 = lgetv %dc;
+        %tmp.189 = getv function %tmp.188 :getWidth;
+        %tmp.190 = invoke %tmp.188 %tmp.189();
+        %tmp.191 = 2;
+        %tmp.192 = div %tmp.190 %tmp.191;
+        %tmp.193 = 0.5;
+        %tmp.195 = lgetv %largeurDizMin.17;
+        %tmp.196 = mul %tmp.193 %tmp.195;
+        %tmp.197 = add %tmp.192 %tmp.196;
+        %tmp.198 = lgetv %dc;
+        %tmp.199 = getv function %tmp.198 :getHeight;
+        %tmp.200 = invoke %tmp.198 %tmp.199();
+        %tmp.201 = 2;
+        %tmp.202 = div %tmp.200 %tmp.201;
+        %tmp.204 = getv ? :customFont;
+        %tmp.206 = lgetv %DizMin.13;
+        %tmp.207 = getm $.Toybox.Graphics;
+        %tmp.208 = getv %tmp.207 :TEXT_JUSTIFY_VCENTER;
+        %tmp.210 = getv ? :Graphics;
+        %tmp.211 = getv %tmp.210 :TEXT_JUSTIFY_CENTER;
+        %tmp.212 = bitor %tmp.208 %tmp.211;
+        invoke %tmp.186 %tmp.187(%tmp.197, %tmp.202, %tmp.204, %tmp.206, %tmp.212);
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 61 3 ]
+        %tmp.213 = lgetv %dc;
+        %tmp.214 = getv function %tmp.213 :setColor;
+        %tmp.215 = getm $.Toybox.Graphics;
+        %tmp.216 = getv %tmp.215 :COLOR_YELLOW;
+        %tmp.217 = getm $.Toybox.Graphics;
+        %tmp.218 = getv %tmp.217 :COLOR_BLACK;
+        invoke %tmp.213 %tmp.214(%tmp.216, %tmp.218);
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 62 3 ]
+        %tmp.219 = lgetv %dc;
+        %tmp.220 = getv function %tmp.219 :drawText;
+        %tmp.221 = lgetv %dc;
+        %tmp.222 = getv function %tmp.221 :getWidth;
+        %tmp.223 = invoke %tmp.221 %tmp.222();
+        %tmp.224 = 2;
+        %tmp.225 = div %tmp.223 %tmp.224;
+        %tmp.226 = 0.5;
+        %tmp.228 = lgetv %largeurDizMin.17;
+        %tmp.229 = mul %tmp.226 %tmp.228;
+        %tmp.230 = add %tmp.225 %tmp.229;
+        %tmp.232 = lgetv %largeurUnitMin.18;
+        %tmp.233 = add %tmp.230 %tmp.232;
+        %tmp.234 = lgetv %dc;
+        %tmp.235 = getv function %tmp.234 :getHeight;
+        %tmp.236 = invoke %tmp.234 %tmp.235();
+        %tmp.237 = 2;
+        %tmp.238 = div %tmp.236 %tmp.237;
+        %tmp.240 = getv ? :customFont;
+        %tmp.242 = lgetv %UnitMin.14;
+        %tmp.243 = getm $.Toybox.Graphics;
+        %tmp.244 = getv %tmp.243 :TEXT_JUSTIFY_VCENTER;
+        %tmp.246 = getv ? :Graphics;
+        %tmp.247 = getv %tmp.246 :TEXT_JUSTIFY_CENTER;
+        %tmp.248 = bitor %tmp.244 %tmp.247;
+        invoke %tmp.219 %tmp.220(%tmp.233, %tmp.238, %tmp.240, %tmp.242, %tmp.248);
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 65 14 ]
+        [ "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_start" "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_stop" ]
+        %months.19 = local;
+        %tmp.249 = newa 12;
+        %tmp.250 = "JAN";
+        %tmp.251 = dup %tmp.249;
+        %tmp.252 = aputv %tmp.251 0 %tmp.250;
+        %tmp.253 = "FEV";
+        %tmp.254 = dup %tmp.252;
+        %tmp.255 = aputv %tmp.254 1 %tmp.253;
+        %tmp.256 = "MAR";
+        %tmp.257 = dup %tmp.255;
+        %tmp.258 = aputv %tmp.257 2 %tmp.256;
+        %tmp.259 = "AVR";
+        %tmp.260 = dup %tmp.258;
+        %tmp.261 = aputv %tmp.260 3 %tmp.259;
+        %tmp.262 = "MAI";
+        %tmp.263 = dup %tmp.261;
+        %tmp.264 = aputv %tmp.263 4 %tmp.262;
+        %tmp.265 = "JUN";
+        %tmp.266 = dup %tmp.264;
+        %tmp.267 = aputv %tmp.266 5 %tmp.265;
+        %tmp.268 = "JUI";
+        %tmp.269 = dup %tmp.267;
+        %tmp.270 = aputv %tmp.269 6 %tmp.268;
+        %tmp.271 = "AOU";
+        %tmp.272 = dup %tmp.270;
+        %tmp.273 = aputv %tmp.272 7 %tmp.271;
+        %tmp.274 = "SEP";
+        %tmp.275 = dup %tmp.273;
+        %tmp.276 = aputv %tmp.275 8 %tmp.274;
+        %tmp.277 = "OCT";
+        %tmp.278 = dup %tmp.276;
+        %tmp.279 = aputv %tmp.278 9 %tmp.277;
+        %tmp.280 = "NOV";
+        %tmp.281 = dup %tmp.279;
+        %tmp.282 = aputv %tmp.281 10 %tmp.280;
+        %tmp.283 = "DEC";
+        %tmp.284 = dup %tmp.282;
+        %tmp.285 = aputv %tmp.284 11 %tmp.283;
+        lputv %months.19 %tmp.285;
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 66 14 ]
+        [ "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_start" "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_stop" ]
+        %weekdays.20 = local;
+        %tmp.286 = newa 7;
+        %tmp.287 = "DIM";
+        %tmp.288 = dup %tmp.286;
+        %tmp.289 = aputv %tmp.288 0 %tmp.287;
+        %tmp.290 = "LUN";
+        %tmp.291 = dup %tmp.289;
+        %tmp.292 = aputv %tmp.291 1 %tmp.290;
+        %tmp.293 = "MAR";
+        %tmp.294 = dup %tmp.292;
+        %tmp.295 = aputv %tmp.294 2 %tmp.293;
+        %tmp.296 = "MER";
+        %tmp.297 = dup %tmp.295;
+        %tmp.298 = aputv %tmp.297 3 %tmp.296;
+        %tmp.299 = "JEU";
+        %tmp.300 = dup %tmp.298;
+        %tmp.301 = aputv %tmp.300 4 %tmp.299;
+        %tmp.302 = "VEN";
+        %tmp.303 = dup %tmp.301;
+        %tmp.304 = aputv %tmp.303 5 %tmp.302;
+        %tmp.305 = "SAM";
+        %tmp.306 = dup %tmp.304;
+        %tmp.307 = aputv %tmp.306 6 %tmp.305;
+        lputv %weekdays.20 %tmp.307;
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 67 5 ]
+        [ "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_start" "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_stop" ]
+        %NumSemaine.21 = local;
+        %tmp.308 = self;
+        %tmp.309 = getv function %tmp.308 :iso_week_number;
+        %tmp.310 = lgetv %dateinfo.4;
+        %tmp.311 = getv %tmp.310 :year;
+        %tmp.312 = lgetv %dateinfo.4;
+        %tmp.313 = getv %tmp.312 :month;
+        %tmp.314 = lgetv %dateinfo.4;
+        %tmp.315 = getv %tmp.314 :day;
+        %tmp.316 = invoke %tmp.308 %tmp.309(%tmp.311, %tmp.313, %tmp.315);
+        lputv %NumSemaine.21 %tmp.316;
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 68 5 ]
+        [ "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_start" "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_stop" ]
+        %DateComplete.22 = local;
+        %tmp.318 = lgetv %weekdays.20;
+        %tmp.319 = lgetv %dateinfo.4;
+        %tmp.320 = getv %tmp.319 :day_of_week;
+        %tmp.321 = 1;
+        %tmp.322 = sub %tmp.320 %tmp.321;
+        %tmp.323 = agetv %tmp.318 %tmp.322;
+        %tmp.324 = " ";
+        %tmp.325 = add %tmp.323 %tmp.324;
+        %tmp.326 = lgetv %dateinfo.4;
+        %tmp.327 = getv %tmp.326 :day;
+        %tmp.328 = add %tmp.325 %tmp.327;
+        %tmp.329 = " ";
+        %tmp.330 = add %tmp.328 %tmp.329;
+        %tmp.332 = lgetv %months.19;
+        %tmp.333 = lgetv %dateinfo.4;
+        %tmp.334 = getv %tmp.333 :month;
+        %tmp.335 = 1;
+        %tmp.336 = sub %tmp.334 %tmp.335;
+        %tmp.337 = agetv %tmp.332 %tmp.336;
+        %tmp.338 = add %tmp.330 %tmp.337;
+        %tmp.339 = "  CW ";
+        %tmp.340 = add %tmp.338 %tmp.339;
+        %tmp.342 = lgetv %NumSemaine.21;
+        %tmp.343 = add %tmp.340 %tmp.342;
+        lputv %DateComplete.22 %tmp.343;
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 70 14 ]
+        %tmp.344 = lgetv %dc;
+        %tmp.345 = getv function %tmp.344 :setColor;
+        %tmp.346 = getm $.Toybox.Graphics;
+        %tmp.347 = getv %tmp.346 :COLOR_BLUE;
+        %tmp.348 = getm $.Toybox.Graphics;
+        %tmp.349 = getv %tmp.348 :COLOR_TRANSPARENT;
+        invoke %tmp.344 %tmp.345(%tmp.347, %tmp.349);
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 71 14 ]
+        %tmp.350 = lgetv %dc;
+        %tmp.351 = getv function %tmp.350 :drawText;
+        %tmp.352 = lgetv %dc;
+        %tmp.353 = getv function %tmp.352 :getWidth;
+        %tmp.354 = invoke %tmp.352 %tmp.353();
+        %tmp.355 = 2;
+        %tmp.356 = div %tmp.354 %tmp.355;
+        %tmp.357 = 20;
+        %tmp.359 = getv ? :falpha;
+        %tmp.361 = lgetv %DateComplete.22;
+        %tmp.362 = getm $.Toybox.Graphics;
+        %tmp.363 = getv %tmp.362 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.350 %tmp.351(%tmp.356, %tmp.357, %tmp.359, %tmp.361, %tmp.363);
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 74 10 ]
+        %tmp.364 = lgetv %dc;
+        %tmp.365 = getv function %tmp.364 :setColor;
+        %tmp.366 = getm $.Toybox.Graphics;
+        %tmp.367 = getv %tmp.366 :COLOR_RED;
+        %tmp.368 = getm $.Toybox.Graphics;
+        %tmp.369 = getv %tmp.368 :COLOR_TRANSPARENT;
+        invoke %tmp.364 %tmp.365(%tmp.367, %tmp.369);
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 75 6 ]
+        %tmp.370 = lgetv %dc;
+        %tmp.371 = getv function %tmp.370 :drawText;
+        %tmp.372 = lgetv %dc;
+        %tmp.373 = getv function %tmp.372 :getWidth;
+        %tmp.374 = invoke %tmp.372 %tmp.373();
+        %tmp.375 = 2;
+        %tmp.376 = div %tmp.374 %tmp.375;
+        %tmp.377 = lgetv %dc;
+        %tmp.378 = getv function %tmp.377 :getHeight;
+        %tmp.379 = invoke %tmp.377 %tmp.378();
+        %tmp.380 = 2;
+        %tmp.381 = div %tmp.379 %tmp.380;
+        %tmp.382 = 70;
+        %tmp.383 = sub %tmp.381 %tmp.382;
+        %tmp.385 = getv ? :falpha2;
+        %tmp.386 = "IRON MAIDEN";
+        %tmp.387 = getm $.Toybox.Graphics;
+        %tmp.388 = getv %tmp.387 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.370 %tmp.371(%tmp.376, %tmp.383, %tmp.385, %tmp.386, %tmp.388);
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 76 6 ]
+        %tmp.389 = lgetv %dc;
+        %tmp.390 = getv function %tmp.389 :setColor;
+        %tmp.391 = getm $.Toybox.Graphics;
+        %tmp.392 = getv %tmp.391 :COLOR_YELLOW;
+        %tmp.393 = getm $.Toybox.Graphics;
+        %tmp.394 = getv %tmp.393 :COLOR_TRANSPARENT;
+        invoke %tmp.389 %tmp.390(%tmp.392, %tmp.394);
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 77 6 ]
+        %tmp.395 = lgetv %dc;
+        %tmp.396 = getv function %tmp.395 :drawText;
+        %tmp.397 = lgetv %dc;
+        %tmp.398 = getv function %tmp.397 :getWidth;
+        %tmp.399 = invoke %tmp.397 %tmp.398();
+        %tmp.400 = 2;
+        %tmp.401 = div %tmp.399 %tmp.400;
+        %tmp.402 = lgetv %dc;
+        %tmp.403 = getv function %tmp.402 :getHeight;
+        %tmp.404 = invoke %tmp.402 %tmp.403();
+        %tmp.405 = 2;
+        %tmp.406 = div %tmp.404 %tmp.405;
+        %tmp.407 = 70;
+        %tmp.408 = sub %tmp.406 %tmp.407;
+        %tmp.410 = getv ? :falpha3;
+        %tmp.411 = "IRON MAIDEN";
+        %tmp.412 = getm $.Toybox.Graphics;
+        %tmp.413 = getv %tmp.412 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.395 %tmp.396(%tmp.401, %tmp.408, %tmp.410, %tmp.411, %tmp.413);
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 80 6 ]
+        [ "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_start" "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_stop" ]
+        %PourcentGoal.23 = local;
+        %tmp.415 = lgetv %steps.7;
+        %tmp.416 = 100;
+        %tmp.417 = mul %tmp.415 %tmp.416;
+        %tmp.419 = lgetv %StepGoal.8;
+        %tmp.420 = div %tmp.417 %tmp.419;
+        lputv %PourcentGoal.23 %tmp.420;
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 81 3 ]
+        [ "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_start" "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_stop" ]
+        %dist2.24 = local;
+        %tmp.421 = lgetv %actinfo.5;
+        %tmp.422 = getv %tmp.421 :distance;
+        %tmp.423 = 100000.0;
+        %tmp.424 = div %tmp.422 %tmp.423;
+        lputv %dist2.24 %tmp.424;
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 83 6 ]
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_83_6_86_56_if_stmt:
+        %tmp.426 = lgetv %PourcentGoal.23;
+        %tmp.427 = 100;
+        %tmp.428 = lt %tmp.426 %tmp.427;
+        bf %tmp.428 @D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_83_6_86_56_if_false;
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_83_6_86_56_if_true:
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_83_28_84_54_start:
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 84 4 ]
+        %tmp.429 = lgetv %dc;
+        %tmp.430 = getv function %tmp.429 :setColor;
+        %tmp.431 = getm $.Toybox.Graphics;
+        %tmp.432 = getv %tmp.431 :COLOR_RED;
+        %tmp.433 = getm $.Toybox.Graphics;
+        %tmp.434 = getv %tmp.433 :COLOR_TRANSPARENT;
+        invoke %tmp.429 %tmp.430(%tmp.432, %tmp.434);
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_83_28_84_54_stop:
+        goto @D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_83_6_86_56_if_end;
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_83_6_86_56_if_false:
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_85_8_86_56_start:
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 86 4 ]
+        %tmp.435 = lgetv %dc;
+        %tmp.436 = getv function %tmp.435 :setColor;
+        %tmp.437 = getm $.Toybox.Graphics;
+        %tmp.438 = getv %tmp.437 :COLOR_GREEN;
+        %tmp.439 = getm $.Toybox.Graphics;
+        %tmp.440 = getv %tmp.439 :COLOR_TRANSPARENT;
+        invoke %tmp.435 %tmp.436(%tmp.438, %tmp.440);
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_85_8_86_56_stop:
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_83_6_86_56_if_end:
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 87 7 ]
+        %tmp.441 = lgetv %dc;
+        %tmp.442 = getv function %tmp.441 :drawText;
+        %tmp.443 = lgetv %dc;
+        %tmp.444 = getv function %tmp.443 :getWidth;
+        %tmp.445 = invoke %tmp.443 %tmp.444();
+        %tmp.446 = 2;
+        %tmp.447 = div %tmp.445 %tmp.446;
+        %tmp.448 = 40;
+        %tmp.450 = getv ? :falpha;
+        %tmp.451 = lgetv %dist2.24;
+        %tmp.452 = getv function %tmp.451 :format;
+        %tmp.453 = "%0.1f";
+        %tmp.454 = invoke %tmp.451 %tmp.452(%tmp.453);
+        %tmp.455 = " KM  ";
+        %tmp.456 = add %tmp.454 %tmp.455;
+        %tmp.458 = lgetv %steps.7;
+        %tmp.459 = add %tmp.456 %tmp.458;
+        %tmp.460 = " STEPS";
+        %tmp.461 = add %tmp.459 %tmp.460;
+        %tmp.462 = getm $.Toybox.Graphics;
+        %tmp.463 = getv %tmp.462 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.441 %tmp.442(%tmp.447, %tmp.448, %tmp.450, %tmp.461, %tmp.463);
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 90 2 ]
+        [ "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_start" "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_stop" ]
+        %flags.25 = local;
+        %tmp.464 = "";
+        lputv %flags.25 %tmp.464;
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 91 2 ]
+        [ "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_start" "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_stop" ]
+        %nombreNotif.26 = local;
+        %tmp.465 = lgetv %settings.9;
+        %tmp.466 = getv %tmp.465 :notificationCount;
+        lputv %nombreNotif.26 %tmp.466;
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 92 2 ]
+        [ "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_start" "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_stop" ]
+        %largeurBattery.27 = local;
+        %tmp.467 = lgetv %dc;
+        %tmp.468 = getv function %tmp.467 :getTextWidthInPixels;
+        %tmp.469 = "d";
+        %tmp.471 = getv ? :fsyms;
+        %tmp.472 = invoke %tmp.467 %tmp.468(%tmp.469, %tmp.471);
+        lputv %largeurBattery.27 %tmp.472;
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 94 2 ]
+        %tmp.473 = lgetv %dc;
+        %tmp.474 = getv function %tmp.473 :setColor;
+        %tmp.475 = getm $.Toybox.Graphics;
+        %tmp.476 = getv %tmp.475 :COLOR_BLUE;
+        %tmp.477 = getm $.Toybox.Graphics;
+        %tmp.478 = getv %tmp.477 :COLOR_TRANSPARENT;
+        invoke %tmp.473 %tmp.474(%tmp.476, %tmp.478);
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 95 2 ]
+        %tmp.479 = lgetv %dc;
+        %tmp.480 = getv function %tmp.479 :drawText;
+        %tmp.481 = lgetv %dc;
+        %tmp.482 = getv function %tmp.481 :getWidth;
+        %tmp.483 = invoke %tmp.481 %tmp.482();
+        %tmp.484 = 2;
+        %tmp.485 = div %tmp.483 %tmp.484;
+        %tmp.486 = 2;
+        %tmp.488 = lgetv %largeurBattery.27;
+        %tmp.489 = mul %tmp.486 %tmp.488;
+        %tmp.490 = add %tmp.485 %tmp.489;
+        %tmp.491 = lgetv %dc;
+        %tmp.492 = getv function %tmp.491 :getHeight;
+        %tmp.493 = invoke %tmp.491 %tmp.492();
+        %tmp.494 = 2;
+        %tmp.495 = div %tmp.493 %tmp.494;
+        %tmp.496 = 55;
+        %tmp.497 = add %tmp.495 %tmp.496;
+        %tmp.498 = 5;
+        %tmp.499 = sub %tmp.497 %tmp.498;
+        %tmp.501 = getv ? :falpha;
+        %tmp.503 = lgetv %nombreNotif.26;
+        %tmp.504 = getm $.Toybox.Graphics;
+        %tmp.505 = getv %tmp.504 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.479 %tmp.480(%tmp.490, %tmp.499, %tmp.501, %tmp.503, %tmp.505);
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 96 2 ]
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_96_2_96_44_if_stmt:
+        %tmp.506 = lgetv %settings.9;
+        %tmp.507 = getv %tmp.506 :phoneConnected;
+        bf %tmp.507 @D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_96_2_96_44_if_end;
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_96_2_96_44_if_true:
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_96_31_96_44_start:
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 96 32 ]
+        %tmp.508 = "p";
+        lputv %flags.25 %tmp.508;
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_96_31_96_44_stop:
+        goto @D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_96_2_96_44_if_end;
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_96_2_96_44_if_end:
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 97 2 ]
+        %tmp.509 = lgetv %dc;
+        %tmp.510 = getv function %tmp.509 :setColor;
+        %tmp.511 = getm $.Toybox.Graphics;
+        %tmp.512 = getv %tmp.511 :COLOR_BLUE;
+        %tmp.513 = getm $.Toybox.Graphics;
+        %tmp.514 = getv %tmp.513 :COLOR_TRANSPARENT;
+        invoke %tmp.509 %tmp.510(%tmp.512, %tmp.514);
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 98 8 ]
+        %tmp.515 = lgetv %dc;
+        %tmp.516 = getv function %tmp.515 :drawText;
+        %tmp.517 = lgetv %dc;
+        %tmp.518 = getv function %tmp.517 :getWidth;
+        %tmp.519 = invoke %tmp.517 %tmp.518();
+        %tmp.520 = 2;
+        %tmp.521 = div %tmp.519 %tmp.520;
+        %tmp.522 = 2;
+        %tmp.524 = lgetv %largeurBattery.27;
+        %tmp.525 = mul %tmp.522 %tmp.524;
+        %tmp.526 = sub %tmp.521 %tmp.525;
+        %tmp.527 = lgetv %dc;
+        %tmp.528 = getv function %tmp.527 :getHeight;
+        %tmp.529 = invoke %tmp.527 %tmp.528();
+        %tmp.530 = 2;
+        %tmp.531 = div %tmp.529 %tmp.530;
+        %tmp.532 = 55;
+        %tmp.533 = add %tmp.531 %tmp.532;
+        %tmp.534 = 9;
+        %tmp.535 = sub %tmp.533 %tmp.534;
+        %tmp.537 = getv ? :fsyms;
+        %tmp.539 = lgetv %flags.25;
+        %tmp.540 = getm $.Toybox.Graphics;
+        %tmp.541 = getv %tmp.540 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.515 %tmp.516(%tmp.526, %tmp.535, %tmp.537, %tmp.539, %tmp.541);
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 101 4 ]
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_101_4_103_4_if_stmt:
+        %tmp.543 = lgetv %battery.6;
+        %tmp.544 = 20;
+        %tmp.545 = gte %tmp.543 %tmp.544;
+        bf %tmp.545 @D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_101_4_103_4_if_end;
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_101_4_103_4_if_true:
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_101_23_103_4_start:
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 102 4 ]
+        %tmp.546 = lgetv %dc;
+        %tmp.547 = getv function %tmp.546 :setColor;
+        %tmp.548 = getm $.Toybox.Graphics;
+        %tmp.549 = getv %tmp.548 :COLOR_GREEN;
+        %tmp.550 = getm $.Toybox.Graphics;
+        %tmp.551 = getv %tmp.550 :COLOR_BLACK;
+        invoke %tmp.546 %tmp.547(%tmp.549, %tmp.551);
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_101_23_103_4_stop:
+        goto @D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_101_4_103_4_if_end;
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_101_4_103_4_if_end:
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 104 4 ]
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_104_4_106_4_if_stmt:
+        %tmp.553 = lgetv %battery.6;
+        %tmp.554 = 20;
+        %tmp.555 = lt %tmp.553 %tmp.554;
+        bf %tmp.555 @D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_104_4_106_4_if_end;
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_104_4_106_4_if_true:
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_104_22_106_4_start:
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 105 4 ]
+        %tmp.556 = lgetv %dc;
+        %tmp.557 = getv function %tmp.556 :setColor;
+        %tmp.558 = getm $.Toybox.Graphics;
+        %tmp.559 = getv %tmp.558 :COLOR_RED;
+        %tmp.560 = getm $.Toybox.Graphics;
+        %tmp.561 = getv %tmp.560 :COLOR_BLACK;
+        invoke %tmp.556 %tmp.557(%tmp.559, %tmp.561);
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_104_22_106_4_stop:
+        goto @D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_104_4_106_4_if_end;
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_104_4_106_4_if_end:
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 107 4 ]
+        %tmp.562 = lgetv %dc;
+        %tmp.563 = getv function %tmp.562 :drawText;
+        %tmp.564 = lgetv %dc;
+        %tmp.565 = getv function %tmp.564 :getWidth;
+        %tmp.566 = invoke %tmp.564 %tmp.565();
+        %tmp.567 = 2;
+        %tmp.568 = div %tmp.566 %tmp.567;
+        %tmp.569 = lgetv %dc;
+        %tmp.570 = getv function %tmp.569 :getHeight;
+        %tmp.571 = invoke %tmp.569 %tmp.570();
+        %tmp.572 = 2;
+        %tmp.573 = div %tmp.571 %tmp.572;
+        %tmp.574 = 55;
+        %tmp.575 = add %tmp.573 %tmp.574;
+        %tmp.576 = 9;
+        %tmp.577 = sub %tmp.575 %tmp.576;
+        %tmp.579 = getv ? :fsyms;
+        %tmp.580 = "d";
+        %tmp.581 = getm $.Toybox.Graphics;
+        %tmp.582 = getv %tmp.581 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.562 %tmp.563(%tmp.568, %tmp.577, %tmp.579, %tmp.580, %tmp.582);
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 108 9 ]
+        %tmp.583 = lgetv %dc;
+        %tmp.584 = getv function %tmp.583 :fillRectangle;
+        %tmp.585 = lgetv %dc;
+        %tmp.586 = getv function %tmp.585 :getWidth;
+        %tmp.587 = invoke %tmp.585 %tmp.586();
+        %tmp.588 = 2;
+        %tmp.589 = div %tmp.587 %tmp.588;
+        %tmp.590 = 6;
+        %tmp.591 = sub %tmp.589 %tmp.590;
+        %tmp.592 = lgetv %dc;
+        %tmp.593 = getv function %tmp.592 :getHeight;
+        %tmp.594 = invoke %tmp.592 %tmp.593();
+        %tmp.595 = 2;
+        %tmp.596 = div %tmp.594 %tmp.595;
+        %tmp.597 = 55;
+        %tmp.598 = add %tmp.596 %tmp.597;
+        %tmp.599 = 11;
+        %tmp.601 = lgetv %battery.6;
+        %tmp.602 = mul %tmp.599 %tmp.601;
+        %tmp.603 = 100;
+        %tmp.604 = div %tmp.602 %tmp.603;
+        %tmp.605 = 7;
+        invoke %tmp.583 %tmp.584(%tmp.591, %tmp.598, %tmp.604, %tmp.605);
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 111 2 ]
+        [ "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_start" "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_stop" ]
+        %largeurCoeur.28 = local;
+        %tmp.606 = lgetv %dc;
+        %tmp.607 = getv function %tmp.606 :getTextWidthInPixels;
+        %tmp.608 = "3";
+        %tmp.610 = getv ? :ficon;
+        %tmp.611 = invoke %tmp.606 %tmp.607(%tmp.608, %tmp.610);
+        lputv %largeurCoeur.28 %tmp.611;
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 112 2 ]
+        [ "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_start" "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_stop" ]
+        %BattementCoeur.29 = local;
+        %tmp.612 = getm $.Toybox.Activity;
+        %tmp.613 = getv function %tmp.612 :getActivityInfo;
+        %tmp.614 = invoke %tmp.612 %tmp.613();
+        %tmp.615 = getv %tmp.614 :currentHeartRate;
+        lputv %BattementCoeur.29 %tmp.615;
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 113 2 ]
+        [ "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_start" "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_stop" ]
+        %BattementString.30 = local;
+        %tmp.616 = "";
+        lputv %BattementString.30 %tmp.616;
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 115 2 ]
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_115_2_119_2_if_stmt:
+        %tmp.618 = lgetv %BattementCoeur.29;
+        %tmp.619 = null;
+        %tmp.620 = ne %tmp.618 %tmp.619;
+        bf %tmp.620 @D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_115_2_119_2_if_false;
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_115_2_119_2_if_true:
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_115_27_117_2_start:
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 116 3 ]
+        %tmp.621 = lgetv %BattementCoeur.29;
+        %tmp.622 = as %tmp.621 { (!Null) };
+        %tmp.623 = getv function %tmp.622 :toString;
+        %tmp.624 = invoke %tmp.622 %tmp.623();
+        lputv %BattementString.30 %tmp.624;
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_115_27_117_2_stop:
+        goto @D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_115_2_119_2_if_end;
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_115_2_119_2_if_false:
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_117_7_119_2_start:
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 118 3 ]
+        %tmp.625 = "0";
+        lputv %BattementString.30 %tmp.625;
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_117_7_119_2_stop:
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_115_2_119_2_if_end:
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 121 2 ]
+        %tmp.626 = lgetv %dc;
+        %tmp.627 = getv function %tmp.626 :drawText;
+        %tmp.628 = lgetv %dc;
+        %tmp.629 = getv function %tmp.628 :getWidth;
+        %tmp.630 = invoke %tmp.628 %tmp.629();
+        %tmp.631 = 2;
+        %tmp.632 = div %tmp.630 %tmp.631;
+        %tmp.633 = 2;
+        %tmp.635 = lgetv %largeurCoeur.28;
+        %tmp.636 = mul %tmp.633 %tmp.635;
+        %tmp.637 = 3;
+        %tmp.638 = div %tmp.636 %tmp.637;
+        %tmp.639 = add %tmp.632 %tmp.638;
+        %tmp.640 = lgetv %dc;
+        %tmp.641 = getv function %tmp.640 :getHeight;
+        %tmp.642 = invoke %tmp.640 %tmp.641();
+        %tmp.643 = 2;
+        %tmp.644 = div %tmp.642 %tmp.643;
+        %tmp.645 = 75;
+        %tmp.646 = add %tmp.644 %tmp.645;
+        %tmp.648 = getv ? :ficon;
+        %tmp.649 = "3";
+        %tmp.650 = getm $.Toybox.Graphics;
+        %tmp.651 = getv %tmp.650 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.626 %tmp.627(%tmp.639, %tmp.646, %tmp.648, %tmp.649, %tmp.651);
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 122 2 ]
+        %tmp.652 = lgetv %dc;
+        %tmp.653 = getv function %tmp.652 :drawText;
+        %tmp.654 = lgetv %dc;
+        %tmp.655 = getv function %tmp.654 :getWidth;
+        %tmp.656 = invoke %tmp.654 %tmp.655();
+        %tmp.657 = 2;
+        %tmp.658 = div %tmp.656 %tmp.657;
+        %tmp.659 = 2;
+        %tmp.661 = lgetv %largeurCoeur.28;
+        %tmp.662 = mul %tmp.659 %tmp.661;
+        %tmp.663 = 3;
+        %tmp.664 = div %tmp.662 %tmp.663;
+        %tmp.665 = sub %tmp.658 %tmp.664;
+        %tmp.666 = lgetv %dc;
+        %tmp.667 = getv function %tmp.666 :getHeight;
+        %tmp.668 = invoke %tmp.666 %tmp.667();
+        %tmp.669 = 2;
+        %tmp.670 = div %tmp.668 %tmp.669;
+        %tmp.671 = 80;
+        %tmp.672 = add %tmp.670 %tmp.671;
+        %tmp.674 = getv ? :falpha4;
+        %tmp.676 = lgetv %BattementString.30;
+        %tmp.677 = getm $.Toybox.Graphics;
+        %tmp.678 = getv %tmp.677 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.652 %tmp.653(%tmp.665, %tmp.672, %tmp.674, %tmp.676, %tmp.678);
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 125 2 ]
+        [ "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_start" "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_stop" ]
+        %largeurMontagne.31 = local;
+        %tmp.679 = lgetv %dc;
+        %tmp.680 = getv function %tmp.679 :getTextWidthInPixels;
+        %tmp.681 = ";";
+        %tmp.683 = getv ? :ficon;
+        %tmp.684 = invoke %tmp.679 %tmp.680(%tmp.681, %tmp.683);
+        lputv %largeurMontagne.31 %tmp.684;
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 126 2 ]
+        [ "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_start" "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_stop" ]
+        %Alti.32 = local;
+        %tmp.685 = getm $.Toybox.Activity;
+        %tmp.686 = getv function %tmp.685 :getActivityInfo;
+        %tmp.687 = invoke %tmp.685 %tmp.686();
+        %tmp.688 = getv %tmp.687 :altitude;
+        lputv %Alti.32 %tmp.688;
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 127 2 ]
+        [ "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_start" "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_stop" ]
+        %AltiString.33 = local;
+        %tmp.689 = "";
+        lputv %AltiString.33 %tmp.689;
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 129 2 ]
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_129_2_133_2_if_stmt:
+        %tmp.691 = lgetv %AltiString.33;
+        %tmp.692 = null;
+        %tmp.693 = ne %tmp.691 %tmp.692;
+        bf %tmp.693 @D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_129_2_133_2_if_false;
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_129_2_133_2_if_true:
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_129_23_131_2_start:
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 130 3 ]
+        %tmp.694 = lgetv %Alti.32;
+        %tmp.695 = getv function %tmp.694 :toString;
+        %tmp.696 = invoke %tmp.694 %tmp.695();
+        lputv %AltiString.33 %tmp.696;
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_129_23_131_2_stop:
+        goto @D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_129_2_133_2_if_end;
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_129_2_133_2_if_false:
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_131_7_133_2_start:
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 132 3 ]
+        %tmp.697 = "0";
+        lputv %AltiString.33 %tmp.697;
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_131_7_133_2_stop:
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_129_2_133_2_if_end:
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 135 2 ]
+        %tmp.698 = lgetv %dc;
+        %tmp.699 = getv function %tmp.698 :drawText;
+        %tmp.700 = lgetv %dc;
+        %tmp.701 = getv function %tmp.700 :getWidth;
+        %tmp.702 = invoke %tmp.700 %tmp.701();
+        %tmp.703 = 35;
+        %tmp.704 = sub %tmp.702 %tmp.703;
+        %tmp.705 = lgetv %dc;
+        %tmp.706 = getv function %tmp.705 :getHeight;
+        %tmp.707 = invoke %tmp.705 %tmp.706();
+        %tmp.708 = 2;
+        %tmp.709 = div %tmp.707 %tmp.708;
+        %tmp.710 = 75;
+        %tmp.711 = add %tmp.709 %tmp.710;
+        %tmp.713 = getv ? :ficon;
+        %tmp.714 = ";";
+        %tmp.715 = getm $.Toybox.Graphics;
+        %tmp.716 = getv %tmp.715 :TEXT_JUSTIFY_RIGHT;
+        invoke %tmp.698 %tmp.699(%tmp.704, %tmp.711, %tmp.713, %tmp.714, %tmp.716);
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 136 2 ]
+        %tmp.717 = lgetv %dc;
+        %tmp.718 = getv function %tmp.717 :drawText;
+        %tmp.719 = lgetv %dc;
+        %tmp.720 = getv function %tmp.719 :getWidth;
+        %tmp.721 = invoke %tmp.719 %tmp.720();
+        %tmp.722 = 35;
+        %tmp.723 = sub %tmp.721 %tmp.722;
+        %tmp.724 = lgetv %dc;
+        %tmp.725 = getv function %tmp.724 :getHeight;
+        %tmp.726 = invoke %tmp.724 %tmp.725();
+        %tmp.727 = 2;
+        %tmp.728 = div %tmp.726 %tmp.727;
+        %tmp.729 = 80;
+        %tmp.730 = add %tmp.728 %tmp.729;
+        %tmp.732 = getv ? :falpha4;
+        %tmp.734 = lgetv %AltiString.33;
+        %tmp.735 = getm $.Toybox.Graphics;
+        %tmp.736 = getv %tmp.735 :TEXT_JUSTIFY_RIGHT;
+        invoke %tmp.717 %tmp.718(%tmp.723, %tmp.730, %tmp.732, %tmp.734, %tmp.736);
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_26_26_138_4_stop:
+    }
+    [ @file = "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc"; @line = 140; ]
+    function onShow() {
+    }
+    [ @file = "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc"; @line = 143; ]
+    function onHide() {
+    }
+    [ @file = "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc"; @line = 146; ]
+    function onExitSleep() {
+    }
+    [ @file = "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc"; @line = 149; ]
+    function onEnterSleep() {
+    }
+    [ @file = "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc"; @line = 152; ]
+    function julian_day(year, month, day) {
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_153_1_158_2_start:
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 154 2 ]
+        [ "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_153_1_158_2_start" "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_153_1_158_2_stop" ]
+        %a.1 = local;
+        %tmp.1 = 14;
+        %tmp.3 = lgetv %month;
+        %tmp.4 = sub %tmp.1 %tmp.3;
+        %tmp.5 = 12;
+        %tmp.6 = div %tmp.4 %tmp.5;
+        lputv %a.1 %tmp.6;
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 155 2 ]
+        [ "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_153_1_158_2_start" "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_153_1_158_2_stop" ]
+        %y.2 = local;
+        %tmp.8 = lgetv %year;
+        %tmp.9 = 4800;
+        %tmp.10 = add %tmp.8 %tmp.9;
+        %tmp.12 = lgetv %a.1;
+        %tmp.13 = sub %tmp.10 %tmp.12;
+        lputv %y.2 %tmp.13;
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 156 2 ]
+        [ "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_153_1_158_2_start" "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_153_1_158_2_stop" ]
+        %m.3 = local;
+        %tmp.15 = lgetv %month;
+        %tmp.16 = 12;
+        %tmp.18 = lgetv %a.1;
+        %tmp.19 = mul %tmp.16 %tmp.18;
+        %tmp.20 = add %tmp.15 %tmp.19;
+        %tmp.21 = 3;
+        %tmp.22 = sub %tmp.20 %tmp.21;
+        lputv %m.3 %tmp.22;
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 157 2 ]
+        %tmp.24 = lgetv %day;
+        %tmp.25 = 153;
+        %tmp.27 = lgetv %m.3;
+        %tmp.28 = mul %tmp.25 %tmp.27;
+        %tmp.29 = 2;
+        %tmp.30 = add %tmp.28 %tmp.29;
+        %tmp.31 = 5;
+        %tmp.32 = div %tmp.30 %tmp.31;
+        %tmp.33 = add %tmp.24 %tmp.32;
+        %tmp.34 = 365;
+        %tmp.36 = lgetv %y.2;
+        %tmp.37 = mul %tmp.34 %tmp.36;
+        %tmp.38 = add %tmp.33 %tmp.37;
+        %tmp.40 = lgetv %y.2;
+        %tmp.41 = 4;
+        %tmp.42 = div %tmp.40 %tmp.41;
+        %tmp.43 = add %tmp.38 %tmp.42;
+        %tmp.45 = lgetv %y.2;
+        %tmp.46 = 100;
+        %tmp.47 = div %tmp.45 %tmp.46;
+        %tmp.48 = sub %tmp.43 %tmp.47;
+        %tmp.50 = lgetv %y.2;
+        %tmp.51 = 400;
+        %tmp.52 = div %tmp.50 %tmp.51;
+        %tmp.53 = add %tmp.48 %tmp.52;
+        %tmp.54 = 32045;
+        %tmp.55 = sub %tmp.53 %tmp.54;
+        ret %tmp.55;
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_153_1_158_2_stop:
+    }
+    [ @file = "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc"; @line = 160; ]
+    function is_leap_year(year) {
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_161_2_173_1_start:
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 162 2 ]
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_162_2_170_2_if_stmt:
+        %tmp.2 = lgetv %year;
+        %tmp.3 = 4;
+        %tmp.4 = mod %tmp.2 %tmp.3;
+        %tmp.5 = 0;
+        %tmp.6 = ne %tmp.4 %tmp.5;
+        bf %tmp.6 @D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_162_2_170_2_if_false;
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_162_2_170_2_if_true:
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_162_21_164_2_start:
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 163 2 ]
+        %tmp.7 = false;
+        ret %tmp.7;
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_162_21_164_2_stop:
+        goto @D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_162_2_170_2_if_end;
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_162_2_170_2_if_false:
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 165 7 ]
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_165_7_170_2_if_stmt:
+        %tmp.9 = lgetv %year;
+        %tmp.10 = 100;
+        %tmp.11 = mod %tmp.9 %tmp.10;
+        %tmp.12 = 0;
+        %tmp.13 = ne %tmp.11 %tmp.12;
+        bf %tmp.13 @D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_165_7_170_2_if_false;
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_165_7_170_2_if_true:
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_165_28_167_2_start:
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 166 2 ]
+        %tmp.14 = true;
+        ret %tmp.14;
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_165_28_167_2_stop:
+        goto @D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_165_7_170_2_if_end;
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_165_7_170_2_if_false:
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 168 7 ]
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_168_7_170_2_if_stmt:
+        %tmp.16 = lgetv %year;
+        %tmp.17 = 400;
+        %tmp.18 = mod %tmp.16 %tmp.17;
+        %tmp.19 = 0;
+        %tmp.20 = eq %tmp.18 %tmp.19;
+        bf %tmp.20 @D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_168_7_170_2_if_end;
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_168_7_170_2_if_true:
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_168_28_170_2_start:
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 169 2 ]
+        %tmp.21 = true;
+        ret %tmp.21;
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_168_28_170_2_stop:
+        goto @D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_168_7_170_2_if_end;
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_168_7_170_2_if_end:
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_165_7_170_2_if_end:
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_162_2_170_2_if_end:
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 172 2 ]
+        %tmp.22 = false;
+        ret %tmp.22;
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_161_2_173_1_stop:
+    }
+    [ @file = "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc"; @line = 175; ]
+    function initialize() as Void {
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_175_23_177_1_start:
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 176 2 ]
+        %tmp.1 = getm $.Toybox.WatchUi;
+        %tmp.2 = getv %tmp.1 :WatchFace;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_175_23_177_1_stop:
+    }
+    [ @file = "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc"; @line = 179; ]
+    function iso_week_number(year, month, day) {
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_180_1_214_1_start:
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 181 2 ]
+        [ "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_180_1_214_1_start" "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_180_1_214_1_stop" ]
+        %first_day_of_year.1 = local;
+        %tmp.1 = self;
+        %tmp.2 = getv function %tmp.1 :julian_day;
+        %tmp.4 = lgetv %year;
+        %tmp.5 = 1;
+        %tmp.6 = 1;
+        %tmp.7 = invoke %tmp.1 %tmp.2(%tmp.4, %tmp.5, %tmp.6);
+        lputv %first_day_of_year.1 %tmp.7;
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 182 2 ]
+        [ "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_180_1_214_1_start" "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_180_1_214_1_stop" ]
+        %given_day_of_year.2 = local;
+        %tmp.8 = self;
+        %tmp.9 = getv function %tmp.8 :julian_day;
+        %tmp.11 = lgetv %year;
+        %tmp.13 = lgetv %month;
+        %tmp.15 = lgetv %day;
+        %tmp.16 = invoke %tmp.8 %tmp.9(%tmp.11, %tmp.13, %tmp.15);
+        lputv %given_day_of_year.2 %tmp.16;
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 184 2 ]
+        [ "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_180_1_214_1_start" "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_180_1_214_1_stop" ]
+        %day_of_week.3 = local;
+        %tmp.18 = lgetv %first_day_of_year.1;
+        %tmp.19 = 3;
+        %tmp.20 = add %tmp.18 %tmp.19;
+        %tmp.21 = 7;
+        %tmp.22 = mod %tmp.20 %tmp.21;
+        lputv %day_of_week.3 %tmp.22;
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 185 2 ]
+        [ "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_180_1_214_1_start" "D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_180_1_214_1_stop" ]
+        %week_of_year.4 = local;
+        %tmp.24 = lgetv %given_day_of_year.2;
+        %tmp.26 = lgetv %first_day_of_year.1;
+        %tmp.27 = sub %tmp.24 %tmp.26;
+        %tmp.29 = lgetv %day_of_week.3;
+        %tmp.30 = add %tmp.27 %tmp.29;
+        %tmp.31 = 4;
+        %tmp.32 = add %tmp.30 %tmp.31;
+        %tmp.33 = 7;
+        %tmp.34 = div %tmp.32 %tmp.33;
+        lputv %week_of_year.4 %tmp.34;
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 188 2 ]
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_188_2_213_2_if_stmt:
+        %tmp.36 = lgetv %week_of_year.4;
+        %tmp.37 = 53;
+        %tmp.38 = eq %tmp.36 %tmp.37;
+        bf %tmp.38 @D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_188_2_213_2_if_false;
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_188_2_213_2_if_true:
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_188_26_199_2_start:
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 190 2 ]
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_190_2_198_2_if_stmt:
+        %tmp.40 = lgetv %day_of_week.3;
+        %tmp.41 = 6;
+        %tmp.42 = eq %tmp.40 %tmp.41;
+        bf %tmp.42 @D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_190_2_198_2_if_false;
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_190_2_198_2_if_true:
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_190_24_192_2_start:
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 191 2 ]
+        %tmp.44 = lgetv %week_of_year.4;
+        ret %tmp.44;
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_190_24_192_2_stop:
+        goto @D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_190_2_198_2_if_end;
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_190_2_198_2_if_false:
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 193 7 ]
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_193_7_198_2_if_stmt:
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_193_11_193_48_begin:
+        %tmp.46 = lgetv %day_of_week.3;
+        %tmp.47 = 5;
+        %tmp.48 = eq %tmp.46 %tmp.47;
+        bf %tmp.48 @D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_193_7_198_2_if_false;
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_193_31_193_48_true:
+        %tmp.49 = self;
+        %tmp.50 = getv function %tmp.49 :is_leap_year;
+        %tmp.52 = lgetv %year;
+        %tmp.53 = invoke %tmp.49 %tmp.50(%tmp.52);
+        push %tmp.53;
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_193_31_193_48_end:
+        %tmp.54 = phi [%tmp.48 @D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_193_11_193_48_begin] [%tmp.53 @D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_193_31_193_48_true] [%tmp.54 @D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_193_31_193_48_end];
+        bf %tmp.54 @D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_193_7_198_2_if_false;
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_193_7_198_2_if_true:
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_193_51_195_2_start:
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 194 2 ]
+        %tmp.56 = lgetv %week_of_year.4;
+        ret %tmp.56;
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_193_51_195_2_stop:
+        goto @D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_193_7_198_2_if_end;
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_193_7_198_2_if_false:
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_196_7_198_2_start:
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 197 2 ]
+        %tmp.57 = 1;
+        ret %tmp.57;
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_196_7_198_2_stop:
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_193_7_198_2_if_end:
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_190_2_198_2_if_end:
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_188_26_199_2_stop:
+        goto @D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_188_2_213_2_if_end;
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_188_2_213_2_if_false:
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 202 7 ]
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_202_7_213_2_if_stmt:
+        %tmp.59 = lgetv %week_of_year.4;
+        %tmp.60 = 0;
+        %tmp.61 = eq %tmp.59 %tmp.60;
+        bf %tmp.61 @D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_202_7_213_2_if_false;
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_202_7_213_2_if_true:
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_202_30_208_2_start:
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 203 2 ]
+        %tmp.62 = self;
+        %tmp.63 = getv function %tmp.62 :julian_day;
+        %tmp.65 = lgetv %year;
+        %tmp.66 = 1;
+        %tmp.67 = sub %tmp.65 %tmp.66;
+        %tmp.68 = 1;
+        %tmp.69 = 1;
+        %tmp.70 = invoke %tmp.62 %tmp.63(%tmp.67, %tmp.68, %tmp.69);
+        lputv %first_day_of_year.1 %tmp.70;
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 205 2 ]
+        %tmp.72 = lgetv %first_day_of_year.1;
+        %tmp.73 = 3;
+        %tmp.74 = add %tmp.72 %tmp.73;
+        %tmp.75 = 7;
+        %tmp.76 = mod %tmp.74 %tmp.75;
+        lputv %day_of_week.3 %tmp.76;
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 207 2 ]
+        %tmp.78 = lgetv %given_day_of_year.2;
+        %tmp.80 = lgetv %first_day_of_year.1;
+        %tmp.81 = sub %tmp.78 %tmp.80;
+        %tmp.83 = lgetv %day_of_week.3;
+        %tmp.84 = add %tmp.81 %tmp.83;
+        %tmp.85 = 4;
+        %tmp.86 = add %tmp.84 %tmp.85;
+        %tmp.87 = 7;
+        %tmp.88 = div %tmp.86 %tmp.87;
+        ret %tmp.88;
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_202_30_208_2_stop:
+        goto @D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_202_7_213_2_if_end;
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_202_7_213_2_if_false:
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_211_7_213_2_start:
+[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc" 212 2 ]
+        %tmp.90 = lgetv %week_of_year.4;
+        ret %tmp.90;
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_211_7_213_2_stop:
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_202_7_213_2_if_end:
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_188_2_213_2_if_end:
+D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenView___Copie_mc_180_1_214_1_stop:
+    }
+}
+[ @file = "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenView - Copie.mc"; @line = 1; ]
+<init> {
+}
