@@ -186,36 +186,43 @@ class EpixMaidenView extends Ui.WatchFace {
 		}else{
 			BattementString = "0";
 		}
-		
+		dc.setColor(Gfx.COLOR_DK_GRAY, Gfx.COLOR_TRANSPARENT);
 		dc.drawText(X2, Y4, ficon, "3",  Gfx.TEXT_JUSTIFY_RIGHT);
+		dc.setColor(Gfx.COLOR_PINK, Gfx.COLOR_TRANSPARENT);
 		dc.drawText(X1, Y4-2, TextIron, BattementString,  Gfx.TEXT_JUSTIFY_RIGHT);
 
 		// steps today
     		var PourcentGoal = steps*100/StepGoal;
-			var dist2 = actinfo.distance/1000000;
+			var dist2 = actinfo.distance/100000.0;
 
-    		if (PourcentGoal<100 ){
+    		
+		dc.setColor(Gfx.COLOR_DK_GRAY, Gfx.COLOR_TRANSPARENT);
+		dc.drawText(X2+3, Y3, TextIron, "KM",  Gfx.TEXT_JUSTIFY_RIGHT);
+		if (PourcentGoal<100 ){
 				dc.setColor(Gfx.COLOR_RED, Gfx.COLOR_TRANSPARENT);}
 			else {
 				dc.setColor(Gfx.COLOR_GREEN, Gfx.COLOR_TRANSPARENT);}
-
-		dc.drawText(X2, Y3, TextIron, "KM",  Gfx.TEXT_JUSTIFY_RIGHT);
-		dc.drawText(X1, Y3, TextIron, dist2.format("%.0f"),  Gfx.TEXT_JUSTIFY_RIGHT);
+		if(dist2!=null) {
+		dc.drawText(X1, Y3, TextIron, dist2.format("%.1f"),  Gfx.TEXT_JUSTIFY_RIGHT);}
   
 		//poids
 		var poids=Moi.getProfile().weight;
 		poids=poids/1000;
 		var poidsstring=poids.toString();
-		dc.setColor(Gfx.COLOR_PINK, Gfx.COLOR_TRANSPARENT);
+		dc.setColor(Gfx.COLOR_DK_GRAY, Gfx.COLOR_TRANSPARENT);
 		dc.drawText(X3, Y1-HauteurIcon, ficon, "@",  Gfx.TEXT_JUSTIFY_LEFT);
-		dc.drawText(X4, Y1-HauteurIcon,TextIron, poidsstring , Graphics.TEXT_JUSTIFY_LEFT);
+		dc.setColor(Gfx.COLOR_PINK, Gfx.COLOR_TRANSPARENT);
+		if(poidsstring!=null) {
+		dc.drawText(X4, Y1-HauteurIcon,TextIron, poidsstring , Graphics.TEXT_JUSTIFY_LEFT);}
 
 		//body batterie
-		dc.setColor(Gfx.COLOR_PINK, Gfx.COLOR_TRANSPARENT);
+		dc.setColor(Gfx.COLOR_DK_GRAY, Gfx.COLOR_TRANSPARENT);
 		dc.drawText(X3, Y2-HauteurIcon, ficon, "6",  Gfx.TEXT_JUSTIFY_LEFT);
+		dc.setColor(Gfx.COLOR_PINK, Gfx.COLOR_TRANSPARENT);
 		var bbIterator = Toybox.SensorHistory.getBodyBatteryHistory({:period=>1});
 		var sample = bbIterator.next();
-		dc.drawText(X4, Y2-HauteurIcon,	TextIron, sample.data.format("%d"), Gfx.TEXT_JUSTIFY_LEFT); 
+		if(sample!=null) {
+		dc.drawText(X4, Y2-HauteurIcon,	TextIron, sample.data.format("%d"), Gfx.TEXT_JUSTIFY_LEFT); }
 
 		//altitude
 		var Alti=Acty.getActivityInfo().altitude;
@@ -229,8 +236,9 @@ class EpixMaidenView extends Ui.WatchFace {
 		}else{
 			AltiString = "0";
 		}
-
+		dc.setColor(Gfx.COLOR_DK_GRAY, Gfx.COLOR_TRANSPARENT);
 		dc.drawText(X3, Y3, ficon, ";",  Gfx.TEXT_JUSTIFY_LEFT);
+		dc.setColor(Gfx.COLOR_PINK, Gfx.COLOR_TRANSPARENT);
 		if (Alti>0){
 		dc.drawText(X4, Y3-2, TextIron, AltiString,  Gfx.TEXT_JUSTIFY_LEFT);
 		}else{
@@ -239,11 +247,12 @@ class EpixMaidenView extends Ui.WatchFace {
 
 		//notifications
 		var nombreNotif=settings.notificationCount;
-		dc.setColor(Gfx.COLOR_PINK, Gfx.COLOR_TRANSPARENT);
+		dc.setColor(Gfx.COLOR_DK_GRAY, Gfx.COLOR_TRANSPARENT);
 		dc.drawText(X3, Y4, ficon,"5",  Gfx.TEXT_JUSTIFY_LEFT);
-		dc.drawText(X4, Y4-2, TextIron,nombreNotif,  Gfx.TEXT_JUSTIFY_LEFT);
+		dc.setColor(Gfx.COLOR_PINK, Gfx.COLOR_TRANSPARENT);
+		if(nombreNotif!=null) {
+		dc.drawText(X4, Y4-2, TextIron,nombreNotif,  Gfx.TEXT_JUSTIFY_LEFT);}
 	
-
     }
 
     function onShow(){
@@ -284,7 +293,7 @@ class EpixMaidenView extends Ui.WatchFace {
 				sunrise = 6;
 			}
 			
-			dc.setColor(Gfx.COLOR_PINK, Gfx.COLOR_TRANSPARENT);
+			dc.setColor(Gfx.COLOR_DK_GRAY, Gfx.COLOR_TRANSPARENT);
 
 			if (cond == 20) { // Cloudy
 				dc.drawText(x2-1, y-1, WeatherFont, "I", Gfx.TEXT_JUSTIFY_RIGHT); // Cloudy
@@ -362,6 +371,7 @@ class EpixMaidenView extends Ui.WatchFace {
 			temp = Meteo.getCurrentConditions().temperature;
 			temp=temp.format("%d");
 			temp=temp + "°";
+			dc.setColor(Gfx.COLOR_PINK, Gfx.COLOR_TRANSPARENT);
 			dc.drawText(x3, y, TextIron, temp , Graphics.TEXT_JUSTIFY_RIGHT);
 	}
 
@@ -389,8 +399,10 @@ class EpixMaidenView extends Ui.WatchFace {
 				icon = ">";
 				time = sunrise;
 			}
+			dc.setColor(Gfx.COLOR_DK_GRAY, Gfx.COLOR_TRANSPARENT);
 			dc.drawText(x3, y, ficon, icon, Gfx.TEXT_JUSTIFY_RIGHT);
 			text=Lang.format("$1$:$2$",[time.hour.format("%02u"), time.min.format("%02u")]);
+			dc.setColor(Gfx.COLOR_PINK, Gfx.COLOR_TRANSPARENT);
 			dc.drawText(x, y-4, TextIron, text , Graphics.TEXT_JUSTIFY_RIGHT);
 	}
 
