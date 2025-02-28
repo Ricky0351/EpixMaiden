@@ -1,0 +1,1353 @@
+[ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 11; ]
+using Toybox.Lang as :Lang;
+[ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 12; ]
+using Toybox.Math as :Math;
+[ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 13; ]
+using Toybox.Graphics as :Graphics;
+[ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 14; ]
+using Toybox.System as :Sys;
+[ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 15; ]
+using Toybox.Test as :Test;
+[ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 17; ]
+module Colors {
+    [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 17; ]
+    <init> {
+    }
+    [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 22; ]
+    class rgb extends Lang.Number{
+        [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 22; ]
+        <init> {
+        }
+        [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 22; ]
+        static
+        <init> {
+        }
+        [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 24; @position = 15; ]
+        protected
+        var r;
+        [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 24; @position = 18; ]
+        protected
+        var g;
+        [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 24; @position = 21; ]
+        protected
+        var b;
+        [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 25; @position = 15; ]
+        protected
+        var hex;
+        [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 31; ]
+        function initialize(hex) as Void {
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_31_26_38_1_start:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 32 2 ]
+            %tmp.2 = getv ? :Number;
+            %tmp.3 = getv function %tmp.2 :initialize;
+            invoke %tmp.2 %tmp.3();
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 34 5 ]
+            %tmp.5 = lgetv %hex;
+            %tmp.6 = 0xFF0000;
+            %tmp.7 = bitand %tmp.5 %tmp.6;
+            %tmp.8 = 16;
+            %tmp.9 = shr %tmp.7 %tmp.8;
+            putv self :r %tmp.9;
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 35 5 ]
+            %tmp.11 = lgetv %hex;
+            %tmp.12 = 0x00FF00;
+            %tmp.13 = bitand %tmp.11 %tmp.12;
+            %tmp.14 = 8;
+            %tmp.15 = shr %tmp.13 %tmp.14;
+            putv self :g %tmp.15;
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 36 5 ]
+            %tmp.17 = lgetv %hex;
+            %tmp.18 = 0x0000FF;
+            %tmp.19 = bitand %tmp.17 %tmp.18;
+            putv self :b %tmp.19;
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 37 5 ]
+            %tmp.21 = lgetv %hex;
+            putv self :hex %tmp.21;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_31_26_38_1_stop:
+        }
+        [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 43; ]
+        function toString() {
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_43_21_45_1_start:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 44 2 ]
+            %tmp.1 = "rgb(";
+            %tmp.2 = lgetv %self;
+            %tmp.3 = getv %tmp.2 :r;
+            %tmp.4 = add %tmp.1 %tmp.3;
+            %tmp.5 = ", ";
+            %tmp.6 = add %tmp.4 %tmp.5;
+            %tmp.7 = lgetv %self;
+            %tmp.8 = getv %tmp.7 :g;
+            %tmp.9 = add %tmp.6 %tmp.8;
+            %tmp.10 = ", ";
+            %tmp.11 = add %tmp.9 %tmp.10;
+            %tmp.12 = lgetv %self;
+            %tmp.13 = getv %tmp.12 :b;
+            %tmp.14 = add %tmp.11 %tmp.13;
+            %tmp.15 = ")";
+            %tmp.16 = add %tmp.14 %tmp.15;
+            ret %tmp.16;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_43_21_45_1_stop:
+        }
+        [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 50; ]
+        function toNumber() {
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_50_21_52_1_start:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 51 2 ]
+            %tmp.1 = lgetv %self;
+            %tmp.2 = getv %tmp.1 :hex;
+            %tmp.3 = getv function %tmp.2 :toNumber;
+            %tmp.4 = invoke %tmp.2 %tmp.3();
+            ret %tmp.4;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_50_21_52_1_stop:
+        }
+        [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 58; ]
+        function setR(val) {
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_58_20_63_1_start:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 59 2 ]
+            %tmp.2 = lgetv %val;
+            putv self :r %tmp.2;
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 61 2 ]
+            %tmp.3 = lgetv %val;
+            %tmp.4 = getv function %tmp.3 :toLong;
+            %tmp.5 = invoke %tmp.3 %tmp.4();
+            %tmp.6 = 0x0000FF;
+            %tmp.7 = bitand %tmp.5 %tmp.6;
+            %tmp.8 = 16;
+            %tmp.9 = shl %tmp.7 %tmp.8;
+            %tmp.10 = lgetv %self;
+            %tmp.11 = getv %tmp.10 :hex;
+            %tmp.12 = getv function %tmp.11 :toLong;
+            %tmp.13 = invoke %tmp.11 %tmp.12();
+            %tmp.14 = 0x00FFFF;
+            %tmp.15 = bitand %tmp.13 %tmp.14;
+            %tmp.16 = bitor %tmp.9 %tmp.15;
+            putv self :hex %tmp.16;
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 62 2 ]
+            %tmp.18 = self;
+            ret %tmp.18;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_58_20_63_1_stop:
+        }
+        [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 69; ]
+        function setG(val) {
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_69_20_74_1_start:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 70 2 ]
+            %tmp.2 = lgetv %val;
+            putv self :g %tmp.2;
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 72 2 ]
+            %tmp.3 = lgetv %val;
+            %tmp.4 = getv function %tmp.3 :toLong;
+            %tmp.5 = invoke %tmp.3 %tmp.4();
+            %tmp.6 = 0x0000FF;
+            %tmp.7 = bitand %tmp.5 %tmp.6;
+            %tmp.8 = 8;
+            %tmp.9 = shl %tmp.7 %tmp.8;
+            %tmp.10 = lgetv %self;
+            %tmp.11 = getv %tmp.10 :hex;
+            %tmp.12 = getv function %tmp.11 :toLong;
+            %tmp.13 = invoke %tmp.11 %tmp.12();
+            %tmp.14 = 0xFF00FF;
+            %tmp.15 = bitand %tmp.13 %tmp.14;
+            %tmp.16 = bitor %tmp.9 %tmp.15;
+            putv self :hex %tmp.16;
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 73 2 ]
+            %tmp.18 = self;
+            ret %tmp.18;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_69_20_74_1_stop:
+        }
+        [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 80; ]
+        function setB(val) {
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_80_20_85_1_start:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 81 2 ]
+            %tmp.2 = lgetv %val;
+            putv self :b %tmp.2;
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 83 2 ]
+            %tmp.3 = lgetv %val;
+            %tmp.4 = getv function %tmp.3 :toLong;
+            %tmp.5 = invoke %tmp.3 %tmp.4();
+            %tmp.6 = 0x0000FF;
+            %tmp.7 = bitand %tmp.5 %tmp.6;
+            %tmp.8 = lgetv %self;
+            %tmp.9 = getv %tmp.8 :hex;
+            %tmp.10 = getv function %tmp.9 :toLong;
+            %tmp.11 = invoke %tmp.9 %tmp.10();
+            %tmp.12 = 0xFFFF00;
+            %tmp.13 = bitand %tmp.11 %tmp.12;
+            %tmp.14 = bitor %tmp.7 %tmp.13;
+            putv self :hex %tmp.14;
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 84 2 ]
+            %tmp.16 = self;
+            ret %tmp.16;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_80_20_85_1_stop:
+        }
+        [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 93; ]
+        function setRGB(r, g, b) {
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_93_25_100_1_start:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 94 2 ]
+            %tmp.2 = lgetv %r;
+            putv self :r %tmp.2;
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 95 2 ]
+            %tmp.4 = lgetv %g;
+            putv self :g %tmp.4;
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 96 2 ]
+            %tmp.6 = lgetv %b;
+            putv self :b %tmp.6;
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 98 2 ]
+            %tmp.7 = lgetv %r;
+            %tmp.8 = getv function %tmp.7 :toLong;
+            %tmp.9 = invoke %tmp.7 %tmp.8();
+            %tmp.10 = 0x0000FF;
+            %tmp.11 = bitand %tmp.9 %tmp.10;
+            %tmp.12 = 16;
+            %tmp.13 = shl %tmp.11 %tmp.12;
+            %tmp.14 = lgetv %g;
+            %tmp.15 = getv function %tmp.14 :toLong;
+            %tmp.16 = invoke %tmp.14 %tmp.15();
+            %tmp.17 = 0x0000FF;
+            %tmp.18 = bitand %tmp.16 %tmp.17;
+            %tmp.19 = 8;
+            %tmp.20 = shl %tmp.18 %tmp.19;
+            %tmp.21 = bitor %tmp.13 %tmp.20;
+            %tmp.22 = lgetv %b;
+            %tmp.23 = getv function %tmp.22 :toLong;
+            %tmp.24 = invoke %tmp.22 %tmp.23();
+            %tmp.25 = 0x0000FF;
+            %tmp.26 = bitand %tmp.24 %tmp.25;
+            %tmp.27 = bitor %tmp.21 %tmp.26;
+            putv self :hex %tmp.27;
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 99 2 ]
+            %tmp.29 = self;
+            ret %tmp.29;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_93_25_100_1_stop:
+        }
+        [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 105; ]
+        function getR() {
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_105_16_107_1_start:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 106 2 ]
+            %tmp.1 = lgetv %self;
+            %tmp.2 = getv %tmp.1 :r;
+            ret %tmp.2;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_105_16_107_1_stop:
+        }
+        [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 112; ]
+        function getG() {
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_112_16_114_1_start:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 113 2 ]
+            %tmp.1 = lgetv %self;
+            %tmp.2 = getv %tmp.1 :g;
+            ret %tmp.2;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_112_16_114_1_stop:
+        }
+        [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 119; ]
+        function getB() {
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_119_16_121_1_start:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 120 2 ]
+            %tmp.1 = lgetv %self;
+            %tmp.2 = getv %tmp.1 :b;
+            ret %tmp.2;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_119_16_121_1_stop:
+        }
+        [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 126; ]
+        function getRGB() {
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_126_18_132_1_start:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 127 2 ]
+            %tmp.1 = newd 3;
+            %tmp.2 = 'r';
+            %tmp.3 = lgetv %self;
+            %tmp.4 = getv %tmp.3 :r;
+            %tmp.5 = dup %tmp.1;
+            %tmp.6 = aputv %tmp.5 %tmp.2 %tmp.4;
+            %tmp.7 = 'g';
+            %tmp.8 = lgetv %self;
+            %tmp.9 = getv %tmp.8 :g;
+            %tmp.10 = dup %tmp.6;
+            %tmp.11 = aputv %tmp.10 %tmp.7 %tmp.9;
+            %tmp.12 = 'b';
+            %tmp.13 = lgetv %self;
+            %tmp.14 = getv %tmp.13 :b;
+            %tmp.15 = dup %tmp.11;
+            %tmp.16 = aputv %tmp.15 %tmp.12 %tmp.14;
+            ret %tmp.16;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_126_18_132_1_stop:
+        }
+        [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 138; ]
+        function add(c) {
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_138_16_140_1_start:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 139 2 ]
+            %tmp.4 = getv ? :rgb;
+            %tmp.5 = lgetv %self;
+            %tmp.6 = getv function %tmp.5 :toNumber;
+            %tmp.7 = invoke %tmp.5 %tmp.6();
+            %tmp.8 = lgetv %c;
+            %tmp.9 = getv function %tmp.8 :toNumber;
+            %tmp.10 = invoke %tmp.8 %tmp.9();
+            %tmp.11 = add %tmp.7 %tmp.10;
+            %tmp.1 = newc %tmp.4 (%tmp.11);
+            ret %tmp.1;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_138_16_140_1_stop:
+        }
+        [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 146; ]
+        function subtract(c) {
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_146_21_148_1_start:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 147 2 ]
+            %tmp.4 = getv ? :rgb;
+            %tmp.5 = lgetv %self;
+            %tmp.6 = getv function %tmp.5 :toNumber;
+            %tmp.7 = invoke %tmp.5 %tmp.6();
+            %tmp.8 = lgetv %c;
+            %tmp.9 = getv function %tmp.8 :toNumber;
+            %tmp.10 = invoke %tmp.8 %tmp.9();
+            %tmp.11 = sub %tmp.7 %tmp.10;
+            %tmp.1 = newc %tmp.4 (%tmp.11);
+            ret %tmp.1;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_146_21_148_1_stop:
+        }
+        [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 153; ]
+        function copy() {
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_153_16_155_1_start:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 154 2 ]
+            %tmp.4 = getv ? :rgb;
+            %tmp.6 = getv ? :hex;
+            %tmp.1 = newc %tmp.4 (%tmp.6);
+            ret %tmp.1;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_153_16_155_1_stop:
+        }
+    }
+    [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 166; ]
+    function valsToRGB(r, g, b) {
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_166_27_168_0_start:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 167 1 ]
+        %tmp.4 = getv ? :rgb;
+        %tmp.5 = 0x000000;
+        %tmp.1 = newc %tmp.4 (%tmp.5);
+        %tmp.6 = getv function %tmp.1 :setRGB;
+        %tmp.7 = getm $.Toybox.Math;
+        %tmp.8 = getv function %tmp.7 :round;
+        %tmp.10 = lgetv %r;
+        %tmp.11 = invoke %tmp.7 %tmp.8(%tmp.10);
+        %tmp.12 = getm $.Toybox.Math;
+        %tmp.13 = getv function %tmp.12 :round;
+        %tmp.15 = lgetv %g;
+        %tmp.16 = invoke %tmp.12 %tmp.13(%tmp.15);
+        %tmp.17 = getm $.Toybox.Math;
+        %tmp.18 = getv function %tmp.17 :round;
+        %tmp.20 = lgetv %b;
+        %tmp.21 = invoke %tmp.17 %tmp.18(%tmp.20);
+        %tmp.22 = invoke %tmp.1 %tmp.6(%tmp.11, %tmp.16, %tmp.21);
+        ret %tmp.22;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_166_27_168_0_stop:
+    }
+    [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 177; ]
+    function randRGB() {
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_177_18_179_0_start:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 178 1 ]
+        %tmp.4 = getv ? :rgb;
+        %tmp.5 = 0xFFFFFF;
+        %tmp.6 = getm $.Toybox.Math;
+        %tmp.7 = getv function %tmp.6 :rand;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        %tmp.9 = bitand %tmp.5 %tmp.8;
+        %tmp.1 = newc %tmp.4 (%tmp.9);
+        ret %tmp.1;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_177_18_179_0_stop:
+    }
+    [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 186; ]
+    class Gradient{
+        [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 186; ]
+        <init> {
+        }
+        [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 186; ]
+        static
+        <init> {
+        }
+        [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 188; @position = 15; ]
+        protected
+        var outer;
+        [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 189; @position = 15; ]
+        protected
+        var inner;
+        [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 190; @position = 15; ]
+        protected
+        var scale;
+        [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 192; @position = 15; ]
+        protected
+        var r_step;
+        [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 193; @position = 15; ]
+        protected
+        var g_step;
+        [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 194; @position = 15; ]
+        protected
+        var b_step;
+        [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 196; @position = 15; ]
+        protected
+        var step_count;
+        [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 197; @position = 15; ]
+        protected
+        var multi;
+        [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 199; @position = 15; ]
+        protected
+        var rgb;
+        [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 201; @position = 15; ]
+        protected
+        var grad;
+        [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 213; ]
+        function initialize(outer, inner, w) as Void {
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_213_38_238_1_start:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 214 2 ]
+            %tmp.2 = lgetv %w;
+            putv self :scale %tmp.2;
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 216 2 ]
+            [ "D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_213_38_238_1_start" "D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_213_38_238_1_stop" ]
+            %inner_vals.1 = local;
+            %tmp.3 = lgetv %inner;
+            %tmp.4 = getv function %tmp.3 :getRGB;
+            %tmp.5 = invoke %tmp.3 %tmp.4();
+            lputv %inner_vals.1 %tmp.5;
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 217 2 ]
+            [ "D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_213_38_238_1_start" "D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_213_38_238_1_stop" ]
+            %outer_vals.2 = local;
+            %tmp.6 = lgetv %outer;
+            %tmp.7 = getv function %tmp.6 :getRGB;
+            %tmp.8 = invoke %tmp.6 %tmp.7();
+            lputv %outer_vals.2 %tmp.8;
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 219 2 ]
+            %tmp.10 = lgetv %inner_vals.1;
+            %tmp.11 = 'r';
+            %tmp.12 = agetv %tmp.10 %tmp.11;
+            %tmp.14 = lgetv %outer_vals.2;
+            %tmp.15 = 'r';
+            %tmp.16 = agetv %tmp.14 %tmp.15;
+            %tmp.17 = sub %tmp.12 %tmp.16;
+            %tmp.18 = getv function %tmp.17 :toDouble;
+            %tmp.19 = invoke %tmp.17 %tmp.18();
+            %tmp.21 = getv ? :scale;
+            %tmp.22 = div %tmp.19 %tmp.21;
+            putv self :r_step %tmp.22;
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 220 5 ]
+            %tmp.24 = lgetv %inner_vals.1;
+            %tmp.25 = 'g';
+            %tmp.26 = agetv %tmp.24 %tmp.25;
+            %tmp.28 = lgetv %outer_vals.2;
+            %tmp.29 = 'g';
+            %tmp.30 = agetv %tmp.28 %tmp.29;
+            %tmp.31 = sub %tmp.26 %tmp.30;
+            %tmp.32 = getv function %tmp.31 :toDouble;
+            %tmp.33 = invoke %tmp.31 %tmp.32();
+            %tmp.35 = getv ? :scale;
+            %tmp.36 = div %tmp.33 %tmp.35;
+            putv self :g_step %tmp.36;
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 221 5 ]
+            %tmp.38 = lgetv %inner_vals.1;
+            %tmp.39 = 'b';
+            %tmp.40 = agetv %tmp.38 %tmp.39;
+            %tmp.42 = lgetv %outer_vals.2;
+            %tmp.43 = 'b';
+            %tmp.44 = agetv %tmp.42 %tmp.43;
+            %tmp.45 = sub %tmp.40 %tmp.44;
+            %tmp.46 = getv function %tmp.45 :toDouble;
+            %tmp.47 = invoke %tmp.45 %tmp.46();
+            %tmp.49 = getv ? :scale;
+            %tmp.50 = div %tmp.47 %tmp.49;
+            putv self :b_step %tmp.50;
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 223 5 ]
+            %tmp.52 = lgetv %outer;
+            putv self :outer %tmp.52;
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 224 5 ]
+            %tmp.54 = lgetv %inner;
+            putv self :inner %tmp.54;
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 226 5 ]
+            %tmp.55 = 1;
+            putv self :multi %tmp.55;
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 227 5 ]
+            %tmp.56 = 0;
+            putv self :step_count %tmp.56;
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 229 5 ]
+            %tmp.59 = lgetv %w;
+            %tmp.57 = newa %tmp.59;
+            putv self :grad %tmp.57;
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 231 5 ]
+            for @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_231_5_236_5_for_test @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_231_5_236_5_for_incr @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_231_5_236_5_for_end;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_231_5_236_5_for_init:
+            [ "D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_231_5_236_5_for_begin" "D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_231_5_236_5_for_end" ]
+            %i.3 = local;
+            %tmp.60 = 0;
+            lputv %i.3 %tmp.60;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_231_5_236_5_for_test:
+            %tmp.62 = lgetv %i.3;
+            %tmp.64 = lgetv %w;
+            %tmp.65 = lt %tmp.62 %tmp.64;
+            bf %tmp.65 @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_231_5_236_5_for_end;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_231_5_236_5_for_begin:
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_231_25_236_5_start:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 232 6 ]
+            [ "D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_231_25_236_5_start" "D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_231_25_236_5_stop" ]
+            %r.4 = local;
+            %tmp.67 = lgetv %outer_vals.2;
+            %tmp.68 = 'r';
+            %tmp.69 = agetv %tmp.67 %tmp.68;
+            %tmp.71 = getv ? :r_step;
+            %tmp.73 = lgetv %i.3;
+            %tmp.74 = mul %tmp.71 %tmp.73;
+            %tmp.75 = add %tmp.69 %tmp.74;
+            %tmp.76 = getv function %tmp.75 :toDouble;
+            %tmp.77 = invoke %tmp.75 %tmp.76();
+            lputv %r.4 %tmp.77;
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 233 3 ]
+            [ "D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_231_25_236_5_start" "D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_231_25_236_5_stop" ]
+            %g.5 = local;
+            %tmp.79 = lgetv %outer_vals.2;
+            %tmp.80 = 'g';
+            %tmp.81 = agetv %tmp.79 %tmp.80;
+            %tmp.83 = getv ? :g_step;
+            %tmp.85 = lgetv %i.3;
+            %tmp.86 = mul %tmp.83 %tmp.85;
+            %tmp.87 = add %tmp.81 %tmp.86;
+            %tmp.88 = getv function %tmp.87 :toDouble;
+            %tmp.89 = invoke %tmp.87 %tmp.88();
+            lputv %g.5 %tmp.89;
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 234 3 ]
+            [ "D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_231_25_236_5_start" "D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_231_25_236_5_stop" ]
+            %b.6 = local;
+            %tmp.91 = lgetv %outer_vals.2;
+            %tmp.92 = 'b';
+            %tmp.93 = agetv %tmp.91 %tmp.92;
+            %tmp.95 = getv ? :b_step;
+            %tmp.97 = lgetv %i.3;
+            %tmp.98 = mul %tmp.95 %tmp.97;
+            %tmp.99 = add %tmp.93 %tmp.98;
+            %tmp.100 = getv function %tmp.99 :toDouble;
+            %tmp.101 = invoke %tmp.99 %tmp.100();
+            lputv %b.6 %tmp.101;
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 235 3 ]
+            %tmp.102 = getv self :grad;
+            %tmp.104 = getv ? :Colors;
+            %tmp.105 = getv function %tmp.104 :valsToRGB;
+            %tmp.107 = lgetv %r.4;
+            %tmp.109 = lgetv %g.5;
+            %tmp.111 = lgetv %b.6;
+            %tmp.112 = invoke %tmp.104 %tmp.105(%tmp.107, %tmp.109, %tmp.111);
+            %tmp.114 = lgetv %i.3;
+            aputv %tmp.102 %tmp.114 %tmp.112;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_231_25_236_5_stop:
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_231_5_236_5_for_incr:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 231 ]
+            %tmp.117 = lgetv %i.3;
+            %tmp.118 = add %tmp.117 1;
+            lputv %i.3 %tmp.118;
+            goto @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_231_5_236_5_for_test;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_231_5_236_5_for_end:
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_213_38_238_1_stop:
+        }
+        [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 247; ]
+        function concat(gradient) {
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_247_26_251_1_start:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 248 2 ]
+            %tmp.1 = lgetv %self;
+            %tmp.2 = getv %tmp.1 :grad;
+            %tmp.3 = getv function %tmp.2 :addAll;
+            %tmp.4 = lgetv %gradient;
+            %tmp.5 = getv function %tmp.4 :toArray;
+            %tmp.6 = invoke %tmp.4 %tmp.5();
+            invoke %tmp.2 %tmp.3(%tmp.6);
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 249 2 ]
+            %tmp.7 = lgetv %self;
+            %tmp.8 = getv %tmp.7 :scale;
+            %tmp.9 = lgetv %gradient;
+            %tmp.10 = getv function %tmp.9 :size;
+            %tmp.11 = invoke %tmp.9 %tmp.10();
+            %tmp.12 = add %tmp.8 %tmp.11;
+            putv self :scale %tmp.12;
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 250 2 ]
+            %tmp.14 = self;
+            ret %tmp.14;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_247_26_251_1_stop:
+        }
+        [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 256; ]
+        function hasNext() {
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_256_20_258_1_start:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 257 2 ]
+            %tmp.2 = getv ? :step_count;
+            %tmp.4 = getv ? :scale;
+            %tmp.5 = 1;
+            %tmp.6 = sub %tmp.4 %tmp.5;
+            %tmp.7 = lt %tmp.2 %tmp.6;
+            ret %tmp.7;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_256_20_258_1_stop:
+        }
+        [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 263; ]
+        function hasPrev() {
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_263_20_265_1_start:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 264 2 ]
+            %tmp.2 = getv ? :step_count;
+            %tmp.3 = 0;
+            %tmp.4 = gt %tmp.2 %tmp.3;
+            ret %tmp.4;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_263_20_265_1_stop:
+        }
+        [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 270; ]
+        function next() {
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_270_17_273_1_start:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 271 2 ]
+            %tmp.3 = getv ? :step_count;
+            %tmp.4 = add %tmp.3 1;
+            putv self :step_count dup %tmp.4;
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 272 2 ]
+            %tmp.5 = lgetv %self;
+            %tmp.6 = getv %tmp.5 :grad;
+            %tmp.8 = getv ? :step_count;
+            %tmp.9 = agetv %tmp.6 %tmp.8;
+            ret %tmp.9;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_270_17_273_1_stop:
+        }
+        [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 278; ]
+        function prev() {
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_278_17_281_1_start:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 279 2 ]
+            %tmp.3 = getv ? :step_count;
+            %tmp.4 = sub %tmp.3 1;
+            putv self :step_count dup %tmp.4;
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 280 2 ]
+            %tmp.5 = lgetv %self;
+            %tmp.6 = getv %tmp.5 :grad;
+            %tmp.8 = getv ? :step_count;
+            %tmp.9 = agetv %tmp.6 %tmp.8;
+            ret %tmp.9;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_278_17_281_1_stop:
+        }
+        [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 286; ]
+        function getStep() {
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_286_19_288_1_start:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 287 2 ]
+            %tmp.2 = getv ? :step_count;
+            ret %tmp.2;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_286_19_288_1_stop:
+        }
+        [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 293; ]
+        function size() {
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_293_16_295_1_start:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 294 2 ]
+            %tmp.1 = lgetv %self;
+            %tmp.2 = getv %tmp.1 :scale;
+            ret %tmp.2;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_293_16_295_1_stop:
+        }
+        [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 301; ]
+        function get(i) {
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_301_16_310_1_start:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 303 2 ]
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_303_2_305_2_if_stmt:
+            %tmp.2 = lgetv %i;
+            %tmp.4 = getv ? :scale;
+            %tmp.5 = gte %tmp.2 %tmp.4;
+            bf %tmp.5 @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_303_2_305_2_if_end;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_303_2_305_2_if_true:
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_303_14_305_2_start:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 304 3 ]
+            %tmp.7 = lgetv %i;
+            %tmp.9 = getv ? :scale;
+            %tmp.10 = sub %tmp.7 %tmp.9;
+            lputv %i %tmp.10;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_303_14_305_2_stop:
+            goto @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_303_2_305_2_if_end;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_303_2_305_2_if_end:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 306 2 ]
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_306_2_308_2_if_stmt:
+            %tmp.12 = lgetv %i;
+            %tmp.13 = 0;
+            %tmp.14 = lt %tmp.12 %tmp.13;
+            bf %tmp.14 @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_306_2_308_2_if_end;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_306_2_308_2_if_true:
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_306_9_308_2_start:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 307 3 ]
+            %tmp.16 = getv ? :scale;
+            %tmp.18 = lgetv %i;
+            %tmp.19 = add %tmp.16 %tmp.18;
+            lputv %i %tmp.19;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_306_9_308_2_stop:
+            goto @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_306_2_308_2_if_end;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_306_2_308_2_if_end:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 309 2 ]
+            %tmp.21 = getv ? :grad;
+            %tmp.23 = lgetv %i;
+            %tmp.24 = agetv %tmp.21 %tmp.23;
+            ret %tmp.24;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_301_16_310_1_stop:
+        }
+        [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 312; ]
+        function toArray() {
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_312_19_314_1_start:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 313 2 ]
+            %tmp.1 = lgetv %self;
+            %tmp.2 = getv %tmp.1 :grad;
+            ret %tmp.2;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_312_19_314_1_stop:
+        }
+    }
+    [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 320; ]
+    class Palette extends Lang.Array{
+        [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 320; ]
+        <init> {
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 321 5 ]
+            %tmp.3 = newa 0;
+            putv self :keys %tmp.3;
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 322 5 ]
+            %tmp.4 = newa 0;
+            putv self :values %tmp.4;
+        }
+        [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 320; ]
+        static
+        <init> {
+        }
+        [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 321; @position = 5; ]
+        var keys;
+        [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 322; @position = 5; ]
+        var values;
+        [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 332; ]
+        function initialize(array) as Void {
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_332_27_338_1_start:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 333 2 ]
+            %tmp.2 = getv ? :Array;
+            %tmp.3 = getv function %tmp.2 :initialize;
+            invoke %tmp.2 %tmp.3();
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 334 2 ]
+            for @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_334_2_337_2_for_test @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_334_2_337_2_for_incr @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_334_2_337_2_for_end;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_334_2_337_2_for_init:
+            [ "D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_334_2_337_2_for_begin" "D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_334_2_337_2_for_end" ]
+            %i.1 = local;
+            %tmp.4 = 0;
+            lputv %i.1 %tmp.4;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_334_2_337_2_for_test:
+            %tmp.6 = lgetv %i.1;
+            %tmp.7 = lgetv %array;
+            %tmp.8 = getv function %tmp.7 :size;
+            %tmp.9 = invoke %tmp.7 %tmp.8();
+            %tmp.10 = lt %tmp.6 %tmp.9;
+            bf %tmp.10 @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_334_2_337_2_for_end;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_334_2_337_2_for_begin:
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_334_35_337_2_start:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 335 3 ]
+            %tmp.12 = getv ? :keys;
+            %tmp.13 = getv function %tmp.12 :add;
+            %tmp.15 = lgetv %array;
+            %tmp.17 = lgetv %i.1;
+            %tmp.18 = agetv %tmp.15 %tmp.17;
+            %tmp.19 = getv function %tmp.18 :keys;
+            %tmp.20 = invoke %tmp.18 %tmp.19();
+            %tmp.21 = 0;
+            %tmp.22 = agetv %tmp.20 %tmp.21;
+            invoke %tmp.12 %tmp.13(%tmp.22);
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 336 3 ]
+            %tmp.24 = getv ? :values;
+            %tmp.25 = getv function %tmp.24 :add;
+            %tmp.27 = lgetv %array;
+            %tmp.29 = lgetv %i.1;
+            %tmp.30 = agetv %tmp.27 %tmp.29;
+            %tmp.31 = getv function %tmp.30 :values;
+            %tmp.32 = invoke %tmp.30 %tmp.31();
+            %tmp.33 = 0;
+            %tmp.34 = agetv %tmp.32 %tmp.33;
+            invoke %tmp.24 %tmp.25(%tmp.34);
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_334_35_337_2_stop:
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_334_2_337_2_for_incr:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 334 ]
+            %tmp.37 = lgetv %i.1;
+            %tmp.38 = add %tmp.37 1;
+            lputv %i.1 %tmp.38;
+            goto @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_334_2_337_2_for_test;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_334_2_337_2_for_end:
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_332_27_338_1_stop:
+        }
+        [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 343; ]
+        function toString() {
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_343_20_350_1_start:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 344 2 ]
+            [ "D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_343_20_350_1_start" "D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_343_20_350_1_stop" ]
+            %ret.1 = local;
+            %tmp.1 = "PALETTE: ";
+            lputv %ret.1 %tmp.1;
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 345 2 ]
+            for @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_345_2_347_2_for_test @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_345_2_347_2_for_incr @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_345_2_347_2_for_end;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_345_2_347_2_for_init:
+            [ "D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_345_2_347_2_for_begin" "D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_345_2_347_2_for_end" ]
+            %i.2 = local;
+            %tmp.2 = 0;
+            lputv %i.2 %tmp.2;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_345_2_347_2_for_test:
+            %tmp.4 = lgetv %i.2;
+            %tmp.5 = lgetv %self;
+            %tmp.6 = getv %tmp.5 :keys;
+            %tmp.7 = getv function %tmp.6 :size;
+            %tmp.8 = invoke %tmp.6 %tmp.7();
+            %tmp.9 = lt %tmp.4 %tmp.8;
+            bf %tmp.9 @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_345_2_347_2_for_end;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_345_2_347_2_for_begin:
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_345_40_347_2_start:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 346 3 ]
+            %tmp.11 = lgetv %ret.1;
+            %tmp.12 = lgetv %self;
+            %tmp.13 = getv %tmp.12 :keys;
+            %tmp.15 = lgetv %i.2;
+            %tmp.16 = agetv %tmp.13 %tmp.15;
+            %tmp.17 = getv function %tmp.16 :toString;
+            %tmp.18 = invoke %tmp.16 %tmp.17();
+            %tmp.19 = add %tmp.11 %tmp.18;
+            %tmp.20 = "=>";
+            %tmp.21 = add %tmp.19 %tmp.20;
+            %tmp.22 = lgetv %self;
+            %tmp.23 = getv %tmp.22 :values;
+            %tmp.25 = lgetv %i.2;
+            %tmp.26 = agetv %tmp.23 %tmp.25;
+            %tmp.27 = getv function %tmp.26 :toString;
+            %tmp.28 = invoke %tmp.26 %tmp.27();
+            %tmp.29 = add %tmp.21 %tmp.28;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_346_78_346_108_begin:
+            %tmp.31 = lgetv %i.2;
+            %tmp.32 = lgetv %self;
+            %tmp.33 = getv %tmp.32 :keys;
+            %tmp.34 = getv function %tmp.33 :size;
+            %tmp.35 = invoke %tmp.33 %tmp.34();
+            %tmp.36 = 1;
+            %tmp.37 = sub %tmp.35 %tmp.36;
+            %tmp.38 = lt %tmp.31 %tmp.37;
+            bf %tmp.38 @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_346_78_346_108_false;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_346_78_346_108_true:
+            %tmp.39 = ", ";
+            push %tmp.39;
+            goto @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_346_78_346_108_end;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_346_78_346_108_false:
+            %tmp.40 = "";
+            push %tmp.40;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_346_78_346_108_end:
+            %tmp.41 = phi [%tmp.38 @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_346_78_346_108_begin] [%tmp.39 @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_346_78_346_108_true] [%tmp.40 @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_346_78_346_108_false] [%tmp.41 @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_346_78_346_108_end];
+            %tmp.42 = add %tmp.29 %tmp.41;
+            lputv %ret.1 %tmp.42;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_345_40_347_2_stop:
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_345_2_347_2_for_incr:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 345 ]
+            %tmp.45 = lgetv %i.2;
+            %tmp.46 = add %tmp.45 1;
+            lputv %i.2 %tmp.46;
+            goto @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_345_2_347_2_for_test;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_345_2_347_2_for_end:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 349 2 ]
+            %tmp.48 = lgetv %ret.1;
+            ret %tmp.48;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_343_20_350_1_stop:
+        }
+        [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 355; ]
+        function getValues() {
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_355_21_357_1_start:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 356 2 ]
+            %tmp.1 = lgetv %self;
+            %tmp.2 = getv %tmp.1 :values;
+            ret %tmp.2;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_355_21_357_1_stop:
+        }
+        [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 362; ]
+        function getKeys() {
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_362_19_364_1_start:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 363 2 ]
+            %tmp.1 = lgetv %self;
+            %tmp.2 = getv %tmp.1 :keys;
+            ret %tmp.2;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_362_19_364_1_stop:
+        }
+        [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 370; ]
+        function get(name) {
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_370_19_378_1_start:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 372 2 ]
+            for @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_372_2_376_2_for_test @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_372_2_376_2_for_incr @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_372_2_376_2_for_end;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_372_2_376_2_for_init:
+            [ "D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_372_2_376_2_for_begin" "D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_372_2_376_2_for_end" ]
+            %i.1 = local;
+            %tmp.1 = 0;
+            lputv %i.1 %tmp.1;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_372_2_376_2_for_test:
+            %tmp.3 = lgetv %i.1;
+            %tmp.5 = getv ? :keys;
+            %tmp.6 = getv function %tmp.5 :size;
+            %tmp.7 = invoke %tmp.5 %tmp.6();
+            %tmp.8 = lt %tmp.3 %tmp.7;
+            bf %tmp.8 @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_372_2_376_2_for_end;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_372_2_376_2_for_begin:
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_372_34_376_2_start:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 373 3 ]
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_373_3_375_3_if_stmt:
+            %tmp.9 = lgetv %name;
+            %tmp.10 = getv function %tmp.9 :equals;
+            %tmp.12 = getv ? :keys;
+            %tmp.14 = lgetv %i.1;
+            %tmp.15 = agetv %tmp.12 %tmp.14;
+            %tmp.16 = invoke %tmp.9 %tmp.10(%tmp.15);
+            bf %tmp.16 @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_373_3_375_3_if_end;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_373_3_375_3_if_true:
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_373_27_375_3_start:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 374 4 ]
+            %tmp.18 = getv ? :values;
+            %tmp.20 = lgetv %i.1;
+            %tmp.21 = agetv %tmp.18 %tmp.20;
+            ret %tmp.21;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_373_27_375_3_stop:
+            goto @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_373_3_375_3_if_end;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_373_3_375_3_if_end:
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_372_34_376_2_stop:
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_372_2_376_2_for_incr:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 372 ]
+            %tmp.24 = lgetv %i.1;
+            %tmp.25 = add %tmp.24 1;
+            lputv %i.1 %tmp.25;
+            goto @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_372_2_376_2_for_test;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_372_2_376_2_for_end:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 377 2 ]
+            %tmp.26 = null;
+            ret %tmp.26;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_370_19_378_1_stop:
+        }
+        [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 385; ]
+        function put(key, val) {
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_385_23_390_1_start:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 387 2 ]
+            %tmp.1 = lgetv %self;
+            %tmp.2 = getv %tmp.1 :keys;
+            %tmp.3 = getv function %tmp.2 :add;
+            %tmp.5 = lgetv %key;
+            invoke %tmp.2 %tmp.3(%tmp.5);
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 388 2 ]
+            %tmp.6 = lgetv %self;
+            %tmp.7 = getv %tmp.6 :values;
+            %tmp.8 = getv function %tmp.7 :add;
+            %tmp.10 = lgetv %val;
+            invoke %tmp.7 %tmp.8(%tmp.10);
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 389 2 ]
+            %tmp.12 = self;
+            ret %tmp.12;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_385_23_390_1_stop:
+        }
+    }
+    [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 404; ]
+    function createPaletteFromHex(array) {
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_404_36_413_0_start:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 405 1 ]
+        [ "D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_404_36_413_0_start" "D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_404_36_413_0_stop" ]
+        %p.1 = local;
+        %tmp.4 = getv ? :Palette;
+        %tmp.5 = newa 0;
+        %tmp.1 = newc %tmp.4 (%tmp.5);
+        lputv %p.1 %tmp.1;
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 407 1 ]
+        for @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_407_1_409_1_for_test @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_407_1_409_1_for_incr @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_407_1_409_1_for_end;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_407_1_409_1_for_init:
+        [ "D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_407_1_409_1_for_begin" "D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_407_1_409_1_for_end" ]
+        %i.2 = local;
+        %tmp.6 = 0;
+        lputv %i.2 %tmp.6;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_407_1_409_1_for_test:
+        %tmp.8 = lgetv %i.2;
+        %tmp.9 = lgetv %array;
+        %tmp.10 = getv function %tmp.9 :size;
+        %tmp.11 = invoke %tmp.9 %tmp.10();
+        %tmp.12 = lt %tmp.8 %tmp.11;
+        bf %tmp.12 @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_407_1_409_1_for_end;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_407_1_409_1_for_begin:
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_407_35_409_1_start:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 408 2 ]
+        %tmp.13 = lgetv %p.1;
+        %tmp.14 = getv function %tmp.13 :put;
+        %tmp.16 = lgetv %array;
+        %tmp.18 = lgetv %i.2;
+        %tmp.19 = agetv %tmp.16 %tmp.18;
+        %tmp.20 = getv function %tmp.19 :keys;
+        %tmp.21 = invoke %tmp.19 %tmp.20();
+        %tmp.22 = 0;
+        %tmp.23 = agetv %tmp.21 %tmp.22;
+        %tmp.27 = getv ? :rgb;
+        %tmp.29 = lgetv %array;
+        %tmp.31 = lgetv %i.2;
+        %tmp.32 = agetv %tmp.29 %tmp.31;
+        %tmp.33 = getv function %tmp.32 :values;
+        %tmp.34 = invoke %tmp.32 %tmp.33();
+        %tmp.35 = 0;
+        %tmp.36 = agetv %tmp.34 %tmp.35;
+        %tmp.24 = newc %tmp.27 (%tmp.36);
+        invoke %tmp.13 %tmp.14(%tmp.23, %tmp.24);
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_407_35_409_1_stop:
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_407_1_409_1_for_incr:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 407 ]
+        %tmp.39 = lgetv %i.2;
+        %tmp.40 = add %tmp.39 1;
+        lputv %i.2 %tmp.40;
+        goto @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_407_1_409_1_for_test;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_407_1_409_1_for_end:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 411 1 ]
+        %tmp.42 = lgetv %p.1;
+        ret %tmp.42;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_404_36_413_0_stop:
+    }
+    [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 425; ]
+    function createGradientFromPalette(palette, widths, circular) {
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_425_61_439_0_start:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 427 2 ]
+        [ "D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_425_61_439_0_start" "D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_425_61_439_0_stop" ]
+        %colors.1 = local;
+        %tmp.1 = lgetv %palette;
+        %tmp.2 = getv function %tmp.1 :getValues;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %colors.1 %tmp.3;
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 428 1 ]
+        [ "D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_425_61_439_0_start" "D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_425_61_439_0_stop" ]
+        %grad.2 = local;
+        %tmp.7 = getv ? :Colors;
+        %tmp.8 = getv function ? %tmp.7 :Gradient;
+        %tmp.10 = lgetv %colors.1;
+        %tmp.11 = 0;
+        %tmp.12 = agetv %tmp.10 %tmp.11;
+        %tmp.14 = lgetv %colors.1;
+        %tmp.15 = 1;
+        %tmp.16 = agetv %tmp.14 %tmp.15;
+        %tmp.18 = lgetv %widths;
+        %tmp.19 = 0;
+        %tmp.20 = agetv %tmp.18 %tmp.19;
+        %tmp.4 = newc %tmp.8 (%tmp.12, %tmp.16, %tmp.20);
+        lputv %grad.2 %tmp.4;
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 430 1 ]
+        for @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_430_1_432_1_for_test @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_430_1_432_1_for_incr @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_430_1_432_1_for_end;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_430_1_432_1_for_init:
+        [ "D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_430_1_432_1_for_begin" "D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_430_1_432_1_for_end" ]
+        %i.3 = local;
+        %tmp.21 = 1;
+        lputv %i.3 %tmp.21;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_430_1_432_1_for_test:
+        %tmp.23 = lgetv %i.3;
+        %tmp.24 = lgetv %colors.1;
+        %tmp.25 = getv function %tmp.24 :size;
+        %tmp.26 = invoke %tmp.24 %tmp.25();
+        %tmp.27 = 1;
+        %tmp.28 = sub %tmp.26 %tmp.27;
+        %tmp.29 = lt %tmp.23 %tmp.28;
+        bf %tmp.29 @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_430_1_432_1_for_end;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_430_1_432_1_for_begin:
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_430_37_432_1_start:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 431 2 ]
+        %tmp.30 = lgetv %grad.2;
+        %tmp.31 = getv function %tmp.30 :concat;
+        %tmp.35 = getv ? :Colors;
+        %tmp.36 = getv function ? %tmp.35 :Gradient;
+        %tmp.38 = lgetv %colors.1;
+        %tmp.40 = lgetv %i.3;
+        %tmp.41 = agetv %tmp.38 %tmp.40;
+        %tmp.43 = lgetv %colors.1;
+        %tmp.45 = lgetv %i.3;
+        %tmp.46 = 1;
+        %tmp.47 = add %tmp.45 %tmp.46;
+        %tmp.48 = agetv %tmp.43 %tmp.47;
+        %tmp.50 = lgetv %widths;
+        %tmp.52 = lgetv %i.3;
+        %tmp.53 = agetv %tmp.50 %tmp.52;
+        %tmp.32 = newc %tmp.36 (%tmp.41, %tmp.48, %tmp.53);
+        invoke %tmp.30 %tmp.31(%tmp.32);
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_430_37_432_1_stop:
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_430_1_432_1_for_incr:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 430 ]
+        %tmp.56 = lgetv %i.3;
+        %tmp.57 = add %tmp.56 1;
+        lputv %i.3 %tmp.57;
+        goto @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_430_1_432_1_for_test;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_430_1_432_1_for_end:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 434 1 ]
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_434_1_436_1_if_stmt:
+        %tmp.59 = lgetv %circular;
+        bf %tmp.59 @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_434_1_436_1_if_end;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_434_1_436_1_if_true:
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_434_13_436_1_start:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 435 2 ]
+        %tmp.60 = lgetv %grad.2;
+        %tmp.61 = getv function %tmp.60 :concat;
+        %tmp.65 = getv ? :Colors;
+        %tmp.66 = getv function ? %tmp.65 :Gradient;
+        %tmp.68 = lgetv %colors.1;
+        %tmp.69 = lgetv %colors.1;
+        %tmp.70 = getv function %tmp.69 :size;
+        %tmp.71 = invoke %tmp.69 %tmp.70();
+        %tmp.72 = 1;
+        %tmp.73 = sub %tmp.71 %tmp.72;
+        %tmp.74 = agetv %tmp.68 %tmp.73;
+        %tmp.76 = lgetv %colors.1;
+        %tmp.77 = 0;
+        %tmp.78 = agetv %tmp.76 %tmp.77;
+        %tmp.80 = lgetv %widths;
+        %tmp.81 = lgetv %colors.1;
+        %tmp.82 = getv function %tmp.81 :size;
+        %tmp.83 = invoke %tmp.81 %tmp.82();
+        %tmp.84 = 1;
+        %tmp.85 = sub %tmp.83 %tmp.84;
+        %tmp.86 = agetv %tmp.80 %tmp.85;
+        %tmp.62 = newc %tmp.66 (%tmp.74, %tmp.78, %tmp.86);
+        invoke %tmp.60 %tmp.61(%tmp.62);
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_434_13_436_1_stop:
+        goto @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_434_1_436_1_if_end;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_434_1_436_1_if_end:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 438 1 ]
+        %tmp.88 = lgetv %grad.2;
+        ret %tmp.88;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_425_61_439_0_stop:
+    }
+    [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 450; ]
+    function drawCurvedGradient(dc, x, y, r, gradient) {
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_450_50_455_0_start:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 451 1 ]
+        while @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_451_1_454_1_while_test @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_451_1_454_1_while_end;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_451_1_454_1_while_test:
+        %tmp.1 = lgetv %gradient;
+        %tmp.2 = getv function %tmp.1 :hasNext;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        bf %tmp.3 @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_451_1_454_1_while_end;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_451_1_454_1_while_begin:
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_451_27_454_1_start:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 452 2 ]
+        %tmp.4 = lgetv %dc;
+        %tmp.5 = getv function %tmp.4 :setColor;
+        %tmp.6 = lgetv %gradient;
+        %tmp.7 = getv function %tmp.6 :next;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        %tmp.9 = getv function %tmp.8 :toNumber;
+        %tmp.10 = invoke %tmp.8 %tmp.9();
+        %tmp.11 = getm $.Toybox.Graphics;
+        %tmp.12 = getv %tmp.11 :COLOR_BLACK;
+        invoke %tmp.4 %tmp.5(%tmp.10, %tmp.12);
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 453 2 ]
+        %tmp.13 = lgetv %dc;
+        %tmp.14 = getv function %tmp.13 :fillCircle;
+        %tmp.16 = lgetv %x;
+        %tmp.18 = lgetv %y;
+        %tmp.20 = lgetv %r;
+        %tmp.21 = lgetv %gradient;
+        %tmp.22 = getv function %tmp.21 :getStep;
+        %tmp.23 = invoke %tmp.21 %tmp.22();
+        %tmp.24 = sub %tmp.20 %tmp.23;
+        %tmp.25 = 2;
+        %tmp.26 = add %tmp.24 %tmp.25;
+        invoke %tmp.13 %tmp.14(%tmp.16, %tmp.18, %tmp.26);
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_451_27_454_1_stop:
+        goto @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_451_1_454_1_while_test;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_451_1_454_1_while_end:
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_450_50_455_0_stop:
+    }
+    [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 467; ]
+    function drawCurvedGradientRA(dc, x, y, r, gradient) {
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_467_52_472_0_start:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 468 1 ]
+        for @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_468_1_471_1_for_test @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_468_1_471_1_for_incr @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_468_1_471_1_for_end;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_468_1_471_1_for_init:
+        [ "D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_468_1_471_1_for_begin" "D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_468_1_471_1_for_end" ]
+        %i.1 = local;
+        %tmp.1 = 0;
+        lputv %i.1 %tmp.1;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_468_1_471_1_for_test:
+        %tmp.3 = lgetv %i.1;
+        %tmp.4 = lgetv %gradient;
+        %tmp.5 = getv function %tmp.4 :size;
+        %tmp.6 = invoke %tmp.4 %tmp.5();
+        %tmp.7 = lt %tmp.3 %tmp.6;
+        bf %tmp.7 @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_468_1_471_1_for_end;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_468_1_471_1_for_begin:
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_468_38_471_1_start:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 469 2 ]
+        %tmp.8 = lgetv %dc;
+        %tmp.9 = getv function %tmp.8 :setColor;
+        %tmp.10 = lgetv %gradient;
+        %tmp.11 = getv function %tmp.10 :get;
+        %tmp.13 = lgetv %i.1;
+        %tmp.14 = invoke %tmp.10 %tmp.11(%tmp.13);
+        %tmp.15 = getv function %tmp.14 :toNumber;
+        %tmp.16 = invoke %tmp.14 %tmp.15();
+        %tmp.17 = getm $.Toybox.Graphics;
+        %tmp.18 = getv %tmp.17 :COLOR_BLACK;
+        invoke %tmp.8 %tmp.9(%tmp.16, %tmp.18);
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 470 2 ]
+        %tmp.19 = lgetv %dc;
+        %tmp.20 = getv function %tmp.19 :fillCircle;
+        %tmp.22 = lgetv %x;
+        %tmp.24 = lgetv %y;
+        %tmp.26 = lgetv %r;
+        %tmp.28 = lgetv %i.1;
+        %tmp.29 = sub %tmp.26 %tmp.28;
+        %tmp.30 = 2;
+        %tmp.31 = add %tmp.29 %tmp.30;
+        invoke %tmp.19 %tmp.20(%tmp.22, %tmp.24, %tmp.31);
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_468_38_471_1_stop:
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_468_1_471_1_for_incr:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 468 ]
+        %tmp.34 = lgetv %i.1;
+        %tmp.35 = add %tmp.34 1;
+        lputv %i.1 %tmp.35;
+        goto @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_468_1_471_1_for_test;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_468_1_471_1_for_end:
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_467_52_472_0_stop:
+    }
+    [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 486; ]
+    function drawRectGradient(dc, x, y, width, height, gradient, vertical) {
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_486_70_502_0_start:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 487 1 ]
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_487_1_500_1_if_stmt:
+        %tmp.2 = lgetv %vertical;
+        bf %tmp.2 @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_487_1_500_1_if_false;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_487_1_500_1_if_true:
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_487_13_493_1_start:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 488 2 ]
+        [ "D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_487_13_493_1_start" "D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_487_13_493_1_stop" ]
+        %bandwidth.1 = local;
+        %tmp.3 = lgetv %height;
+        %tmp.4 = getv function %tmp.3 :toDouble;
+        %tmp.5 = invoke %tmp.3 %tmp.4();
+        %tmp.6 = lgetv %gradient;
+        %tmp.7 = getv function %tmp.6 :size;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        %tmp.9 = getv function %tmp.8 :toDouble;
+        %tmp.10 = invoke %tmp.8 %tmp.9();
+        %tmp.11 = div %tmp.5 %tmp.10;
+        lputv %bandwidth.1 %tmp.11;
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 489 2 ]
+        for @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_489_2_492_2_for_test @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_489_2_492_2_for_incr @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_489_2_492_2_for_end;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_489_2_492_2_for_init:
+        [ "D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_489_2_492_2_for_begin" "D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_489_2_492_2_for_end" ]
+        %i.2 = local;
+        %tmp.12 = 0;
+        lputv %i.2 %tmp.12;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_489_2_492_2_for_test:
+        %tmp.14 = lgetv %i.2;
+        %tmp.15 = lgetv %gradient;
+        %tmp.16 = getv function %tmp.15 :size;
+        %tmp.17 = invoke %tmp.15 %tmp.16();
+        %tmp.18 = lt %tmp.14 %tmp.17;
+        bf %tmp.18 @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_489_2_492_2_for_end;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_489_2_492_2_for_begin:
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_489_38_492_2_start:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 490 3 ]
+        %tmp.19 = lgetv %dc;
+        %tmp.20 = getv function %tmp.19 :setColor;
+        %tmp.21 = lgetv %gradient;
+        %tmp.22 = getv function %tmp.21 :get;
+        %tmp.24 = lgetv %i.2;
+        %tmp.25 = invoke %tmp.21 %tmp.22(%tmp.24);
+        %tmp.26 = getv function %tmp.25 :toNumber;
+        %tmp.27 = invoke %tmp.25 %tmp.26();
+        %tmp.28 = getm $.Toybox.Graphics;
+        %tmp.29 = getv %tmp.28 :COLOR_BLACK;
+        invoke %tmp.19 %tmp.20(%tmp.27, %tmp.29);
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 491 3 ]
+        %tmp.30 = lgetv %dc;
+        %tmp.31 = getv function %tmp.30 :fillRectangle;
+        %tmp.33 = lgetv %x;
+        %tmp.35 = lgetv %y;
+        %tmp.37 = lgetv %bandwidth.1;
+        %tmp.39 = lgetv %i.2;
+        %tmp.40 = mul %tmp.37 %tmp.39;
+        %tmp.41 = add %tmp.35 %tmp.40;
+        %tmp.43 = lgetv %width;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_491_48_491_66_begin:
+        %tmp.45 = lgetv %bandwidth.1;
+        %tmp.46 = 1;
+        %tmp.47 = lt %tmp.45 %tmp.46;
+        bf %tmp.47 @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_491_48_491_66_false;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_491_48_491_66_true:
+        %tmp.48 = 1;
+        push %tmp.48;
+        goto @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_491_48_491_66_end;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_491_48_491_66_false:
+        %tmp.50 = lgetv %bandwidth.1;
+        push %tmp.50;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_491_48_491_66_end:
+        %tmp.51 = phi [%tmp.47 @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_491_48_491_66_begin] [%tmp.48 @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_491_48_491_66_true] [%tmp.50 @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_491_48_491_66_false] [%tmp.51 @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_491_48_491_66_end];
+        invoke %tmp.30 %tmp.31(%tmp.33, %tmp.41, %tmp.43, %tmp.51);
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_489_38_492_2_stop:
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_489_2_492_2_for_incr:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 489 ]
+        %tmp.54 = lgetv %i.2;
+        %tmp.55 = add %tmp.54 1;
+        lputv %i.2 %tmp.55;
+        goto @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_489_2_492_2_for_test;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_489_2_492_2_for_end:
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_487_13_493_1_stop:
+        goto @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_487_1_500_1_if_end;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_487_1_500_1_if_false:
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_494_5_500_1_start:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 495 2 ]
+        [ "D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_494_5_500_1_start" "D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_494_5_500_1_stop" ]
+        %bandwidth.3 = local;
+        %tmp.56 = lgetv %width;
+        %tmp.57 = getv function %tmp.56 :toDouble;
+        %tmp.58 = invoke %tmp.56 %tmp.57();
+        %tmp.59 = lgetv %gradient;
+        %tmp.60 = getv function %tmp.59 :size;
+        %tmp.61 = invoke %tmp.59 %tmp.60();
+        %tmp.62 = getv function %tmp.61 :toDouble;
+        %tmp.63 = invoke %tmp.61 %tmp.62();
+        %tmp.64 = div %tmp.58 %tmp.63;
+        lputv %bandwidth.3 %tmp.64;
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 496 2 ]
+        for @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_496_2_499_2_for_test @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_496_2_499_2_for_incr @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_496_2_499_2_for_end;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_496_2_499_2_for_init:
+        [ "D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_496_2_499_2_for_begin" "D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_496_2_499_2_for_end" ]
+        %i.4 = local;
+        %tmp.65 = 0;
+        lputv %i.4 %tmp.65;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_496_2_499_2_for_test:
+        %tmp.67 = lgetv %i.4;
+        %tmp.68 = lgetv %gradient;
+        %tmp.69 = getv function %tmp.68 :size;
+        %tmp.70 = invoke %tmp.68 %tmp.69();
+        %tmp.71 = lt %tmp.67 %tmp.70;
+        bf %tmp.71 @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_496_2_499_2_for_end;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_496_2_499_2_for_begin:
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_496_38_499_2_start:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 497 3 ]
+        %tmp.72 = lgetv %dc;
+        %tmp.73 = getv function %tmp.72 :setColor;
+        %tmp.74 = lgetv %gradient;
+        %tmp.75 = getv function %tmp.74 :get;
+        %tmp.77 = lgetv %i.4;
+        %tmp.78 = invoke %tmp.74 %tmp.75(%tmp.77);
+        %tmp.79 = getv function %tmp.78 :toNumber;
+        %tmp.80 = invoke %tmp.78 %tmp.79();
+        %tmp.81 = getm $.Toybox.Graphics;
+        %tmp.82 = getv %tmp.81 :COLOR_BLACK;
+        invoke %tmp.72 %tmp.73(%tmp.80, %tmp.82);
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 498 3 ]
+        %tmp.83 = lgetv %dc;
+        %tmp.84 = getv function %tmp.83 :fillRectangle;
+        %tmp.86 = lgetv %x;
+        %tmp.88 = lgetv %bandwidth.3;
+        %tmp.90 = lgetv %i.4;
+        %tmp.91 = mul %tmp.88 %tmp.90;
+        %tmp.92 = add %tmp.86 %tmp.91;
+        %tmp.94 = lgetv %y;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_498_41_498_59_begin:
+        %tmp.96 = lgetv %bandwidth.3;
+        %tmp.97 = 1;
+        %tmp.98 = lt %tmp.96 %tmp.97;
+        bf %tmp.98 @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_498_41_498_59_false;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_498_41_498_59_true:
+        %tmp.99 = 1;
+        push %tmp.99;
+        goto @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_498_41_498_59_end;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_498_41_498_59_false:
+        %tmp.101 = lgetv %bandwidth.3;
+        push %tmp.101;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_498_41_498_59_end:
+        %tmp.102 = phi [%tmp.98 @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_498_41_498_59_begin] [%tmp.99 @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_498_41_498_59_true] [%tmp.101 @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_498_41_498_59_false] [%tmp.102 @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_498_41_498_59_end];
+        %tmp.104 = lgetv %height;
+        invoke %tmp.83 %tmp.84(%tmp.92, %tmp.94, %tmp.102, %tmp.104);
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_496_38_499_2_stop:
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_496_2_499_2_for_incr:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc" 496 ]
+        %tmp.107 = lgetv %i.4;
+        %tmp.108 = add %tmp.107 1;
+        lputv %i.4 %tmp.108;
+        goto @D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_496_2_499_2_for_test;
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_496_2_499_2_for_end:
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_494_5_500_1_stop:
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_487_1_500_1_if_end:
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_Colors_mc_486_70_502_0_stop:
+    }
+}
+[ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\Colors.mc"; @line = 11; ]
+<init> {
+}

@@ -1,57 +1,66 @@
-[ @file = "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenApp.mc"; @line = 1; ]
+[ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\EpixMaidenApp.mc"; @line = 1; ]
 import Toybox.Application;
-[ @file = "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenApp.mc"; @line = 2; ]
+[ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\EpixMaidenApp.mc"; @line = 2; ]
 import Toybox.Lang;
-[ @file = "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenApp.mc"; @line = 3; ]
+[ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\EpixMaidenApp.mc"; @line = 3; ]
 import Toybox.WatchUi;
-[ @file = "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenApp.mc"; @line = 5; ]
+[ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\EpixMaidenApp.mc"; @line = 5; ]
 class EpixMaidenApp extends Application.AppBase{
-    [ @file = "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenApp.mc"; @line = 5; ]
+    [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\EpixMaidenApp.mc"; @line = 5; ]
     <init> {
     }
-    [ @file = "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenApp.mc"; @line = 5; ]
+    [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\EpixMaidenApp.mc"; @line = 5; ]
     static
     <init> {
     }
-    [ @file = "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenApp.mc"; @line = 7; ]
+    [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\EpixMaidenApp.mc"; @line = 7; ]
     function initialize() as Void {
-D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenApp_mc_7_26_9_4_start:
-[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenApp.mc" 8 8 ]
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_EpixMaidenApp_mc_7_26_9_4_start:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\EpixMaidenApp.mc" 8 8 ]
         %tmp.2 = getv ? :AppBase;
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenApp_mc_7_26_9_4_stop:
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_EpixMaidenApp_mc_7_26_9_4_stop:
     }
-    [ @file = "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenApp.mc"; @line = 12; ]
+    [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\EpixMaidenApp.mc"; @line = 12; ]
     function onStart(state as Dictionary or Null) as Void {
     }
-    [ @file = "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenApp.mc"; @line = 16; ]
+    [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\EpixMaidenApp.mc"; @line = 16; ]
     function onStop(state as Dictionary or Null) as Void {
     }
-    [ @file = "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenApp.mc"; @line = 20; ]
+    [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\EpixMaidenApp.mc"; @line = 20; ]
     function getInitialView() as [Views] or [Views, InputDelegates] {
-D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenApp_mc_20_68_22_4_start:
-[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenApp.mc" 21 8 ]
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_EpixMaidenApp_mc_20_68_22_4_start:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\EpixMaidenApp.mc" 21 8 ]
         %tmp.1 = newa 1;
         %tmp.5 = getv ? :EpixMaidenView;
         %tmp.2 = newc %tmp.5 ();
         %tmp.6 = dup %tmp.1;
         %tmp.7 = aputv %tmp.6 0 %tmp.2;
         ret %tmp.7;
-D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenApp_mc_20_68_22_4_stop:
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_EpixMaidenApp_mc_20_68_22_4_stop:
+    }
+    [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\EpixMaidenApp.mc"; @line = 25; ]
+    function onSettingsChanged() as Void {
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_EpixMaidenApp_mc_25_41_27_4_start:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\EpixMaidenApp.mc" 26 8 ]
+        %tmp.1 = getm $.Toybox.WatchUi;
+        %tmp.2 = getv function %tmp.1 :requestUpdate;
+        invoke %tmp.1 %tmp.2();
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_EpixMaidenApp_mc_25_41_27_4_stop:
     }
 }
-[ @file = "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenApp.mc"; @line = 26; ]
+[ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\EpixMaidenApp.mc"; @line = 31; ]
 function getApp() as EpixMaidenApp {
-D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenApp_mc_26_35_28_0_start:
-[ "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenApp.mc" 27 4 ]
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_EpixMaidenApp_mc_31_35_33_0_start:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\EpixMaidenApp.mc" 32 4 ]
     %tmp.1 = getm $.Toybox.Application;
     %tmp.2 = getv function %tmp.1 :getApp;
     %tmp.3 = invoke %tmp.1 %tmp.2();
     %tmp.4 = as %tmp.3 EpixMaidenApp;
     ret %tmp.4;
-D_Code_SDKGarmin3_EpixMaiden_source_EpixMaidenApp_mc_26_35_28_0_stop:
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_EpixMaidenApp_mc_31_35_33_0_stop:
 }
-[ @file = "D:\Code\SDKGarmin3\EpixMaiden\source\EpixMaidenApp.mc"; @line = 1; ]
+[ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\EpixMaidenApp.mc"; @line = 1; ]
 <init> {
 }

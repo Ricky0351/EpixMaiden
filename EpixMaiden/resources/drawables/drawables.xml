@@ -1,3 +1,12 @@
 <drawables>
     <bitmap id="LauncherIcon" filename="launcher_icon.png" />
+    <bitmap id="id_pic" filename="Eddie2.png" />
+    <bitmap id="Maiden_BG1" filename="Maiden BG 1.png" />
+    <bitmap id="Maiden_BG2" filename="Maiden BG 2.png" />
+    <bitmap id="Maiden_BG3" filename="Maiden BG 3.png" />
+    <bitmap id="Maiden_BG4" filename="Maiden BG 4.png" />
+    <bitmap id="Maiden_BG5" filename="Maiden BG 5.png" />
+    <bitmap id="Motor_BG1" filename="Motorhead BG 1.png" />
+    <bitmap id="Bonzai_BG1" filename="Bonzai BG 1.png" />
+    <bitmap id="Cradle_BG1" filename="Cradle BG 1.png" />
 </drawables>

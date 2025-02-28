@@ -1,3 +1,38 @@
 <strings>
+
     <string id="AppName">EpixMaiden</string>
+    <string id="LangueSettingTitle">Language</string>
+    <string id="WeekNumberSettingTitle">Week Number</string>
+    <string id="DateOrderSetttingTitle">Date Order (Day DayNumber Month)</string>
+    <string id="IconColorsSettingTitle">Icons Color</string>
+    <string id="DatasColorsSetttingsTitle">Datas Color</string>
+    <string id="DateColorsSettingsTitle">Date Color</string>
+    <string id="HourColorsSettingsTitle">Hour Color</string>
+    <string id="SecondsColorsSettingsTitle">Seconds Color</string>
+    <string id="CouleurAleatoireSettingTitle">Random Color</string>
+    <string id="MiniLuminositySettingTitle">Minimum Luminosity</string>
+    <string id="StepColorSettingTitle">Step Color</string>
+    <string id="TempsBackgroundSettingTitle">Background duration before image</string>
+    <string id="LangueFrancais">Francais</string>
+    <string id="LangueAnglais">English</string>
+    <string id="LangueDeutsch">Deutsch</string>
+    <string id="ReponseYes">Yes</string>
+    <string id="ReponseNo">No</string>
+    <string id="ReponseFixe">Fixe</string>
+    <string id="ReponseAleatoire">Aleatoire</string>
+    <string id="ReponseProgressive">Progressive</string>
+    <string id="DateDNM">DNM</string>
+    <string id="DateDMN">DMN</string>
+    <string id="DateNDM">NDM</string>
+    <string id="DateNMD">NMD</string>
+    <string id="DateMND">MND</string>
+    <string id="DateMDN">MDN</string>
+    <string id="CouleurGris">Gfx.COLOR_DK_GRAY</string>
+    <string id="CouleurRouge">Gfx.COLOR_RED</string>
+    <string id="CouleurJaune">Gfx.COLOR_Yellow</string>
+    <string id="CouleurBleu">Gfx.COLOR_Blue</string>
+    <string id="CouleurVert">Gfx.COLOR_Green</string>
+    <string id="CouleurPink">Gfx.COLOR_Pink</string>
+    <string id="CouleurBlanc">Gfx.COLOR_White</string>
+
 </strings>

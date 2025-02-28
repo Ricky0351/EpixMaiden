@@ -1,0 +1,16 @@
+<properties>
+
+    <property id="LangueSetting" type="number">0</property>
+    <property id="WeekNumberSetting" type="number">0</property>
+    <property id="DateOrderSettting" type="number">0</property>
+    <property id="IconColorsSetting" type="number">0</property>
+    <property id="DatasColorsSetttings" type="number">5</property>
+    <property id="DateColorsSettings" type="number">6</property>
+    <property id="HourColorsSettings" type="number">3</property>
+    <property id="SecondsColorsSettings" type="number">1</property>
+    <property id="CouleurAleatoireSetting" type="number">0</property>
+    <property id="MiniLuminositySetting" type="number">250</property>
+    <property id="StepColorSetting" type="number" >30</property>
+    <property id="TempsBackgroundSetting" type="number" >5</property>
+
+</properties>

@@ -1,0 +1,919 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+<manifest filename="D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\manifest.xml"/>
+<pcToLineNum>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenApp.mc" id="1" lineNum="31" parent="globals" pc="268435460" symbol="getApp"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenApp.mc" id="1" lineNum="32" parent="globals" pc="268435470" symbol="getApp"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenBackground.mc" id="2" lineNum="6" parent="globals/Background" pc="268435481" symbol="&lt;init&gt;"/>
+<entry filename="d:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\bin\\gen\\006-B4533-00\\source\\Rez.mcgen" id="3" lineNum="7" parent="globals/Rez" pc="268435493" symbol="&lt;init&gt;"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="4" lineNum="11" parent="globals/EpixMaidenView" pc="268435513" symbol="&lt;init&gt;"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenApp.mc" id="5" lineNum="5" parent="globals/EpixMaidenApp" pc="268435525" symbol="&lt;init&gt;"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenBackground.mc" id="6" lineNum="8" parent="globals/Background" pc="268435537" symbol="initialize"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenBackground.mc" id="6" lineNum="9" parent="globals/Background" pc="268435540" symbol="initialize"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenBackground.mc" id="6" lineNum="13" parent="globals/Background" pc="268435558" symbol="initialize"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenBackground.mc" id="7" lineNum="16" parent="globals/Background" pc="268435575" symbol="draw"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenBackground.mc" id="7" lineNum="19" parent="globals/Background" pc="268435577" symbol="draw"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="8" lineNum="515" parent="globals/EpixMaidenView" pc="268435586" symbol="is_leap_year"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="8" lineNum="517" parent="globals/EpixMaidenView" pc="268435588" symbol="is_leap_year"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="8" lineNum="518" parent="globals/EpixMaidenView" pc="268435598" symbol="is_leap_year"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="8" lineNum="520" parent="globals/EpixMaidenView" pc="268435603" symbol="is_leap_year"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="8" lineNum="521" parent="globals/EpixMaidenView" pc="268435613" symbol="is_leap_year"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="8" lineNum="523" parent="globals/EpixMaidenView" pc="268435618" symbol="is_leap_year"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="8" lineNum="524" parent="globals/EpixMaidenView" pc="268435629" symbol="is_leap_year"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="8" lineNum="527" parent="globals/EpixMaidenView" pc="268435634" symbol="is_leap_year"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="9" lineNum="530" parent="globals/EpixMaidenView" pc="268435636" symbol="TrouvePlusGrand"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="9" lineNum="532" parent="globals/EpixMaidenView" pc="268435639" symbol="TrouvePlusGrand"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="9" lineNum="533" parent="globals/EpixMaidenView" pc="268435642" symbol="TrouvePlusGrand"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="9" lineNum="533" parent="globals/EpixMaidenView" pc="268435650" symbol="TrouvePlusGrand"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="9" lineNum="533" parent="globals/EpixMaidenView" pc="268435657" symbol="TrouvePlusGrand"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="9" lineNum="534" parent="globals/EpixMaidenView" pc="268435661" symbol="TrouvePlusGrand"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="9" lineNum="534" parent="globals/EpixMaidenView" pc="268435669" symbol="TrouvePlusGrand"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="9" lineNum="535" parent="globals/EpixMaidenView" pc="268435676" symbol="TrouvePlusGrand"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="9" lineNum="535" parent="globals/EpixMaidenView" pc="268435684" symbol="TrouvePlusGrand"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="9" lineNum="536" parent="globals/EpixMaidenView" pc="268435691" symbol="TrouvePlusGrand"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="368" parent="globals/EpixMaidenView" pc="268435694" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="371" parent="globals/EpixMaidenView" pc="268435697" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="372" parent="globals/EpixMaidenView" pc="268435714" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="373" parent="globals/EpixMaidenView" pc="268435726" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="374" parent="globals/EpixMaidenView" pc="268435730" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="376" parent="globals/EpixMaidenView" pc="268435737" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="377" parent="globals/EpixMaidenView" pc="268435754" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="378" parent="globals/EpixMaidenView" pc="268435771" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="380" parent="globals/EpixMaidenView" pc="268435788" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="381" parent="globals/EpixMaidenView" pc="268435808" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="382" parent="globals/EpixMaidenView" pc="268435839" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="384" parent="globals/EpixMaidenView" pc="268435850" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="387" parent="globals/EpixMaidenView" pc="268435854" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="388" parent="globals/EpixMaidenView" pc="268435874" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="389" parent="globals/EpixMaidenView" pc="268435905" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="391" parent="globals/EpixMaidenView" pc="268435916" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="394" parent="globals/EpixMaidenView" pc="268435920" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="396" parent="globals/EpixMaidenView" pc="268435934" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="397" parent="globals/EpixMaidenView" pc="268435942" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="398" parent="globals/EpixMaidenView" pc="268435973" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="399" parent="globals/EpixMaidenView" pc="268435989" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="401" parent="globals/EpixMaidenView" pc="268435999" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="403" parent="globals/EpixMaidenView" pc="268436009" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="404" parent="globals/EpixMaidenView" pc="268436024" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="405" parent="globals/EpixMaidenView" pc="268436040" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="406" parent="globals/EpixMaidenView" pc="268436071" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="408" parent="globals/EpixMaidenView" pc="268436081" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="409" parent="globals/EpixMaidenView" pc="268436109" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="411" parent="globals/EpixMaidenView" pc="268436119" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="412" parent="globals/EpixMaidenView" pc="268436151" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="413" parent="globals/EpixMaidenView" pc="268436167" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="414" parent="globals/EpixMaidenView" pc="268436198" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="416" parent="globals/EpixMaidenView" pc="268436208" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="418" parent="globals/EpixMaidenView" pc="268436236" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="420" parent="globals/EpixMaidenView" pc="268436246" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="421" parent="globals/EpixMaidenView" pc="268436262" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="422" parent="globals/EpixMaidenView" pc="268436278" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="423" parent="globals/EpixMaidenView" pc="268436303" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="425" parent="globals/EpixMaidenView" pc="268436313" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="426" parent="globals/EpixMaidenView" pc="268436338" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="428" parent="globals/EpixMaidenView" pc="268436348" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="429" parent="globals/EpixMaidenView" pc="268436428" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="430" parent="globals/EpixMaidenView" pc="268436444" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="431" parent="globals/EpixMaidenView" pc="268436469" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="433" parent="globals/EpixMaidenView" pc="268436479" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="434" parent="globals/EpixMaidenView" pc="268436504" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="436" parent="globals/EpixMaidenView" pc="268436514" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="437" parent="globals/EpixMaidenView" pc="268436586" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="438" parent="globals/EpixMaidenView" pc="268436602" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="439" parent="globals/EpixMaidenView" pc="268436627" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="441" parent="globals/EpixMaidenView" pc="268436637" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="442" parent="globals/EpixMaidenView" pc="268436662" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="444" parent="globals/EpixMaidenView" pc="268436672" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="445" parent="globals/EpixMaidenView" pc="268436728" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="446" parent="globals/EpixMaidenView" pc="268436744" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="448" parent="globals/EpixMaidenView" pc="268436772" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="450" parent="globals/EpixMaidenView" pc="268436797" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="451" parent="globals/EpixMaidenView" pc="268436807" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="452" parent="globals/EpixMaidenView" pc="268436871" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="453" parent="globals/EpixMaidenView" pc="268436887" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="454" parent="globals/EpixMaidenView" pc="268436912" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="456" parent="globals/EpixMaidenView" pc="268436922" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="457" parent="globals/EpixMaidenView" pc="268436947" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="459" parent="globals/EpixMaidenView" pc="268436957" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="460" parent="globals/EpixMaidenView" pc="268437037" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="461" parent="globals/EpixMaidenView" pc="268437053" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="462" parent="globals/EpixMaidenView" pc="268437078" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="464" parent="globals/EpixMaidenView" pc="268437088" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="465" parent="globals/EpixMaidenView" pc="268437113" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="469" parent="globals/EpixMaidenView" pc="268437123" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="470" parent="globals/EpixMaidenView" pc="268437140" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="471" parent="globals/EpixMaidenView" pc="268437156" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="472" parent="globals/EpixMaidenView" pc="268437166" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="10" lineNum="473" parent="globals/EpixMaidenView" pc="268437180" symbol="afficheMeteo"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="11" lineNum="543" parent="globals/EpixMaidenView" pc="268437203" symbol="&lt;globals/EpixMaidenView/&lt;&gt;getWeatherPosition&gt;"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="11" lineNum="545" parent="globals/EpixMaidenView" pc="268437206" symbol="&lt;globals/EpixMaidenView/&lt;&gt;getWeatherPosition&gt;"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="11" lineNum="546" parent="globals/EpixMaidenView" pc="268437219" symbol="&lt;globals/EpixMaidenView/&lt;&gt;getWeatherPosition&gt;"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="11" lineNum="547" parent="globals/EpixMaidenView" pc="268437236" symbol="&lt;globals/EpixMaidenView/&lt;&gt;getWeatherPosition&gt;"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="11" lineNum="549" parent="globals/EpixMaidenView" pc="268437241" symbol="&lt;globals/EpixMaidenView/&lt;&gt;getWeatherPosition&gt;"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="11" lineNum="550" parent="globals/EpixMaidenView" pc="268437255" symbol="&lt;globals/EpixMaidenView/&lt;&gt;getWeatherPosition&gt;"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="11" lineNum="552" parent="globals/EpixMaidenView" pc="268437349" symbol="&lt;globals/EpixMaidenView/&lt;&gt;getWeatherPosition&gt;"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="11" lineNum="554" parent="globals/EpixMaidenView" pc="268437354" symbol="&lt;globals/EpixMaidenView/&lt;&gt;getWeatherPosition&gt;"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="12" lineNum="507" parent="globals/EpixMaidenView" pc="268437357" symbol="julian_day"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="12" lineNum="509" parent="globals/EpixMaidenView" pc="268437360" symbol="julian_day"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="12" lineNum="510" parent="globals/EpixMaidenView" pc="268437370" symbol="julian_day"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="12" lineNum="511" parent="globals/EpixMaidenView" pc="268437381" symbol="julian_day"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="12" lineNum="512" parent="globals/EpixMaidenView" pc="268437394" symbol="julian_day"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="13" lineNum="476" parent="globals/EpixMaidenView" pc="268437440" symbol="afficheSunset"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="13" lineNum="477" parent="globals/EpixMaidenView" pc="268437443" symbol="afficheSunset"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="13" lineNum="479" parent="globals/EpixMaidenView" pc="268437456" symbol="afficheSunset"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="13" lineNum="480" parent="globals/EpixMaidenView" pc="268437462" symbol="afficheSunset"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="13" lineNum="481" parent="globals/EpixMaidenView" pc="268437479" symbol="afficheSunset"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="13" lineNum="482" parent="globals/EpixMaidenView" pc="268437496" symbol="afficheSunset"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="13" lineNum="483" parent="globals/EpixMaidenView" pc="268437515" symbol="afficheSunset"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="13" lineNum="484" parent="globals/EpixMaidenView" pc="268437534" symbol="afficheSunset"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="13" lineNum="485" parent="globals/EpixMaidenView" pc="268437541" symbol="afficheSunset"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="13" lineNum="486" parent="globals/EpixMaidenView" pc="268437564" symbol="afficheSunset"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="13" lineNum="487" parent="globals/EpixMaidenView" pc="268437587" symbol="afficheSunset"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="13" lineNum="488" parent="globals/EpixMaidenView" pc="268437619" symbol="afficheSunset"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="13" lineNum="489" parent="globals/EpixMaidenView" pc="268437626" symbol="afficheSunset"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="13" lineNum="490" parent="globals/EpixMaidenView" pc="268437633" symbol="afficheSunset"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="13" lineNum="491" parent="globals/EpixMaidenView" pc="268437665" symbol="afficheSunset"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="13" lineNum="492" parent="globals/EpixMaidenView" pc="268437672" symbol="afficheSunset"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="13" lineNum="493" parent="globals/EpixMaidenView" pc="268437679" symbol="afficheSunset"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="13" lineNum="494" parent="globals/EpixMaidenView" pc="268437711" symbol="afficheSunset"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="13" lineNum="495" parent="globals/EpixMaidenView" pc="268437718" symbol="afficheSunset"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="13" lineNum="497" parent="globals/EpixMaidenView" pc="268437725" symbol="afficheSunset"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="13" lineNum="498" parent="globals/EpixMaidenView" pc="268437732" symbol="afficheSunset"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="13" lineNum="500" parent="globals/EpixMaidenView" pc="268437736" symbol="afficheSunset"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="13" lineNum="501" parent="globals/EpixMaidenView" pc="268437750" symbol="afficheSunset"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="13" lineNum="502" parent="globals/EpixMaidenView" pc="268437772" symbol="afficheSunset"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="13" lineNum="503" parent="globals/EpixMaidenView" pc="268437839" symbol="afficheSunset"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="13" lineNum="504" parent="globals/EpixMaidenView" pc="268437853" symbol="afficheSunset"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="17" lineNum="23" parent="globals/EpixMaidenView" pc="268437879" symbol="onLayout"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="17" lineNum="24" parent="globals/EpixMaidenView" pc="268437881" symbol="onLayout"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="17" lineNum="25" parent="globals/EpixMaidenView" pc="268437919" symbol="onLayout"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="17" lineNum="26" parent="globals/EpixMaidenView" pc="268437957" symbol="onLayout"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="17" lineNum="28" parent="globals/EpixMaidenView" pc="268437995" symbol="onLayout"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="17" lineNum="29" parent="globals/EpixMaidenView" pc="268438033" symbol="onLayout"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="17" lineNum="30" parent="globals/EpixMaidenView" pc="268438071" symbol="onLayout"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="17" lineNum="31" parent="globals/EpixMaidenView" pc="268438109" symbol="onLayout"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="17" lineNum="32" parent="globals/EpixMaidenView" pc="268438147" symbol="onLayout"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="18" lineNum="557" parent="globals/EpixMaidenView" pc="268438186" symbol="iso_week_number"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="18" lineNum="559" parent="globals/EpixMaidenView" pc="268438189" symbol="iso_week_number"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="18" lineNum="560" parent="globals/EpixMaidenView" pc="268438205" symbol="iso_week_number"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="18" lineNum="562" parent="globals/EpixMaidenView" pc="268438221" symbol="iso_week_number"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="18" lineNum="563" parent="globals/EpixMaidenView" pc="268438231" symbol="iso_week_number"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="18" lineNum="566" parent="globals/EpixMaidenView" pc="268438247" symbol="iso_week_number"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="18" lineNum="568" parent="globals/EpixMaidenView" pc="268438255" symbol="iso_week_number"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="18" lineNum="569" parent="globals/EpixMaidenView" pc="268438263" symbol="iso_week_number"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="18" lineNum="571" parent="globals/EpixMaidenView" pc="268438269" symbol="iso_week_number"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="18" lineNum="572" parent="globals/EpixMaidenView" pc="268438290" symbol="iso_week_number"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="18" lineNum="575" parent="globals/EpixMaidenView" pc="268438296" symbol="iso_week_number"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="18" lineNum="580" parent="globals/EpixMaidenView" pc="268438302" symbol="iso_week_number"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="18" lineNum="581" parent="globals/EpixMaidenView" pc="268438309" symbol="iso_week_number"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="18" lineNum="583" parent="globals/EpixMaidenView" pc="268438328" symbol="iso_week_number"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="18" lineNum="585" parent="globals/EpixMaidenView" pc="268438338" symbol="iso_week_number"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="18" lineNum="590" parent="globals/EpixMaidenView" pc="268438356" symbol="iso_week_number"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="20" lineNum="539" parent="globals/EpixMaidenView" pc="268438360" symbol="initialize"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="20" lineNum="540" parent="globals/EpixMaidenView" pc="268438362" symbol="initialize"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="35" parent="globals/EpixMaidenView" pc="268438379" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="36" parent="globals/EpixMaidenView" pc="268438382" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="37" parent="globals/EpixMaidenView" pc="268438394" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="38" parent="globals/EpixMaidenView" pc="268438402" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="39" parent="globals/EpixMaidenView" pc="268438414" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="40" parent="globals/EpixMaidenView" pc="268438426" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="41" parent="globals/EpixMaidenView" pc="268438434" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="42" parent="globals/EpixMaidenView" pc="268438442" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="43" parent="globals/EpixMaidenView" pc="268438468" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="44" parent="globals/EpixMaidenView" pc="268438480" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="45" parent="globals/EpixMaidenView" pc="268438488" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="46" parent="globals/EpixMaidenView" pc="268438496" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="47" parent="globals/EpixMaidenView" pc="268438504" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="48" parent="globals/EpixMaidenView" pc="268438516" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="50" parent="globals/EpixMaidenView" pc="268438519" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="53" parent="globals/EpixMaidenView" pc="268438526" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="58" parent="globals/EpixMaidenView" pc="268438533" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="59" parent="globals/EpixMaidenView" pc="268438559" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="60" parent="globals/EpixMaidenView" pc="268438585" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="61" parent="globals/EpixMaidenView" pc="268438611" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="62" parent="globals/EpixMaidenView" pc="268438637" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="63" parent="globals/EpixMaidenView" pc="268438663" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="64" parent="globals/EpixMaidenView" pc="268438689" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="65" parent="globals/EpixMaidenView" pc="268438715" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="67" parent="globals/EpixMaidenView" pc="268438741" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="68" parent="globals/EpixMaidenView" pc="268438748" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="69" parent="globals/EpixMaidenView" pc="268438750" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="70" parent="globals/EpixMaidenView" pc="268438765" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="71" parent="globals/EpixMaidenView" pc="268438781" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="69" parent="globals/EpixMaidenView" pc="268438800" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="69" parent="globals/EpixMaidenView" pc="268438803" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="70" parent="globals/EpixMaidenView" pc="268438806" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="70" parent="globals/EpixMaidenView" pc="268438810" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="71" parent="globals/EpixMaidenView" pc="268438813" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="71" parent="globals/EpixMaidenView" pc="268438817" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="74" parent="globals/EpixMaidenView" pc="268438821" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="75" parent="globals/EpixMaidenView" pc="268438824" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="76" parent="globals/EpixMaidenView" pc="268438826" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="77" parent="globals/EpixMaidenView" pc="268438841" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="76" parent="globals/EpixMaidenView" pc="268438860" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="76" parent="globals/EpixMaidenView" pc="268438863" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="77" parent="globals/EpixMaidenView" pc="268438866" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="77" parent="globals/EpixMaidenView" pc="268438869" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="80" parent="globals/EpixMaidenView" pc="268438873" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="81" parent="globals/EpixMaidenView" pc="268438880" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="82" parent="globals/EpixMaidenView" pc="268438882" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="83" parent="globals/EpixMaidenView" pc="268438897" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="84" parent="globals/EpixMaidenView" pc="268438913" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="85" parent="globals/EpixMaidenView" pc="268438929" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="86" parent="globals/EpixMaidenView" pc="268438945" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="87" parent="globals/EpixMaidenView" pc="268438961" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="82" parent="globals/EpixMaidenView" pc="268438980" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="82" parent="globals/EpixMaidenView" pc="268438987" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="83" parent="globals/EpixMaidenView" pc="268438990" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="83" parent="globals/EpixMaidenView" pc="268438997" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="84" parent="globals/EpixMaidenView" pc="268439000" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="84" parent="globals/EpixMaidenView" pc="268439007" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="85" parent="globals/EpixMaidenView" pc="268439010" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="85" parent="globals/EpixMaidenView" pc="268439017" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="86" parent="globals/EpixMaidenView" pc="268439020" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="86" parent="globals/EpixMaidenView" pc="268439027" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="87" parent="globals/EpixMaidenView" pc="268439030" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="87" parent="globals/EpixMaidenView" pc="268439037" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="90" parent="globals/EpixMaidenView" pc="268439041" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="91" parent="globals/EpixMaidenView" pc="268439047" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="92" parent="globals/EpixMaidenView" pc="268439049" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="93" parent="globals/EpixMaidenView" pc="268439064" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="94" parent="globals/EpixMaidenView" pc="268439080" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="95" parent="globals/EpixMaidenView" pc="268439096" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="96" parent="globals/EpixMaidenView" pc="268439112" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="97" parent="globals/EpixMaidenView" pc="268439128" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="98" parent="globals/EpixMaidenView" pc="268439144" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="92" parent="globals/EpixMaidenView" pc="268439163" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="92" parent="globals/EpixMaidenView" pc="268439169" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="93" parent="globals/EpixMaidenView" pc="268439172" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="93" parent="globals/EpixMaidenView" pc="268439179" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="94" parent="globals/EpixMaidenView" pc="268439182" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="94" parent="globals/EpixMaidenView" pc="268439189" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="95" parent="globals/EpixMaidenView" pc="268439192" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="95" parent="globals/EpixMaidenView" pc="268439198" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="96" parent="globals/EpixMaidenView" pc="268439201" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="96" parent="globals/EpixMaidenView" pc="268439207" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="97" parent="globals/EpixMaidenView" pc="268439210" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="97" parent="globals/EpixMaidenView" pc="268439217" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="98" parent="globals/EpixMaidenView" pc="268439220" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="98" parent="globals/EpixMaidenView" pc="268439227" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="101" parent="globals/EpixMaidenView" pc="268439231" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="102" parent="globals/EpixMaidenView" pc="268439238" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="103" parent="globals/EpixMaidenView" pc="268439240" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="104" parent="globals/EpixMaidenView" pc="268439255" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="105" parent="globals/EpixMaidenView" pc="268439271" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="106" parent="globals/EpixMaidenView" pc="268439287" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="107" parent="globals/EpixMaidenView" pc="268439303" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="108" parent="globals/EpixMaidenView" pc="268439319" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="109" parent="globals/EpixMaidenView" pc="268439335" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="103" parent="globals/EpixMaidenView" pc="268439354" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="103" parent="globals/EpixMaidenView" pc="268439360" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="104" parent="globals/EpixMaidenView" pc="268439363" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="104" parent="globals/EpixMaidenView" pc="268439370" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="105" parent="globals/EpixMaidenView" pc="268439373" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="105" parent="globals/EpixMaidenView" pc="268439380" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="106" parent="globals/EpixMaidenView" pc="268439383" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="106" parent="globals/EpixMaidenView" pc="268439389" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="107" parent="globals/EpixMaidenView" pc="268439392" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="107" parent="globals/EpixMaidenView" pc="268439398" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="108" parent="globals/EpixMaidenView" pc="268439401" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="108" parent="globals/EpixMaidenView" pc="268439408" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="109" parent="globals/EpixMaidenView" pc="268439411" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="109" parent="globals/EpixMaidenView" pc="268439418" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="112" parent="globals/EpixMaidenView" pc="268439422" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="113" parent="globals/EpixMaidenView" pc="268439429" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="114" parent="globals/EpixMaidenView" pc="268439431" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="115" parent="globals/EpixMaidenView" pc="268439446" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="116" parent="globals/EpixMaidenView" pc="268439462" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="117" parent="globals/EpixMaidenView" pc="268439478" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="118" parent="globals/EpixMaidenView" pc="268439494" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="119" parent="globals/EpixMaidenView" pc="268439510" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="120" parent="globals/EpixMaidenView" pc="268439526" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="114" parent="globals/EpixMaidenView" pc="268439545" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="114" parent="globals/EpixMaidenView" pc="268439551" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="115" parent="globals/EpixMaidenView" pc="268439554" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="115" parent="globals/EpixMaidenView" pc="268439561" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="116" parent="globals/EpixMaidenView" pc="268439564" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="116" parent="globals/EpixMaidenView" pc="268439571" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="117" parent="globals/EpixMaidenView" pc="268439574" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="117" parent="globals/EpixMaidenView" pc="268439580" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="118" parent="globals/EpixMaidenView" pc="268439583" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="118" parent="globals/EpixMaidenView" pc="268439589" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="119" parent="globals/EpixMaidenView" pc="268439592" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="119" parent="globals/EpixMaidenView" pc="268439599" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="120" parent="globals/EpixMaidenView" pc="268439602" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="120" parent="globals/EpixMaidenView" pc="268439609" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="123" parent="globals/EpixMaidenView" pc="268439613" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="124" parent="globals/EpixMaidenView" pc="268439619" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="125" parent="globals/EpixMaidenView" pc="268439621" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="126" parent="globals/EpixMaidenView" pc="268439636" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="127" parent="globals/EpixMaidenView" pc="268439652" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="128" parent="globals/EpixMaidenView" pc="268439668" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="129" parent="globals/EpixMaidenView" pc="268439684" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="130" parent="globals/EpixMaidenView" pc="268439700" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="131" parent="globals/EpixMaidenView" pc="268439716" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="125" parent="globals/EpixMaidenView" pc="268439735" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="125" parent="globals/EpixMaidenView" pc="268439741" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="126" parent="globals/EpixMaidenView" pc="268439744" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="126" parent="globals/EpixMaidenView" pc="268439751" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="127" parent="globals/EpixMaidenView" pc="268439754" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="127" parent="globals/EpixMaidenView" pc="268439761" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="128" parent="globals/EpixMaidenView" pc="268439764" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="128" parent="globals/EpixMaidenView" pc="268439770" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="129" parent="globals/EpixMaidenView" pc="268439773" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="129" parent="globals/EpixMaidenView" pc="268439779" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="130" parent="globals/EpixMaidenView" pc="268439782" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="130" parent="globals/EpixMaidenView" pc="268439789" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="131" parent="globals/EpixMaidenView" pc="268439792" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="131" parent="globals/EpixMaidenView" pc="268439799" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="134" parent="globals/EpixMaidenView" pc="268439803" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="135" parent="globals/EpixMaidenView" pc="268439810" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="136" parent="globals/EpixMaidenView" pc="268439812" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="137" parent="globals/EpixMaidenView" pc="268439827" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="138" parent="globals/EpixMaidenView" pc="268439843" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="139" parent="globals/EpixMaidenView" pc="268439859" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="140" parent="globals/EpixMaidenView" pc="268439875" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="141" parent="globals/EpixMaidenView" pc="268439891" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="142" parent="globals/EpixMaidenView" pc="268439907" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="136" parent="globals/EpixMaidenView" pc="268439926" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="136" parent="globals/EpixMaidenView" pc="268439932" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="137" parent="globals/EpixMaidenView" pc="268439935" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="137" parent="globals/EpixMaidenView" pc="268439942" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="138" parent="globals/EpixMaidenView" pc="268439945" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="138" parent="globals/EpixMaidenView" pc="268439952" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="139" parent="globals/EpixMaidenView" pc="268439955" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="139" parent="globals/EpixMaidenView" pc="268439961" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="140" parent="globals/EpixMaidenView" pc="268439964" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="140" parent="globals/EpixMaidenView" pc="268439970" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="141" parent="globals/EpixMaidenView" pc="268439973" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="141" parent="globals/EpixMaidenView" pc="268439980" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="142" parent="globals/EpixMaidenView" pc="268439983" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="142" parent="globals/EpixMaidenView" pc="268439990" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="146" parent="globals/EpixMaidenView" pc="268439994" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="147" parent="globals/EpixMaidenView" pc="268440015" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="156" parent="globals/EpixMaidenView" pc="268440027" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="157" parent="globals/EpixMaidenView" pc="268440032" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="158" parent="globals/EpixMaidenView" pc="268440053" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="159" parent="globals/EpixMaidenView" pc="268440074" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="160" parent="globals/EpixMaidenView" pc="268440095" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="161" parent="globals/EpixMaidenView" pc="268440099" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="162" parent="globals/EpixMaidenView" pc="268440112" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="163" parent="globals/EpixMaidenView" pc="268440119" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="164" parent="globals/EpixMaidenView" pc="268440132" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="165" parent="globals/EpixMaidenView" pc="268440139" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="166" parent="globals/EpixMaidenView" pc="268440154" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="167" parent="globals/EpixMaidenView" pc="268440169" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="168" parent="globals/EpixMaidenView" pc="268440184" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="171" parent="globals/EpixMaidenView" pc="268440199" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="173" parent="globals/EpixMaidenView" pc="268440252" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="174" parent="globals/EpixMaidenView" pc="268440260" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="177" parent="globals/EpixMaidenView" pc="268440273" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="178" parent="globals/EpixMaidenView" pc="268440287" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="179" parent="globals/EpixMaidenView" pc="268440302" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="180" parent="globals/EpixMaidenView" pc="268440317" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="182" parent="globals/EpixMaidenView" pc="268440332" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="183" parent="globals/EpixMaidenView" pc="268440350" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="184" parent="globals/EpixMaidenView" pc="268440368" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="185" parent="globals/EpixMaidenView" pc="268440386" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="187" parent="globals/EpixMaidenView" pc="268440404" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="188" parent="globals/EpixMaidenView" pc="268440422" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="189" parent="globals/EpixMaidenView" pc="268440426" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="190" parent="globals/EpixMaidenView" pc="268440430" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="191" parent="globals/EpixMaidenView" pc="268440443" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="192" parent="globals/EpixMaidenView" pc="268440503" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="193" parent="globals/EpixMaidenView" pc="268440563" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="194" parent="globals/EpixMaidenView" pc="268440623" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="197" parent="globals/EpixMaidenView" pc="268440683" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="198" parent="globals/EpixMaidenView" pc="268440692" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="199" parent="globals/EpixMaidenView" pc="268440700" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="202" parent="globals/EpixMaidenView" pc="268440713" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="203" parent="globals/EpixMaidenView" pc="268440727" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="205" parent="globals/EpixMaidenView" pc="268440742" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="206" parent="globals/EpixMaidenView" pc="268440760" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="208" parent="globals/EpixMaidenView" pc="268440778" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="209" parent="globals/EpixMaidenView" pc="268440796" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="210" parent="globals/EpixMaidenView" pc="268440809" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="211" parent="globals/EpixMaidenView" pc="268440863" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="215" parent="globals/EpixMaidenView" pc="268440917" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="216" parent="globals/EpixMaidenView" pc="268440925" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="218" parent="globals/EpixMaidenView" pc="268440943" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="219" parent="globals/EpixMaidenView" pc="268440951" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="221" parent="globals/EpixMaidenView" pc="268440970" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="222" parent="globals/EpixMaidenView" pc="268440986" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="223" parent="globals/EpixMaidenView" pc="268441040" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="224" parent="globals/EpixMaidenView" pc="268441101" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="227" parent="globals/EpixMaidenView" pc="268441157" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="228" parent="globals/EpixMaidenView" pc="268441185" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="230" parent="globals/EpixMaidenView" pc="268441197" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="232" parent="globals/EpixMaidenView" pc="268441208" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="233" parent="globals/EpixMaidenView" pc="268441224" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="235" parent="globals/EpixMaidenView" pc="268441243" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="237" parent="globals/EpixMaidenView" pc="268441262" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="239" parent="globals/EpixMaidenView" pc="268441281" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="233" parent="globals/EpixMaidenView" pc="268441284" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="234" parent="globals/EpixMaidenView" pc="268441315" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="235" parent="globals/EpixMaidenView" pc="268441318" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="236" parent="globals/EpixMaidenView" pc="268441349" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="237" parent="globals/EpixMaidenView" pc="268441352" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="238" parent="globals/EpixMaidenView" pc="268441371" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="239" parent="globals/EpixMaidenView" pc="268441374" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="242" parent="globals/EpixMaidenView" pc="268441388" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="242" parent="globals/EpixMaidenView" pc="268441396" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="247" parent="globals/EpixMaidenView" pc="268441427" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="248" parent="globals/EpixMaidenView" pc="268441434" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="251" parent="globals/EpixMaidenView" pc="268441458" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="252" parent="globals/EpixMaidenView" pc="268441472" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="255" parent="globals/EpixMaidenView" pc="268441523" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="256" parent="globals/EpixMaidenView" pc="268441540" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="257" parent="globals/EpixMaidenView" pc="268441585" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="258" parent="globals/EpixMaidenView" pc="268441602" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="272" parent="globals/EpixMaidenView" pc="268441647" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="275" parent="globals/EpixMaidenView" pc="268441677" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="276" parent="globals/EpixMaidenView" pc="268441691" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="279" parent="globals/EpixMaidenView" pc="268441718" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="280" parent="globals/EpixMaidenView" pc="268441735" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="282" parent="globals/EpixMaidenView" pc="268441742" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="283" parent="globals/EpixMaidenView" pc="268441748" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="285" parent="globals/EpixMaidenView" pc="268441761" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="287" parent="globals/EpixMaidenView" pc="268441768" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="288" parent="globals/EpixMaidenView" pc="268441782" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="289" parent="globals/EpixMaidenView" pc="268441807" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="290" parent="globals/EpixMaidenView" pc="268441821" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="293" parent="globals/EpixMaidenView" pc="268441846" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="294" parent="globals/EpixMaidenView" pc="268441856" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="297" parent="globals/EpixMaidenView" pc="268441870" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="298" parent="globals/EpixMaidenView" pc="268441884" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="299" parent="globals/EpixMaidenView" pc="268441912" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="300" parent="globals/EpixMaidenView" pc="268441920" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="302" parent="globals/EpixMaidenView" pc="268441940" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="303" parent="globals/EpixMaidenView" pc="268441956" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="304" parent="globals/EpixMaidenView" pc="268441962" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="307" parent="globals/EpixMaidenView" pc="268442000" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="308" parent="globals/EpixMaidenView" pc="268442017" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="309" parent="globals/EpixMaidenView" pc="268442025" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="310" parent="globals/EpixMaidenView" pc="268442034" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="311" parent="globals/EpixMaidenView" pc="268442048" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="312" parent="globals/EpixMaidenView" pc="268442080" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="313" parent="globals/EpixMaidenView" pc="268442094" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="314" parent="globals/EpixMaidenView" pc="268442100" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="317" parent="globals/EpixMaidenView" pc="268442132" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="318" parent="globals/EpixMaidenView" pc="268442146" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="319" parent="globals/EpixMaidenView" pc="268442178" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="320" parent="globals/EpixMaidenView" pc="268442192" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="321" parent="globals/EpixMaidenView" pc="268442219" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="322" parent="globals/EpixMaidenView" pc="268442228" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="323" parent="globals/EpixMaidenView" pc="268442234" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="326" parent="globals/EpixMaidenView" pc="268442284" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="327" parent="globals/EpixMaidenView" pc="268442301" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="328" parent="globals/EpixMaidenView" pc="268442310" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="328" parent="globals/EpixMaidenView" pc="268442317" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="329" parent="globals/EpixMaidenView" pc="268442326" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="332" parent="globals/EpixMaidenView" pc="268442333" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="333" parent="globals/EpixMaidenView" pc="268442339" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="335" parent="globals/EpixMaidenView" pc="268442351" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="337" parent="globals/EpixMaidenView" pc="268442358" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="338" parent="globals/EpixMaidenView" pc="268442372" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="339" parent="globals/EpixMaidenView" pc="268442398" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="340" parent="globals/EpixMaidenView" pc="268442412" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="341" parent="globals/EpixMaidenView" pc="268442419" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="343" parent="globals/EpixMaidenView" pc="268442448" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="347" parent="globals/EpixMaidenView" pc="268442480" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="348" parent="globals/EpixMaidenView" pc="268442488" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="349" parent="globals/EpixMaidenView" pc="268442502" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="350" parent="globals/EpixMaidenView" pc="268442528" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="351" parent="globals/EpixMaidenView" pc="268442542" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenView.mc" id="21" lineNum="352" parent="globals/EpixMaidenView" pc="268442548" symbol="onUpdate"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenApp.mc" id="22" lineNum="12" parent="globals/EpixMaidenApp" pc="268442578" symbol="onStart"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenApp.mc" id="23" lineNum="25" parent="globals/EpixMaidenApp" pc="268442581" symbol="onSettingsChanged"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenApp.mc" id="23" lineNum="26" parent="globals/EpixMaidenApp" pc="268442583" symbol="onSettingsChanged"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenApp.mc" id="24" lineNum="20" parent="globals/EpixMaidenApp" pc="268442595" symbol="getInitialView"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenApp.mc" id="24" lineNum="21" parent="globals/EpixMaidenApp" pc="268442597" symbol="getInitialView"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenApp.mc" id="25" lineNum="7" parent="globals/EpixMaidenApp" pc="268442627" symbol="initialize"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenApp.mc" id="25" lineNum="8" parent="globals/EpixMaidenApp" pc="268442629" symbol="initialize"/>
+<entry filename="D:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\source\\EpixMaidenApp.mc" id="26" lineNum="16" parent="globals/EpixMaidenApp" pc="268442642" symbol="onStop"/>
+<entry filename="d:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\bin\\gen\\006-B4533-00\\source\\Rez.mcgen" id="27" lineNum="29" parent="globals/Rez/Layouts" pc="268442645" symbol="WatchFace"/>
+<entry filename="d:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\bin\\gen\\006-B4533-00\\source\\Rez.mcgen" id="27" lineNum="30" parent="globals/Rez/Layouts" pc="268442656" symbol="WatchFace"/>
+<entry filename="d:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\bin\\gen\\006-B4533-00\\source\\Rez.mcgen" id="27" lineNum="32" parent="globals/Rez/Layouts" pc="268442680" symbol="WatchFace"/>
+<entry filename="d:\\Code\\SDKGarmin3\\EpixMaidenSettings\\EpixMaiden\\bin\\gen\\006-B4533-00\\source\\Rez.mcgen" id="27" lineNum="34" parent="globals/Rez/Layouts" pc="268442784" symbol="WatchFace"/>
+</pcToLineNum>
+<symbolTable>
+<entry id="8388639" module="true" symbol="Graphics"/>
+<entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+<entry field="true" id="42" symbol="MetalAlpha"/>
+<entry field="true" id="16" symbol="SecIron"/>
+<entry id="8389683" method="true" symbol="onSettingsChanged"/>
+<entry field="true" id="71" symbol="LangueSettingTitle"/>
+<entry field="true" id="60" symbol="DateDNM"/>
+<entry id="37" method="true" symbol="julian_day"/>
+<entry field="true" id="59" symbol="DateDMN"/>
+<entry field="true" id="12" symbol="HauteurHeure"/>
+<entry id="20" method="true" symbol="TrouvePlusGrand"/>
+<entry field="true" id="54" symbol="CouleurPink"/>
+<entry field="true" id="15" symbol="HourIron"/>
+<entry field="true" id="8388611" module="true" symbol="Toybox"/>
+<entry field="true" id="46" symbol="SecIron50"/>
+<entry field="true" id="49" symbol="AppName"/>
+<entry id="6" module="true" symbol="globals/Rez/Strings"/>
+<entry field="true" id="68" symbol="LangueAnglais"/>
+<entry id="8388772" module="true" object="true" symbol="Fonts"/>
+<entry field="true" id="13" symbol="HauteurIcon"/>
+<entry field="true" id="45" symbol="MetalAlphapourcent"/>
+<entry id="23" method="true" symbol="afficheSunset"/>
+<entry id="8388648" module="true" symbol="WatchUi"/>
+<entry field="true" id="69" symbol="LangueDeutsch"/>
+<entry id="2" module="true" symbol="globals/Rez"/>
+<entry field="true" id="29" symbol="ficon"/>
+<entry field="true" id="57" symbol="DatasColorsSetttingsTitle"/>
+<entry id="8389124" method="true" symbol="onUpdate"/>
+<entry id="8389375" method="true" object="true" symbol="WatchFace"/>
+<entry field="true" id="8389065" symbol="locY"/>
+<entry field="true" id="8389064" symbol="locX"/>
+<entry id="8388771" module="true" object="true" symbol="Drawables"/>
+<entry id="8389348" symbol="font"/>
+<entry id="8" object="true" symbol="EpixMaidenView"/>
+<entry field="true" id="31" symbol="fsyms"/>
+<entry id="8389275" method="true" symbol="getApp"/>
+<entry id="36" method="true" symbol="iso_week_number"/>
+<entry id="5" module="true" symbol="globals/Rez/Layouts"/>
+<entry field="true" id="53" symbol="CouleurJaune"/>
+<entry id="8389122" method="true" symbol="onLayout"/>
+<entry field="true" id="52" symbol="CouleurGris"/>
+<entry id="8389376" method="true" symbol="onEnterSleep"/>
+<entry field="true" id="8389063" symbol="identifier"/>
+<entry field="true" id="32" symbol="fweather"/>
+<entry id="7" object="true" symbol="EpixMaidenApp"/>
+<entry id="8389349" symbol="justification"/>
+<entry field="true" id="75" symbol="WeekNumberSettingTitle"/>
+<entry field="true" id="30" symbol="font2"/>
+<entry field="true" id="74" symbol="SecondsColorsSettingsTitle"/>
+<entry field="true" id="21" symbol="WeatherFont"/>
+<entry field="true" id="67" symbol="IconColorsSettingTitle"/>
+<entry field="true" id="28" symbol="falpha4"/>
+<entry field="true" id="27" symbol="falpha3"/>
+<entry field="true" id="26" symbol="falpha2"/>
+<entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+<entry field="true" id="24" symbol="customFont"/>
+<entry field="true" id="73" symbol="ReponseYes"/>
+<entry field="true" id="64" symbol="DateNMD"/>
+<entry field="true" id="63" symbol="DateNDM"/>
+<entry id="8389377" method="true" symbol="onExitSleep"/>
+<entry id="8388769" module="true" object="true" symbol="Rez"/>
+<entry field="true" id="51" symbol="CouleurBleu"/>
+<entry field="true" id="40" symbol="HourIron120"/>
+<entry id="8388640" module="true" symbol="Lang"/>
+<entry field="true" id="56" symbol="CouleurVert"/>
+<entry field="true" id="41" symbol="IconsFont"/>
+<entry id="8389068" method="true" symbol="draw"/>
+<entry field="true" id="25" symbol="falpha"/>
+<entry field="true" id="39" symbol="LauncherIcon"/>
+<entry id="8388610" symbol="statics"/>
+<entry field="true" id="62" symbol="DateMND"/>
+<entry id="8389123" method="true" symbol="onShow"/>
+<entry id="22" method="true" symbol="afficheMeteo"/>
+<entry field="true" id="66" symbol="HourColorsSettingsTitle"/>
+<entry id="8389350" module="true" symbol="globals"/>
+<entry id="8388770" module="true" object="true" symbol="Strings"/>
+<entry id="8390146" module="true" object="true" symbol="Background"/>
+<entry field="true" id="61" symbol="DateMDN"/>
+<entry field="true" id="10" symbol="DateComplete"/>
+<entry id="8388702" method="true" symbol="initialize"/>
+<entry id="8389279" method="true" symbol="onStart"/>
+<entry id="8389808" symbol="period"/>
+<entry id="35" method="true" symbol="is_leap_year"/>
+<entry id="33" method="true" symbol="&lt;globals/EpixMaidenView/&lt;&gt;getWeatherPosition&gt;"/>
+<entry id="8389280" method="true" symbol="getInitialView"/>
+<entry field="true" id="11" symbol="HauteurDate"/>
+<entry field="true" id="17" symbol="TextIron"/>
+<entry id="8389281" method="true" symbol="onStop"/>
+<entry field="true" id="14" symbol="HauteurTitre"/>
+<entry field="true" id="19" symbol="TitleIron46"/>
+<entry field="true" id="18" symbol="TitleIron45"/>
+<entry id="8389347" symbol="color"/>
+<entry field="true" id="44" symbol="MetalAlpha3"/>
+<entry field="true" id="43" symbol="MetalAlpha2"/>
+<entry field="true" id="65" symbol="DateOrderSetttingTitle"/>
+<entry field="true" id="55" symbol="CouleurRouge"/>
+<entry field="true" id="58" symbol="DateColorsSettingsTitle"/>
+<entry id="9" module="true" symbol="Layouts"/>
+<entry field="true" id="50" symbol="CouleurBlanc"/>
+<entry id="4" module="true" symbol="globals/Rez/Fonts"/>
+<entry field="true" id="48" symbol="typicons22"/>
+<entry field="true" id="47" symbol="TextIron30"/>
+<entry id="8389125" method="true" symbol="onHide"/>
+<entry id="8388635" module="true" symbol="Application"/>
+<entry field="true" id="38" symbol="w"/>
+<entry field="true" id="34" symbol="h"/>
+<entry field="true" id="70" symbol="LangueFrancais"/>
+<entry field="true" id="72" symbol="ReponseNo"/>
+</symbolTable>
+<localVars>
+<entry endPc="268435573" name="dictionary" stackId="1" startPc="268435540"/>
+<entry arg="true" endPc="268435585" name="dc" stackId="1" startPc="268435575"/>
+<entry arg="true" endPc="268435635" name="year" stackId="1" startPc="268435586"/>
+<entry arg="true" endPc="268435693" name="Val1" stackId="1" startPc="268435636"/>
+<entry arg="true" endPc="268435693" name="Val2" stackId="2" startPc="268435636"/>
+<entry arg="true" endPc="268435693" name="Val3" stackId="3" startPc="268435636"/>
+<entry arg="true" endPc="268435693" name="Val4" stackId="4" startPc="268435636"/>
+<entry endPc="268435693" name="PlusGrand" stackId="5" startPc="268435639"/>
+<entry arg="true" endPc="268437202" name="dc" stackId="1" startPc="268435694"/>
+<entry arg="true" endPc="268437202" name="x" stackId="2" startPc="268435694"/>
+<entry arg="true" endPc="268437202" name="y" stackId="3" startPc="268435694"/>
+<entry arg="true" endPc="268437202" name="x3" stackId="4" startPc="268435694"/>
+<entry arg="true" endPc="268437202" name="couleur1" stackId="5" startPc="268435694"/>
+<entry arg="true" endPc="268437202" name="couleur2" stackId="6" startPc="268435694"/>
+<entry endPc="268437201" name="sunset" stackId="7" startPc="268435697"/>
+<entry endPc="268437201" name="sunrise" stackId="8" startPc="268435697"/>
+<entry endPc="268437201" name="clockTime" stackId="9" startPc="268435697"/>
+<entry endPc="268437201" name="position" stackId="10" startPc="268435697"/>
+<entry endPc="268437201" name="today" stackId="11" startPc="268435697"/>
+<entry endPc="268437201" name="cond" stackId="12" startPc="268435697"/>
+<entry endPc="268437201" name="temp" stackId="13" startPc="268435697"/>
+<entry endPc="268437201" name="x2" stackId="14" startPc="268435697"/>
+<entry endPc="268437201" name="condName" stackId="15" startPc="268435697"/>
+<entry endPc="268437356" name="conditions" stackId="1" startPc="268437206"/>
+<entry endPc="268437356" name="location" stackId="2" startPc="268437206"/>
+<entry arg="true" endPc="268437439" name="year" stackId="1" startPc="268437357"/>
+<entry arg="true" endPc="268437439" name="month" stackId="2" startPc="268437357"/>
+<entry arg="true" endPc="268437439" name="day" stackId="3" startPc="268437357"/>
+<entry endPc="268437439" name="a" stackId="4" startPc="268437360"/>
+<entry endPc="268437439" name="y" stackId="5" startPc="268437360"/>
+<entry endPc="268437439" name="m" stackId="6" startPc="268437360"/>
+<entry arg="true" endPc="268437878" name="dc" stackId="1" startPc="268437440"/>
+<entry arg="true" endPc="268437878" name="x" stackId="2" startPc="268437440"/>
+<entry arg="true" endPc="268437878" name="y" stackId="3" startPc="268437440"/>
+<entry arg="true" endPc="268437878" name="x3" stackId="4" startPc="268437440"/>
+<entry arg="true" endPc="268437878" name="couleur1" stackId="5" startPc="268437440"/>
+<entry arg="true" endPc="268437878" name="couleur2" stackId="6" startPc="268437440"/>
+<entry endPc="268437877" name="myTime" stackId="7" startPc="268437443"/>
+<entry endPc="268437877" name="sunset" stackId="8" startPc="268437443"/>
+<entry endPc="268437877" name="sunrise" stackId="9" startPc="268437443"/>
+<entry endPc="268437877" name="position" stackId="10" startPc="268437443"/>
+<entry endPc="268437877" name="today" stackId="11" startPc="268437443"/>
+<entry endPc="268437877" name="icon" stackId="12" startPc="268437443"/>
+<entry endPc="268437877" name="time" stackId="13" startPc="268437443"/>
+<entry endPc="268437877" name="text" stackId="14" startPc="268437443"/>
+<entry arg="true" endPc="268438185" name="dc" stackId="1" startPc="268437879"/>
+<entry arg="true" endPc="268438359" name="year" stackId="1" startPc="268438186"/>
+<entry arg="true" endPc="268438359" name="month" stackId="2" startPc="268438186"/>
+<entry arg="true" endPc="268438359" name="day" stackId="3" startPc="268438186"/>
+<entry endPc="268438358" name="first_day_of_year" stackId="4" startPc="268438189"/>
+<entry endPc="268438358" name="given_day_of_year" stackId="5" startPc="268438189"/>
+<entry endPc="268438358" name="day_of_week" stackId="6" startPc="268438189"/>
+<entry endPc="268438358" name="week_of_year" stackId="7" startPc="268438189"/>
+<entry arg="true" endPc="268442577" name="dc" stackId="1" startPc="268438379"/>
+<entry endPc="268442576" name="clockTime" stackId="2" startPc="268438382"/>
+<entry endPc="268442576" name="stats" stackId="3" startPc="268438382"/>
+<entry endPc="268442576" name="hour" stackId="4" startPc="268438382"/>
+<entry endPc="268442576" name="seconds" stackId="5" startPc="268438382"/>
+<entry endPc="268442576" name="dateinfo" stackId="6" startPc="268438382"/>
+<entry endPc="268442576" name="actinfo" stackId="7" startPc="268438382"/>
+<entry endPc="268442576" name="battery" stackId="8" startPc="268438382"/>
+<entry endPc="268442576" name="steps" stackId="9" startPc="268438382"/>
+<entry endPc="268442576" name="StepGoal" stackId="10" startPc="268438382"/>
+<entry endPc="268442576" name="settings" stackId="11" startPc="268438382"/>
+<entry endPc="268442576" name="PlusGrand" stackId="12" startPc="268438382"/>
+<entry endPc="268442576" name="months" stackId="13" startPc="268438382"/>
+<entry endPc="268442576" name="weekdays" stackId="14" startPc="268438382"/>
+<entry endPc="268442576" name="LangueChoisie" stackId="15" startPc="268438382"/>
+<entry endPc="268442576" name="WeekNumberChoisie" stackId="16" startPc="268438382"/>
+<entry endPc="268442576" name="DateOrderChoisie" stackId="17" startPc="268438382"/>
+<entry endPc="268442576" name="CouleurIconesChoisie" stackId="18" startPc="268438382"/>
+<entry endPc="268442576" name="CouleurDataChoisie" stackId="19" startPc="268438382"/>
+<entry endPc="268442576" name="CouleurDateChoisie" stackId="20" startPc="268438382"/>
+<entry endPc="268442576" name="CouleurHeureChoisie" stackId="21" startPc="268438382"/>
+<entry endPc="268442576" name="CouleurSecondesChoisie" stackId="22" startPc="268438382"/>
+<entry endPc="268442576" name="Langue" stackId="23" startPc="268438382"/>
+<entry endPc="268442576" name="WeekNumber" stackId="24" startPc="268438382"/>
+<entry endPc="268442576" name="DateOrder" stackId="25" startPc="268438382"/>
+<entry endPc="268442576" name="CouleurIcones" stackId="26" startPc="268438382"/>
+<entry endPc="268442576" name="CouleurData" stackId="27" startPc="268438382"/>
+<entry endPc="268442576" name="CouleurDate" stackId="28" startPc="268438382"/>
+<entry endPc="268442576" name="CouleurHeure" stackId="29" startPc="268438382"/>
+<entry endPc="268442576" name="CouleurSecondes" stackId="30" startPc="268438382"/>
+<entry endPc="268442576" name="largeurText" stackId="31" startPc="268438382"/>
+<entry endPc="268442576" name="XMilieuEcran" stackId="32" startPc="268438382"/>
+<entry endPc="268442576" name="HauteurTitre" stackId="33" startPc="268438382"/>
+<entry endPc="268442576" name="OffsetHauteurSeconde" stackId="34" startPc="268438382"/>
+<entry endPc="268442576" name="X2" stackId="35" startPc="268438382"/>
+<entry endPc="268442576" name="X1" stackId="36" startPc="268438382"/>
+<entry endPc="268442576" name="X3" stackId="37" startPc="268438382"/>
+<entry endPc="268442576" name="X4" stackId="38" startPc="268438382"/>
+<entry endPc="268442576" name="Y1" stackId="39" startPc="268438382"/>
+<entry endPc="268442576" name="Y2" stackId="40" startPc="268438382"/>
+<entry endPc="268442576" name="Y3" stackId="41" startPc="268438382"/>
+<entry endPc="268442576" name="Y4" stackId="42" startPc="268438382"/>
+<entry endPc="268442576" name="TextHeure" stackId="43" startPc="268438382"/>
+<entry endPc="268442576" name="DizHeure" stackId="44" startPc="268438382"/>
+<entry endPc="268442576" name="UnitHeure" stackId="45" startPc="268438382"/>
+<entry endPc="268442576" name="DizMin" stackId="46" startPc="268438382"/>
+<entry endPc="268442576" name="UnitMin" stackId="47" startPc="268438382"/>
+<entry endPc="268442576" name="largeurDizHeure" stackId="48" startPc="268438382"/>
+<entry endPc="268442576" name="largeurUnitHeure" stackId="49" startPc="268438382"/>
+<entry endPc="268442576" name="largeurDizMin" stackId="50" startPc="268438382"/>
+<entry endPc="268442576" name="largeurUnitMin" stackId="51" startPc="268438382"/>
+<entry endPc="268442576" name="RapportPositionHeure" stackId="52" startPc="268438382"/>
+<entry endPc="268442576" name="OffsetPositionHeure" stackId="53" startPc="268438382"/>
+<entry endPc="268442576" name="TextSec" stackId="54" startPc="268438382"/>
+<entry endPc="268442576" name="DizSec" stackId="55" startPc="268438382"/>
+<entry endPc="268442576" name="UnitSec" stackId="56" startPc="268438382"/>
+<entry endPc="268442576" name="largeurDizSec" stackId="57" startPc="268438382"/>
+<entry endPc="268442576" name="largeurUnitSec" stackId="58" startPc="268438382"/>
+<entry endPc="268442576" name="HauteurSYMB" stackId="59" startPc="268438382"/>
+<entry endPc="268442576" name="NumSemaine" stackId="60" startPc="268438382"/>
+<entry endPc="268441426" name="i" stackId="61" startPc="268441208"/>
+<entry endPc="268442576" name="BattementCoeur" stackId="62" startPc="268438382"/>
+<entry endPc="268442576" name="BattementString" stackId="63" startPc="268438382"/>
+<entry endPc="268442576" name="PourcentGoal" stackId="64" startPc="268438382"/>
+<entry endPc="268442576" name="dist2" stackId="65" startPc="268438382"/>
+<entry endPc="268442576" name="poids" stackId="66" startPc="268438382"/>
+<entry endPc="268442576" name="poidsstring" stackId="67" startPc="268438382"/>
+<entry endPc="268442576" name="bbIterator" stackId="68" startPc="268438382"/>
+<entry endPc="268442576" name="sample" stackId="69" startPc="268438382"/>
+<entry endPc="268442576" name="Alti" stackId="70" startPc="268438382"/>
+<entry endPc="268442576" name="AltiRound" stackId="71" startPc="268438382"/>
+<entry endPc="268442576" name="AltiString" stackId="72" startPc="268438382"/>
+<entry endPc="268442576" name="nombreNotif" stackId="73" startPc="268438382"/>
+<entry arg="true" endPc="268442798" name="dc" stackId="1" startPc="268442645"/>
+<entry endPc="268442798" name="rez_cmp_local_custom_drawable_19778809561506693949" stackId="2" startPc="268442656"/>
+<entry endPc="268442798" name="rez_cmp_local_text_TimeLabel" stackId="3" startPc="268442656"/>
+</localVars>
+<deviceInfo deviceVersion="e470ee747f0d6a18bf042f53621907a0dbf0f873" partNumber="006-B4533-00"/>
+<annotations>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="LangueDeutsch"/>
+<annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="typicons22"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="DateDNM"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="DateMND"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="CouleurRouge"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="CouleurBlanc"/>
+<annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="MetalAlphapourcent"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="CouleurJaune"/>
+<annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="customFont"/>
+<annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="SecIron50"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="CouleurGris"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="DatasColorsSetttingsTitle"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="CouleurVert"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="WeekNumberSettingTitle"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="DateDMN"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="DateNMD"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="IconColorsSettingTitle"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="LangueAnglais"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ReponseNo"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="DateOrderSetttingTitle"/>
+<annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="MetalAlpha3"/>
+<annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="TextIron30"/>
+<annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="MetalAlpha2"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="HourColorsSettingsTitle"/>
+<annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="HourIron120"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ReponseYes"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="SecondsColorsSettingsTitle"/>
+<annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="IconsFont"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="DateMDN"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="DateNDM"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="CouleurBleu"/>
+<annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="TitleIron45"/>
+<annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="TitleIron46"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="CouleurPink"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="LangueFrancais"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="DateColorsSettingsTitle"/>
+<annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="MetalAlpha"/>
+<annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="WeatherFont"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="LangueSettingTitle"/>
+</annotations>
+<dataEntryOffsetMappings>
+<dataEntry label="globals" offset="67" parentId="" symbolId="globals" type="module"/>
+<dataEntry label="globals/Background" offset="143" parentId="globals" symbolId="Background" type="class"/>
+<dataEntry label="globals/Rez" offset="196" parentId="globals" symbolId="Rez" type="module"/>
+<dataEntry label="globals/EpixMaidenView" offset="258" parentId="globals" symbolId="EpixMaidenView" type="class"/>
+<dataEntry label="globals/EpixMaidenApp" offset="617" parentId="globals" symbolId="EpixMaidenApp" type="class"/>
+<dataEntry label="globals/Rez/Drawables" offset="697" parentId="Rez" symbolId="Drawables" type="module"/>
+<dataEntry label="globals/Rez/Layouts" offset="732" parentId="Rez" symbolId="Layouts" type="module"/>
+<dataEntry label="globals/Rez/Fonts" offset="767" parentId="Rez" symbolId="Fonts" type="module"/>
+<dataEntry label="globals/Rez/Strings" offset="910" parentId="Rez" symbolId="Strings" type="module"/>
+</dataEntryOffsetMappings>
+<functions>
+<functionEntry accessMode="public" endPc="268435480" name="getApp" startPc="268435460">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435492" name="&lt;init&gt;" parent="Background" startPc="268435481">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435512" name="&lt;init&gt;" parent="Rez" startPc="268435493">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435524" name="&lt;init&gt;" parent="EpixMaidenView" startPc="268435513">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435536" name="&lt;init&gt;" parent="EpixMaidenApp" startPc="268435525">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435574" name="initialize" parent="Background" startPc="268435537">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435585" name="draw" parent="Background" startPc="268435575">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Fonts">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435635" name="is_leap_year" parent="EpixMaidenView" startPc="268435586">
+<param id="year"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435693" name="TrouvePlusGrand" parent="EpixMaidenView" startPc="268435636">
+<param id="Val1"/>
+<param id="Val2"/>
+<param id="Val3"/>
+<param id="Val4"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437202" name="afficheMeteo" parent="EpixMaidenView" startPc="268435694">
+<param id="dc"/>
+<param id="x"/>
+<param id="y"/>
+<param id="x3"/>
+<param id="couleur1"/>
+<param id="couleur2"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="private" endPc="268437356" name="&lt;globals/EpixMaidenView/&lt;&gt;getWeatherPosition&gt;" parent="EpixMaidenView" startPc="268437203">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437439" name="julian_day" parent="EpixMaidenView" startPc="268437357">
+<param id="year"/>
+<param id="month"/>
+<param id="day"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437878" name="afficheSunset" parent="EpixMaidenView" startPc="268437440">
+<param id="dc"/>
+<param id="x"/>
+<param id="y"/>
+<param id="x3"/>
+<param id="couleur1"/>
+<param id="couleur2"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onHide" parent="EpixMaidenView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onExitSleep" parent="EpixMaidenView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onShow" parent="EpixMaidenView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268438185" name="onLayout" parent="EpixMaidenView" startPc="268437879">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268438359" name="iso_week_number" parent="EpixMaidenView" startPc="268438186">
+<param id="year"/>
+<param id="month"/>
+<param id="day"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onEnterSleep" parent="EpixMaidenView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268438378" name="initialize" parent="EpixMaidenView" startPc="268438360">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268442577" name="onUpdate" parent="EpixMaidenView" startPc="268438379">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268442580" name="onStart" parent="EpixMaidenApp" startPc="268442578">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268442594" name="onSettingsChanged" parent="EpixMaidenApp" startPc="268442581">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268442626" name="getInitialView" parent="EpixMaidenApp" startPc="268442595">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268442641" name="initialize" parent="EpixMaidenApp" startPc="268442627">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268442644" name="onStop" parent="EpixMaidenApp" startPc="268442642">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268442798" name="WatchFace" parent="Layouts" startPc="268442645">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+</functions>
+</debugInfo>

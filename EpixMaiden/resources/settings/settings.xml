@@ -1,0 +1,115 @@
+<settings>
+
+    <setting propertyKey="@Properties.LangueSetting" title="@Strings.LangueSettingTitle">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.LangueFrancais</listEntry>
+            <listEntry value="1">@Strings.LangueAnglais</listEntry>
+            <listEntry value="2">@Strings.LangueDeutsch</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.WeekNumberSetting" title="@Strings.WeekNumberSettingTitle">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.ReponseYes</listEntry>
+            <listEntry value="1">@Strings.ReponseNo</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.DateOrderSettting" title="@Strings.DateOrderSetttingTitle">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.DateDNM</listEntry>
+            <listEntry value="1">@Strings.DateDMN</listEntry>
+            <listEntry value="2">@Strings.DateNDM</listEntry>
+            <listEntry value="3">@Strings.DateNMD</listEntry>
+            <listEntry value="4">@Strings.DateMND</listEntry>
+            <listEntry value="5">@Strings.DateMDN</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.CouleurAleatoireSetting" title="@Strings.CouleurAleatoireSettingTitle">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.ReponseFixe</listEntry>
+            <listEntry value="1">@Strings.ReponseAleatoire</listEntry>
+            <listEntry value="2">@Strings.ReponseProgressive</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.MiniLuminositySetting" title="@Strings.MiniLuminositySettingTitle">
+        <settingConfig type="numeric" min="0" max="600" >
+            
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.StepColorSetting" title="@Strings.StepColorSettingTitle">
+        <settingConfig type="numeric" min="2" max="90">
+            
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.TempsBackgroundSetting" title="@Strings.TempsBackgroundSettingTitle">
+        <settingConfig type="numeric" min="2" max="40">
+            
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.IconColorsSetting" title="@Strings.IconColorsSettingTitle">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.CouleurGris</listEntry>
+            <listEntry value="1">@Strings.CouleurRouge</listEntry>
+            <listEntry value="2">@Strings.CouleurJaune</listEntry>
+            <listEntry value="3">@Strings.CouleurBleu</listEntry>
+            <listEntry value="4">@Strings.CouleurVert</listEntry>
+            <listEntry value="5">@Strings.CouleurPink</listEntry>
+            <listEntry value="6">@Strings.CouleurBlanc</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.DatasColorsSetttings" title="@Strings.DatasColorsSetttingsTitle">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.CouleurGris</listEntry>
+            <listEntry value="1">@Strings.CouleurRouge</listEntry>
+            <listEntry value="2">@Strings.CouleurJaune</listEntry>
+            <listEntry value="3">@Strings.CouleurBleu</listEntry>
+            <listEntry value="4">@Strings.CouleurVert</listEntry>
+            <listEntry value="5">@Strings.CouleurPink</listEntry>
+            <listEntry value="6">@Strings.CouleurBlanc</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.DateColorsSettings" title="@Strings.DateColorsSettingsTitle">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.CouleurGris</listEntry>
+            <listEntry value="1">@Strings.CouleurRouge</listEntry>
+            <listEntry value="2">@Strings.CouleurJaune</listEntry>
+            <listEntry value="3">@Strings.CouleurBleu</listEntry>
+            <listEntry value="4">@Strings.CouleurVert</listEntry>
+            <listEntry value="5">@Strings.CouleurPink</listEntry>
+            <listEntry value="6">@Strings.CouleurBlanc</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.HourColorsSettings" title="@Strings.HourColorsSettingsTitle">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.CouleurGris</listEntry>
+            <listEntry value="1">@Strings.CouleurRouge</listEntry>
+            <listEntry value="2">@Strings.CouleurJaune</listEntry>
+            <listEntry value="3">@Strings.CouleurBleu</listEntry>
+            <listEntry value="4">@Strings.CouleurVert</listEntry>
+            <listEntry value="5">@Strings.CouleurPink</listEntry>
+            <listEntry value="6">@Strings.CouleurBlanc</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.SecondsColorsSettings" title="@Strings.SecondsColorsSettingsTitle">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.CouleurGris</listEntry>
+            <listEntry value="1">@Strings.CouleurRouge</listEntry>
+            <listEntry value="2">@Strings.CouleurJaune</listEntry>
+            <listEntry value="3">@Strings.CouleurBleu</listEntry>
+            <listEntry value="4">@Strings.CouleurVert</listEntry>
+            <listEntry value="5">@Strings.CouleurPink</listEntry>
+            <listEntry value="6">@Strings.CouleurBlanc</listEntry>
+        </settingConfig>
+    </setting>
+
+</settings>

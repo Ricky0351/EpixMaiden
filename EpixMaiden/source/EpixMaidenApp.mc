@@ -21,6 +21,11 @@ class EpixMaidenApp extends Application.AppBase {
         return [ new EpixMaidenView() ];
     }
 
+    // New app settings have been received so trigger a UI update
+    function onSettingsChanged() as Void {
+        WatchUi.requestUpdate();
+    }
+
 }
 
 function getApp() as EpixMaidenApp {

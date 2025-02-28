@@ -1,0 +1,369 @@
+{
+  "settings" : [ {
+    "key" : "LangueSetting",
+    "valueType" : "number",
+    "defaultValue" : 0,
+    "configTitle" : "LangueSettingTitle",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "LangueFrancais",
+      "value" : 0
+    }, {
+      "display" : "LangueAnglais",
+      "value" : 1
+    }, {
+      "display" : "LangueDeutsch",
+      "value" : 2
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "WeekNumberSetting",
+    "valueType" : "number",
+    "defaultValue" : 0,
+    "configTitle" : "WeekNumberSettingTitle",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "ReponseYes",
+      "value" : 0
+    }, {
+      "display" : "ReponseNo",
+      "value" : 1
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "DateOrderSettting",
+    "valueType" : "number",
+    "defaultValue" : 0,
+    "configTitle" : "DateOrderSetttingTitle",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "DateDNM",
+      "value" : 0
+    }, {
+      "display" : "DateDMN",
+      "value" : 1
+    }, {
+      "display" : "DateNDM",
+      "value" : 2
+    }, {
+      "display" : "DateNMD",
+      "value" : 3
+    }, {
+      "display" : "DateMND",
+      "value" : 4
+    }, {
+      "display" : "DateMDN",
+      "value" : 5
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "CouleurAleatoireSetting",
+    "valueType" : "number",
+    "defaultValue" : 0,
+    "configTitle" : "CouleurAleatoireSettingTitle",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "ReponseFixe",
+      "value" : 0
+    }, {
+      "display" : "ReponseAleatoire",
+      "value" : 1
+    }, {
+      "display" : "ReponseProgressive",
+      "value" : 2
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "MiniLuminositySetting",
+    "valueType" : "number",
+    "defaultValue" : 250,
+    "configTitle" : "MiniLuminositySettingTitle",
+    "configPrompt" : null,
+    "configType" : "numeric",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : null,
+    "configMin" : 0,
+    "configMax" : 600,
+    "configMaxLength" : null
+  }, {
+    "key" : "StepColorSetting",
+    "valueType" : "number",
+    "defaultValue" : 30,
+    "configTitle" : "StepColorSettingTitle",
+    "configPrompt" : null,
+    "configType" : "numeric",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : null,
+    "configMin" : 2,
+    "configMax" : 90,
+    "configMaxLength" : null
+  }, {
+    "key" : "TempsBackgroundSetting",
+    "valueType" : "number",
+    "defaultValue" : 5,
+    "configTitle" : "TempsBackgroundSettingTitle",
+    "configPrompt" : null,
+    "configType" : "numeric",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : null,
+    "configMin" : 2,
+    "configMax" : 40,
+    "configMaxLength" : null
+  }, {
+    "key" : "IconColorsSetting",
+    "valueType" : "number",
+    "defaultValue" : 0,
+    "configTitle" : "IconColorsSettingTitle",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "CouleurGris",
+      "value" : 0
+    }, {
+      "display" : "CouleurRouge",
+      "value" : 1
+    }, {
+      "display" : "CouleurJaune",
+      "value" : 2
+    }, {
+      "display" : "CouleurBleu",
+      "value" : 3
+    }, {
+      "display" : "CouleurVert",
+      "value" : 4
+    }, {
+      "display" : "CouleurPink",
+      "value" : 5
+    }, {
+      "display" : "CouleurBlanc",
+      "value" : 6
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "DatasColorsSetttings",
+    "valueType" : "number",
+    "defaultValue" : 5,
+    "configTitle" : "DatasColorsSetttingsTitle",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "CouleurGris",
+      "value" : 0
+    }, {
+      "display" : "CouleurRouge",
+      "value" : 1
+    }, {
+      "display" : "CouleurJaune",
+      "value" : 2
+    }, {
+      "display" : "CouleurBleu",
+      "value" : 3
+    }, {
+      "display" : "CouleurVert",
+      "value" : 4
+    }, {
+      "display" : "CouleurPink",
+      "value" : 5
+    }, {
+      "display" : "CouleurBlanc",
+      "value" : 6
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "DateColorsSettings",
+    "valueType" : "number",
+    "defaultValue" : 6,
+    "configTitle" : "DateColorsSettingsTitle",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "CouleurGris",
+      "value" : 0
+    }, {
+      "display" : "CouleurRouge",
+      "value" : 1
+    }, {
+      "display" : "CouleurJaune",
+      "value" : 2
+    }, {
+      "display" : "CouleurBleu",
+      "value" : 3
+    }, {
+      "display" : "CouleurVert",
+      "value" : 4
+    }, {
+      "display" : "CouleurPink",
+      "value" : 5
+    }, {
+      "display" : "CouleurBlanc",
+      "value" : 6
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "HourColorsSettings",
+    "valueType" : "number",
+    "defaultValue" : 3,
+    "configTitle" : "HourColorsSettingsTitle",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "CouleurGris",
+      "value" : 0
+    }, {
+      "display" : "CouleurRouge",
+      "value" : 1
+    }, {
+      "display" : "CouleurJaune",
+      "value" : 2
+    }, {
+      "display" : "CouleurBleu",
+      "value" : 3
+    }, {
+      "display" : "CouleurVert",
+      "value" : 4
+    }, {
+      "display" : "CouleurPink",
+      "value" : 5
+    }, {
+      "display" : "CouleurBlanc",
+      "value" : 6
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "SecondsColorsSettings",
+    "valueType" : "number",
+    "defaultValue" : 1,
+    "configTitle" : "SecondsColorsSettingsTitle",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "CouleurGris",
+      "value" : 0
+    }, {
+      "display" : "CouleurRouge",
+      "value" : 1
+    }, {
+      "display" : "CouleurJaune",
+      "value" : 2
+    }, {
+      "display" : "CouleurBleu",
+      "value" : 3
+    }, {
+      "display" : "CouleurVert",
+      "value" : 4
+    }, {
+      "display" : "CouleurPink",
+      "value" : 5
+    }, {
+      "display" : "CouleurBlanc",
+      "value" : 6
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  } ],
+  "supportsLiveValidation" : false,
+  "languages" : {
+    "valyrian" : {
+      "DatasColorsSetttingsTitle" : "Datas Color",
+      "CouleurBleu" : "Gfx.COLOR_Blue",
+      "CouleurAleatoireSettingTitle" : "Random Color",
+      "CouleurBlanc" : "Gfx.COLOR_White",
+      "DateDNM" : "DNM",
+      "DateMND" : "MND",
+      "AppName" : "EpixMaiden",
+      "LangueSettingTitle" : "Language",
+      "ReponseYes" : "Yes",
+      "CouleurRouge" : "Gfx.COLOR_RED",
+      "LangueAnglais" : "English",
+      "ReponseFixe" : "Fixe",
+      "SecondsColorsSettingsTitle" : "Seconds Color",
+      "WeekNumberSettingTitle" : "Week Number",
+      "DateColorsSettingsTitle" : "Date Color",
+      "DateOrderSetttingTitle" : "Date Order (Day DayNumber Month)",
+      "StepColorSettingTitle" : "Step Color",
+      "ReponseNo" : "No",
+      "CouleurJaune" : "Gfx.COLOR_Yellow",
+      "DateDMN" : "DMN",
+      "DateNMD" : "NMD",
+      "CouleurGris" : "Gfx.COLOR_DK_GRAY",
+      "ReponseProgressive" : "Progressive",
+      "ReponseAleatoire" : "Aleatoire",
+      "CouleurVert" : "Gfx.COLOR_Green",
+      "CouleurPink" : "Gfx.COLOR_Pink",
+      "LangueDeutsch" : "Deutsch",
+      "DateNDM" : "NDM",
+      "DateMDN" : "MDN",
+      "IconColorsSettingTitle" : "Icons Color",
+      "TempsBackgroundSettingTitle" : "Background duration before image",
+      "MiniLuminositySettingTitle" : "Minimum Luminosity",
+      "HourColorsSettingsTitle" : "Hour Color",
+      "LangueFrancais" : "Francais"
+    }
+  }
+}

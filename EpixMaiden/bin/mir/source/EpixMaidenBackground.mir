@@ -1,0 +1,49 @@
+[ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\EpixMaidenBackground.mc"; @line = 1; ]
+import Toybox.Application;
+[ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\EpixMaidenBackground.mc"; @line = 2; ]
+import Toybox.Graphics;
+[ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\EpixMaidenBackground.mc"; @line = 3; ]
+import Toybox.Lang;
+[ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\EpixMaidenBackground.mc"; @line = 4; ]
+import Toybox.WatchUi;
+[ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\EpixMaidenBackground.mc"; @line = 6; ]
+class Background extends WatchUi.Drawable{
+    [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\EpixMaidenBackground.mc"; @line = 6; ]
+    <init> {
+    }
+    [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\EpixMaidenBackground.mc"; @line = 6; ]
+    static
+    <init> {
+    }
+    [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\EpixMaidenBackground.mc"; @line = 8; ]
+    function initialize() as Void {
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_EpixMaidenBackground_mc_8_26_14_4_start:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\EpixMaidenBackground.mc" 9 8 ]
+        [ "D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_EpixMaidenBackground_mc_8_26_14_4_start" "D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_EpixMaidenBackground_mc_8_26_14_4_stop" ]
+        %dictionary.1 = local;
+        %tmp.1 = newd 1;
+        %tmp.3 = const :identifier;
+        %tmp.4 = "Background";
+        %tmp.5 = dup %tmp.1;
+        %tmp.6 = aputv %tmp.5 %tmp.3 %tmp.4;
+        lputv %dictionary.1 %tmp.6;
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\EpixMaidenBackground.mc" 13 8 ]
+        %tmp.8 = getv ? :Drawable;
+        %tmp.9 = getv function %tmp.8 :initialize;
+        %tmp.11 = lgetv %dictionary.1;
+        invoke %tmp.8 %tmp.9(%tmp.11);
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_EpixMaidenBackground_mc_8_26_14_4_stop:
+    }
+    [ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\EpixMaidenBackground.mc"; @line = 16; ]
+    function draw(dc as Dc) as Void {
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_EpixMaidenBackground_mc_16_36_20_4_start:
+[ "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\EpixMaidenBackground.mc" 19 8 ]
+        %tmp.1 = lgetv %dc;
+        %tmp.2 = getv function %tmp.1 :clear;
+        invoke %tmp.1 %tmp.2();
+D_Code_SDKGarmin3_EpixMaidenSettings_EpixMaiden_source_EpixMaidenBackground_mc_16_36_20_4_stop:
+    }
+}
+[ @file = "D:\Code\SDKGarmin3\EpixMaidenSettings\EpixMaiden\source\EpixMaidenBackground.mc"; @line = 1; ]
+<init> {
+}
